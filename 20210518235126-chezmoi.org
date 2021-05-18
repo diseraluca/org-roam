@@ -1,0 +1,34 @@
+#+title: chezmoi
+#+tags: tools dotfiles automation
+#+source: https://github.com/twpayne/chezmoi
+
++ Needs to be initialized once with ~chezmoi init~.
++ Add a file with ~chezmoi add FILE~.
+  * The file will be added to the /chezmoi/ internal directory.
++ Repository should be managed manually, unless the configuration is changed to autopush.
+  * ~chezmoi cd~ to enter the repository directory
+  * normal git commands to manage the repository
+  * exit
+
+* Templates to manage differences between machines
+
+  Templates can be used to inject a machine dependent value in the configuration.
+
+  + Create `~/.config/chezmoi/chezmoi.toml`. Should ensure that permissions are set to 600.
+  + Add the required variables to it:
+    #+BEGIN_SRC toml
+    [data]
+      email = "jhon@doe.com"
+    #+END_SRC
+  + Use ~chezmoi add --autotemplate FILE~ to add the file in template mode.
+    * Part of the file that are recognized as variables defined in the configuration file are modified to be formatted with the correct value when applied.
+
+  + Templates can be used for branching logic with, for example, ~{{ if eq .chezmoi.os "darwin" -}}~.
+
+* Running scripts to setup the environment
+
+  + Scripts are run when chezmoi apply is run.
+    * Scripts called ~run_once~ are rerun only when their contents change.
+    * Scripts are executed with ~exec~. 
+
+  + Scripts live in files with the prefix ~run_~ in /chezmoi/'s source directory.
