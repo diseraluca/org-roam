@@ -1,0 +1,5 @@
+*
+!.gitignore
+!*.org
+!assets
+!assets/**

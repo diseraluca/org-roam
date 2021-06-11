@@ -1,0 +1,230 @@
+#+title: TAPL:Untyped Arithmetic Expressions
+#+roam_tags: TAPL type-systems benjamin-pierce PLT
+#+roam_key: [[https://www.cis.upenn.edu/~bcpierce/tapl/][Types and Programming Languages by Benjamin C. Pierce]] 
+
+#+LATEX_HEADER: \usepackage{enumitem}
+
+#+LATEX_HEADER: \newcommand{\fontsmall}{\fontsize{5pt}{6pt}\selectfont}
+#+LATEX_HEADER: \newcommand{\fontnormal}{\fontsize{10pt}{12pt}\selectfont}
+
+#+LATEX_HEADER: \newtheorem{definition}{Definition}
+#+LATEX_HEADER: \newtheorem{theorem}{Theorem}
+
++ Uses a simple untyped programming language to introduce concepts such as abstract syntax, proofs, etc...
+
+    #+begin_verse 
+      t ::=                        ; Terms
+            | true 
+            | false
+            | if t then t else t
+            | 0
+            | succ t
+            | pred t
+            | iszero t 
+    #+end_verse
+  * Grammar for the system used in this chapter.
+
+**** Syntax
+
+     * Multiple ways to define the syntax.
+       + Above EBNF
+       + Inductively
+
+         \paragraph{Inductive definitions of Terms}
+           The set of \emph{terms} is the smallest set $\tau$ such that
+
+           \begin{enumerate}
+            \item \{\textbf{true},\textbf{false},0\} $\subseteq \tau$;
+            \item if $t_1 \in \tau$, then \{\textbf{succ } $t_1$,\textbf{pred } $t_1$, \textbf{iszero } $t_1$\} $\subseteq \tau$;
+            \item if $t_1 \in \tau$, $t_2 \in \tau$ and $t_3 \in \tau$, then \textbf{if } $t_1$ \textbf{then } $t_2$ \textbf{else } $t_3 \in \tau$.
+           \end{enumerate}
+
+         The first clause provides us with three basic terms in the syntax of \(tau\). The two following clauses provides us a way to build compound statements, starting from the element of clause 1 and building ad-infinitum.
+         Lastly, the word `smallest` in the preamble tells us that no elements other than then specified ones reside in \(tau\).
+
+       + Inference Rules, Natural Deduction Style
+
+           \paragraph{Definition of Terms by Inference Rules}
+           The set of terms is defined by the following rules:
+
+           \begin{align*}
+             &\textbf{true } \in \tau && \textbf{false } \in \tau && 0 \in \tau \\[5pt]
+             &\frac{t_1 \in \tau}{\textbf{succ } t_1 \in \tau} && \frac{t_1 \in \tau}{\textbf{pred } t_1 \in \tau} && \frac{t_1 \in \tau}{\textbf{iszero } t_1 \in \tau} \\[5pt]
+             &&&\frac{\begin{array}{l c r}t_1 \in \tau & t_2 \in \tau & t_3 \in \tau\end{array}}{\textbf{if } t_1 \textbf{then } t_2 \textbf{else } t_3 \in \tau}
+           \end{align*}
+         
+         The rules are read as `If we can establish that the premises (the statements above the line) hold, then we may derive the conclusion (the one below the line)`.
+         The first three rules are equivalent to clause 1 in the inductive rules. The following ones capture clauses (2) and (3).
+
+         + axiom :: Rules with no premises
+
+      + Concrete Terms Definition
+
+        \paragraph{Definition of terms in a Concrete Style}
+        For each natural number $i$, define a set $S_i$, as follows:
+
+        \begin{align*}
+          S_0 &= \emptyset \\
+          S_{i+1} &= &\{true, false, 0\} \\
+            &\  \cup\  &\{\textbf{succ } t_1, \textbf{pred } t_1, \textbf{iszero } t_1 \,|\, t_1 \in S_i\} \\
+            &\  \cup\  &\{\textbf{if } t_1 \textbf{then } t_2 \textbf{else } t_3 \,|\, t_1,t_2,t_3 \in S_i\} \\
+        \end{align*}
+
+        Finally, let
+
+        \begin{equation*}
+          S = \bigcup\limits_{i}S_i
+        \end{equation*}
+
+        - Gives a generating procedure for the elements of \(\tau\)
+
+**** Induction on Terms
+
+     From the definitions in the previous sections, we can derive a principle for reasoning about the elements of \(\tau\).
+     If \(t \in \tau\), then one of the following must be true of \(t\):
+
+     + \(t\) is a constant
+     + \(t\) has one of the forms *succ* \(t_1\), *pred* \(t_1\), *iszero* \(t_1\); for some /smaller/ term \(t_1\)
+     + \(t\) has the form *if* \(t_1\) *then* \(t_2\) *else* \(t_3\); for some /smaller/ term \(t_1\), \(t_2\) and \(t_3\)
+    
+     This reasoning can be used to create mappings over the \(\tau\).   
+
+     For example:
+
+   #+begin_definition
+   The set of constants appearing in a term \(t\), written /Consts(t)/, is defined as follows:
+
+   \begin{align*}
+   Consts(true) &= \{true\} \\
+   Consts(false) &= \{false\} \\
+   Consts(0) &= \{0\} \\
+   Consts(\textbf{succ } t_1) &= Consts(t_1) \\
+   Consts(\textbf{pred } t_1) &= Consts(t_1) \\
+   Consts(\textbf{iszero } t_1) &= Consts(t_1) \\
+   Consts(\textbf{if } t_1 \textbf{ then } t_2 \textbf{ else } t_3) &= Consts(t_1) \cup Consts(t_2) \cup Consts(t_3) \\
+   \end{align*}
+   #+end_definition
+    
+     
+   #+begin_definition
+   The size of a term \(t\), written /size(\(t\))/, is defined as follows:
+
+   \begin{align*}
+   size(true) &=  1 \\
+   size(false) &= 1 \\
+   size(0) &= 1 \\
+   size(\textbf{succ } t_1) &= size(t_1) + 1 \\
+   size(\textbf{pred } t_1) &= size(t_1) + 1 \\
+   size(\textbf{iszero } t_1) &= size(t_1) + 1 \\
+   size(\textbf{if } t_1 \textbf{ then } t_2 \textbf{ else } t_3) &= size(t_1) + size(t_2) + size(t_3) + 1 \\
+   \end{align*}
+   #+end_definition
+
+   #+begin_definition
+   The depth of a term \(t\), written /depth(\(t\))/, is defined as follows:
+
+   \begin{align*}
+   deptn(true) &=  1 \\
+   deptn(false) &= 1 \\
+   deptn(0) &= 1 \\
+   deptn(\textbf{succ } t_1) &= depth(t_1) + 1 \\
+   deptn(\textbf{pred } t_1) &= depth(t_1) + 1 \\
+   deptn(\textbf{iszero } t_1) &= depth(t_1) + 1 \\
+   deptn(\textbf{if } t_1 \textbf{ then } t_2 \textbf{ else } t_3) &= max(depth(t_1), depth(t_2), depth(t_3)) + 1 \\
+   \end{align*}
+   #+end_definition
+
+   #+begin_theorem
+   (Principles of Induction on Terms)
+
+  \begin{description}
+    \item[]\emph{Induction on depth}:
+    \begin{itemize}[noitemsep, topsep=-8pt]
+    \item[] If, for each term $\bm{s}$,
+      \begin{itemize}[noitemsep]
+      \item[]given $P(\bm{r})$, for all $\bm{r}$ such that $depth(\bm{r}) < depth(\bm{s})$
+      \item[]we can show $P(\bm{s})$,
+      \end{itemize}
+    Then $P(\bm{s})$ holds for all $\bm{s}$.
+    \end{itemize}
+  \end{description}
+  
+  \begin{description}
+    \item[]\emph{Induction on size}:
+    \begin{itemize}[noitemsep, topsep=-8pt]
+    \item[] If, for each term $\bm{s}$,
+      \begin{itemize}[noitemsep]
+      \item[]given $P(\bm{r})$, for all $\bm{r}$ such that $size(\bm{r}) < size(\bm{s})$
+      \item[]we can show $P(\bm{s})$,
+      \end{itemize}
+    Then $P(\bm{s})$ holds for all $\bm{s}$.
+    \end{itemize}
+  \end{description}
+  
+  \begin{description}
+    \item[]\emph{Structural Induction}:
+    \begin{itemize}[noitemsep, topsep=-8pt]
+    \item[] If, for each term $\bm{s}$,
+      \begin{itemize}[noitemsep]
+      \item[]given $P(\bm{r})$, for all immediate subterms $\bm{r}$ of $\bm{s}$
+      \item[]we can show $P(\bm{s})$,
+      \end{itemize}
+    Then $P(\bm{s})$ holds for all $\bm{s}$.
+    \end{itemize}
+  \end{description}
+   #+end_theorem
+
+   + This theorem can be used to generally reason about terms.
+   + The inductive methods are interchangeable but /Structural Induction/ should generally be preferred as it avoids the indirection of natural numbers that the other two have.
+
+   Most proofs of induction on the terms have the same structure, where at each step we consider each possible form of the term ( conditional, true, false, $\ldots$ ).
+   To simplify the repeating structure, we can elide the unvarying parts and write something similar to the following:
+
+   - Proof: By induction on \(t\)
+
+     - Case: \(t\) = *true*
+       ...show P(*true*)...
+     - Case: \(t\) = *false*
+       ...show P(*false*)...
+     - Case: t = *if* t_1 *then* t_2 *else* t_3
+       ...show P(*if* t_1 *then* t_2 *else* t_3), using P(t_1), P(t_2), P(t_3)...
+
+
+**** Semantic Styles
+
+     + Operational Semantics :: Specifies the behavior of the language by defining an abstract machine for it that uses the terms of the language as its state and transition function that finds the next state by simplifying the term.
+     + Denotational Semantics ::  Finds a collection of semantic domains ( mathematical objects ) and maps terms to elements of those domains by an interpretation function.
+       - Domain Theory is the study and research of appropriate semantic domains for modeling language features.
+     + Axiomatic Semantics :: Instead of defining a behavior and finding laws from it, Axiomatic Semantics uses the laws themselves as a definition of the language. The meaning of a term is what can be proved about it.
+    
+   This book uses /Operational Semantics/.
+
+**** Evaluation
+     
+
+  \fontsmall
+  \begin{minipage}{0.4\textwidth}%
+    \textbf{Syntax} \\
+
+    \fbox{t} ::= \hspace*{\fill} terms:
+    \begin{itemize}
+    \item[] \fbox{true} \hspace*{\fill} constant true
+    \item[] \fbox{false} \hspace*{\fill} constant false
+    \item[] \fbox{if t then t else t} \hspace*{\fill} conditional
+    \end{itemize}
+
+    \fbox{v} ::=  \hspace*{\fill} values:
+    \begin{itemize}
+    \item[] \fbox{true} \hspace*{\fill} true value
+    \item[] \fbox{false} \hspace*{\fill} false value
+    \end{itemize}
+  \end{minipage}%
+  \hfil\vline\hfil
+  \begin{minipage}{0.4\textwidth}%
+    \textbf{Evaluation} \hspace*{\fill}\fbox{$t \rightarrow t'$} \\
+
+    \fbox{if true then $t_2$ else $t_e \rightarrow t_2$ } \hspace{\fill} (E-IFTRUE)
+    \fbox{if false then $t_2$ else $t_e \rightarrow t_3$ } \hspace*{\fill} (E-IFFALSE)
+    \fbox{$\frac{t_1 \rightarrow t_1^'}{\text{if } t_1 \text{then } t_2 \text{else } t_3 \rightarrow \text{if } t_1^{'} \text{then } t_2 \text{else } t_3}$} \hspace*{\fill} (E-IF)
+  \end{minipage}%
+  \fontnormal
