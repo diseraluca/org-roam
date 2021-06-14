@@ -1,0 +1,21 @@
+#+title: Vectors:Find the components from magnitude and angle with the x axis
+#+roam_tags: vectors maths trigonometry conversion
+
++ \(\left| \bm{v} \right| \cos{\theta}\bm{i} + \left| \bm{v} \right| \sin{\theta}\bm{j} \)
+
+Consider any non-zero vector *v*, and let the angle it makes with the positive x-direction be \( \theta \).
+
+Let *u* be the vector with the same direction as *v* but with a magnitude of 1.
+Drawing *u* with its tail at the origin, its top will lie on the unit circle.
+
+Then, its tip must have coordinates \(\left(\cos{\theta},\sin{\theta}\right)\), such that \(\bm{u} = \cos{\theta}\bm{i} + \sin{\theta}\bm{j} \).
+
+Then, multiplying *u* by the magnitude of *v*, will give us *v*, thus:
+
+\begin{align*}
+\bm{v} &= \left| \bm{v} \right|\left(\cos{\theta}\bm{i} + \sin{\theta}\bm{j}\right) \\
+\bm{v} &= \left| \bm{v} \right| \cos{\theta}\bm{i} + \left| \bm{v} \right| \sin{\theta}\bm{j}
+\end{align*}
+
+
+

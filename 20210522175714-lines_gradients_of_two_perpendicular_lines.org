@@ -1,0 +1,56 @@
+#+title: Lines:Gradients of two perpendicular lines
+#+roam_tags: maths lines geometry gradient
+
++ The gradients of any two perpendicular lines ( not parallel to the axes ) have product -1.
+
+Consider two lines that are perpendicular and not parallel to the axes. Let A be
+the the point where the lines cross, B any point that lies on the lines and is
+above and to the right of A, and let C be the point on the other line that is
+obtained by rotating B anticlocwise by 90 degrees about A.
+
+[[./assets/images/perpendicular_lines_gradients.png]]
+
+Consider p to be the run from A to B and q to be the rise from A to B.
+
+If we rotate the right angled triangle with hypotenuse AB and catheti p and q
+anticlockwise by 90 degrees about A, then it will lie exactly above the
+right-angled triangle with hypotenuse AB.
+
+It follows that the run from A to C is -q and the rise from A to C is p.
+
+Hence, the gradient of the line trough A and B \( = \frac{q}{p} \) and
+the gradient of the line trough A and C \( = -\frac{p}{1} \).
+
+The product of those two gradients is \( \frac{q}{p} \cdot -\frac{p}{q} = -1 \).
+
+*** Example
+
+    Find in terms of \(x\) and \(y\), the equation of the straight line that passes trough the point \((3,5)\)
+    and is perpendicular to the line \(y = 2x + 4\).
+
+    Let A be the straight line that passes trough the point \((3,5)\) and its gradient be \(\nabla_A\).
+    Let B be the straight line \(y = 2x + 4\) and its gradient be \(\nabla_B = 2\).
+
+    Then:
+
+    \begin{align*}
+      \nabla_A\nabla_B &= -1 \\[5pt]
+      \nabla_A &= -\frac{1}{\nabla_B} \\[5pt]
+      \nabla_A &= -\frac{1}{2} \\[5pt]
+    \end{align*}
+
+    Thus the equation of \(A\) has form \(y = -\frac{1}{2}x + c\), where \(c\) is a constant.
+
+    Knowing that \(A\) passes trough the point \((3,5)\), we can find \(c\), as follows:
+
+    \begin{align*}
+      5 &= -\frac{1}{2}\cdot 3 + c \\[5pt]
+      5 &= -\frac{3}{2} + c \\[5pt]
+      5 + \frac{3}{2} &=  c \\[5pt]
+      \frac{10 + 3}{2} &=  c \\[5pt]
+      \frac{13}{2} &=  c \\[5pt]
+      c &= \frac{13}{2} \\[5pt]
+    \end{align*}
+
+    Thus, the equation of the line passing trough the point \((3,5)\) and perpendicular to the straight line
+    with equation \(y = 2x + 4\) is \(y = -\frac{1}{2}x + \frac{13}{2}\).
