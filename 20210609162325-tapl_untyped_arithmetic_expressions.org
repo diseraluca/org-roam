@@ -228,3 +228,113 @@
     \fbox{$\frac{t_1 \rightarrow t_1^'}{\text{if } t_1 \text{then } t_2 \text{else } t_3 \rightarrow \text{if } t_1^{'} \text{then } t_2 \text{else } t_3}$} \hspace*{\fill} (E-IF)
   \end{minipage}%
   \fontnormal
+  
+  + Syntax and operational semantic example for the language of booleans
+
+    + (E-IFTRUE) :: If the term evaluated in a conditional is literally the constant *true* then the term is reduced to \(t_2\).
+    + (E-IFFALSE) :: If the term evaluated in a conditional is literally the constant *false* then the term is reduced to \(t_3\).
+    + (E-IF) :: A conditional with guard \(t_1\), evaluates \(t_1\) to \(t_1^'\) and then reduces to the conditional with guard \(t_1^'\).
+
+  #+begin_definition
+  An instance of an inference rule is obtained by consistently replacing each metavariable by the same term in the rule's conclusion and all its premises.
+  #+end_definition
+  
+  #+begin_definition
+  A rule is \emph{satisfied} by a relation if, for each instance of the rule, either the conclusion is in the relation of one of the premises is not.
+  #+end_definition
+
+  #+begin_definition
+  The one-step evaluation relation $rightarrow$ is the smallest binary relation on terms satisfying the three rules in the operational semantics of booleans.
+
+  When the pair $(t,t^)$ is in the evaluation relation, we say that "the evaluation statement $t \rightarrow t'$ is \emph{derivable}.
+  #+end_definition
+
+   #+begin_theorem
+   (Determinacy of One-Step Evaluation)
+
+   If $t \rightarrow t'$ and $t \rightarrow t''$, then $t' = t''$.
+   #+end_theorem
+
+  #+begin_definition
+  A term $t$ is in \emph{normal form} if no evaluation rule applies to it.
+  #+end_definition
+
+  + More generally
+
+   #+begin_theorem
+   Every value is in normal form
+   #+end_theorem
+   
+  + As no rule reduces it
+  
+   #+begin_theorem
+   If $t$ is in normal form, then $t$ is a value
+   #+end_theorem
+    
+   #+begin_definition
+   The multi-step evaluation relation $\rightarrow^*$ is the reflexive, transitive closure of one-step evaluation.
+
+   That is, it is the smallest relation such that
+
+   \begin{itemize}
+     \item[(1)] If $t \rightarrow t'$ then $t \rightarrow^* t'$
+     \item[(2)] $t \rightarrow^* t$ for all $t$
+     \item[(3)] If $t \rightarrow^* t^'$ and $t' \rightarrow^* t^{''}$, then $t \rightarrow^* t''$
+   \end{itemize}
+   #+end_definition
+
+   #+begin_theorem
+   (Uniqueness of Normal Forms)
+   
+   If $t \rightarrow^* u$ and $t \rightarrow^* u^'$, where $u$ and $u^'$ are both normal forms, then $u = u^'$.
+   #+end_theorem
+
+   #+begin_theorem
+   (Termination of Evaluation)
+   
+   For every term $t$ there is some normal form $t^'$ such that $t \rightarrow^* t^'$.
+   #+end_theorem
+
+  \fontsmall
+  \begin{minipage}{0.4\textwidth}%
+    \textbf{New Syntactic forms} \\
+
+    \fbox{t} ::= $\ldots$ \hspace*{\fill} terms:
+    \begin{itemize}
+    \item[] \fbox{$0$} \hspace*{\fill} constant zero
+    \item[] \fbox{succ $t$} \hspace*{\fill} successor
+    \item[] \fbox{pred $t$} \hspace*{\fill} predecessor
+    \item[] \fbox{iszero $t$} \hspace*{\fill} zero test
+    \end{itemize}
+
+    \fbox{v} ::= $\ldots$ \hspace*{\fill} values:
+    \begin{itemize}
+    \item[] \fbox{nv} \hspace*{\fill} numeric value
+    \end{itemize}
+    
+    \fbox{nv} ::=  \hspace*{\fill} numeric values:
+    \begin{itemize}
+    \item[] \fbox{$0$} \hspace*{\fill} zero value
+    \item[] \fbox{succ nv} \hspace*{\fill} successor value
+    \end{itemize}
+  \end{minipage}%
+  \hfil\vline\hfil
+  \begin{minipage}{0.4\textwidth}%
+    \textbf{New Evaluation Rules} \hspace*{\fill}\fbox{$t \rightarrow t'$} \\
+
+    \fbox{$\frac{t_1 \rightarrow t_1^'}{\text{succ } t_1 \rightarrow \text{succ } t_1^{'}$}} \hspace*{\fill} (E-SUCC)
+    \fbox{$\text{pred } 0 \rightarrow 0$} \hspace{\fill} (E-PREDZERO)
+    \fbox{$\text{pred } (\text{succ } nv_1) \rightarrow nv_1$} \hspace{\fill} (E-PREDSUCC)
+    \fbox{$\frac{t_1 \rightarrow t_1^'}{\text{pred } t_1 \rightarrow \text{pred } t_1^{'}$}} \hspace*{\fill} (E-PRED)
+    \fbox{$\text{iszero } 0 \rightarrow \text{true}$} \hspace{\fill} (E-ISZEROZERO)
+    \fbox{$\text{iszero } (\text{succ } nv_1) \rightarrow \text{false}$} \hspace{\fill} (E-ISZEROSUCC)
+    \fbox{$\frac{t_1 \rightarrow t_1^'}{\text{iszero } t_1 \rightarrow \text{iszero } t_1^{'}$}} \hspace*{\fill} (E-ISZERO)
+  \end{minipage}%
+  \fontnormal
+  
+  + Syntax and Semantical extension for Arithmetic expressions
+  
+   #+begin_definition
+   A closed term is \emph{stuck} if it is in normal form but not a value.
+   #+end_definition
+
