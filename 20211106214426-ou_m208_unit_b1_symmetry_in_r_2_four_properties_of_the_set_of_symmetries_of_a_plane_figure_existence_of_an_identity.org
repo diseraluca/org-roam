@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       628cfdce-5aad-46f2-b7b9-eb2d46f97013
+:END:
+#+title: OU:M208:Unit-B1:Symmetry in R^2:Four Properties of the Set of Symmetries of a Plane Figure:Existence of an Identity
+#+filetags: OU M208 Mathematics Group-Theory Symmetry Plane Identity
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}
+The set $S(F)$ of symmetries of a plane figure $F$ contains a special symmetry $e$
+
+(the \textbf{identity symmetry}) such that, for each symmetry $f$ in $S(F)$:
+
+\begin{equation*}
+f \circ e = f = e \circ f
+\end{equation*}
+\end{tcolorbox}

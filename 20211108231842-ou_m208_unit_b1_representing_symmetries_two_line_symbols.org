@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       12a576b2-cda0-4507-becc-b974ec844e7b
+:END:
+#+title: OU:M208:Unit-B1:Representing Symmetries:Two-line Symbols
+#+filetags: OU M208 Mathematics Group-Theory Symmetry Plane Representation Notation
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Two-line Notation]
+Let $f$ be a symmetry of a polygon $F$ that has vertices at locations labelled $1,2,3, \ldots, n$.
+
+The \textbf{two-line symbol} representing $f$ is:
+
+\begin{pmatrix}
+1&2&3&\ldots&n\\
+f(1)&f(2)&f(3)&\ldots&f(n)
+\end{pmatrix}
+
+where $f(1), f(2), f(3), \ldots, f(n)$ are the labels of the locations to which $f$ moves the vertices originally aligned at the locations labelled $1,2,3,\ldots,n$, respectively.
+
+We say that $f$ is written in \textbf{two-line notation}
+\end{tcolorbox}

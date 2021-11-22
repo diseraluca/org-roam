@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0d773ac3-4969-4c90-a2ab-9e44f7a63b58
+:END:
+#+title: OU:M208:Unit-A4:Real Functions And Their Graphs
+#+filetags: OU M208 Mathematics Graphs Real-Functions
+
+
+See [[id:7fd298b1-ac82-4721-96a7-27cc637a1724][OU:M-208:Unit-A4:Real Functions And Their Graphs:Real Functions]] for an introduction to the concept of real functions.
+
+See [[id:901c8cf1-435c-4fb9-92ea-a39c79e1ba49][OU:M208:unit-A4:Real Functions And Their Graphs:Graphs of Basic Functions]] to see the form of the graphs for various common real functions.

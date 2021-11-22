@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       2f488917-2535-4889-8352-e100b6c07948
+:END:
+#+title: OU:M208:Unit-A1:Sets:Intervals
+#+filetags: OU M208 Mathematics Set-Theory Sets Intervals
+
++ Interval :: Set of real numbers included between two endpoints \(a\) and \(b\)
+
+There are multiple kinds of intervals:
+
+ + Open Interval :: An interval in which both endpoints are excluded
+
+   \(-2 < x < 5\) is written \((-2, 5)\)
+ + Closed Interval :: An interval in which both endpoints are included
+
+   \(-2 \le x \le 5\) is written \([-2, 5]\)
+
+ + Half-Open Interval :: An interval in which one endpoint is included and one is excluded.
+
+   \(-2 < x \le 5\) is written \((-2, 5]\)
+   \(-2 \le x < 5\) is written \([-2, 5)\)
+
+We use the symbol \(\infty\) when the interval extends indefinitely in the
+positive direction and the symbol \(-\infty\) when the interval extends
+indefinitely in the negative direction.
+
+We always use round-brackets for the inifinite parts of an interval.
+
+  * The set of all real numbers greater than \(-3\) is \((-3, \infty)\)
+  * The set of all real numbers less than or equal to \(4\) is \((-\infty, 4]\)

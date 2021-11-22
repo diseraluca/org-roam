@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       dce6f3cd-8223-4c84-941b-43d868a67156
+:END:
+#+title: OU:M208:Unit-A2:Complex Numbers:Division of a Complex Number
+#+filetags: OU M208 Mathematics Complex-Numbers Division
+
+The second of the conjugate-modulus properties, see [[id:c5b4589b-8871-43cc-b88b-b9d6e5d025b8][OU:M208:Unit-A2:Complex Numbers:Modulus of a Complex Number]], allows us to find reciprocals for complex numbers and, hence, to divide one complex number by another.
+
+To find the reciprocal, we can multiply \(\frac{1}{z}\) by the conjugate of \(z\).
+For example:
+
+\begin{align*}
+\frac{1}{2 - 5i} &= \frac{1(2 + 5i)}{(2 - 5i)(2 + 5i)} \\
+                 &= \frac{2 + 5i}{\left|2 - 5i\right|^2} \\
+                 &= \frac{2 + 5i}{4 + 25} \\
+                 &= \frac{2 + 5i}{29} \\
+                 &= \frac{2}{29} + \frac{5}{29}i \\
+                 &= \frac{1}{29}(2 + 5i)
+\end{align*}
+
+As a general formula we have:
+
+\begin{equation*}
+\frac{1}{z} = \frac{1 \times \overline{z}}{z \times \overline{z}} = \frac{\overline{z}}{\left|z\right|^2}
+\end{equation*}

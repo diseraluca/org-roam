@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       a6b8108b-7c1d-4b6b-8c05-411a28bd1dc9
+:END:
+#+title: OU:Unit-A1:Functions:Image Set of a Function
+#+filetags: OU M208 Mathematics Functions Image-Set Surjective
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Image]
+Let $f : A \rightarrow B$ be a function. For any subset $S$ of $A$, the \textbf{image} of $S$ under $f$, denoted by $f(S)$, is the set:
+
+\begin{equation*}
+f(S) = \{f(x) : x \in S\}
+\end{equation*}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Image Set]
+The \textbf{image set} of a function $f : A \rightarrow B$ is the set
+
+\begin{equation*}
+f(A) = \{f(x) : x \in A\}
+\end{equation*}
+\end{tcolorbox}
+
+\begin{tcolorbox}[title=Surjective Function]
+A function $f : A \rightarrow B$ is \textbf{onto} or \textbf{surjective} if $f(A) = B$
+\end{tcolorbox}
+
+    + In a *surjective function*, each element of the codomain is the image of at least one element of the domain.

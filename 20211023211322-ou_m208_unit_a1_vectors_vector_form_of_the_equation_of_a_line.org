@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       9d3514cd-dc81-41b0-aafe-be554d7cce60
+:END:
+#+title: OU:M208:Unit-A1:Vectors:Vector Form of the Equation of a Line
+#+filetags: OU M208 Mathematics Vectors Plane Lines
+
+As we've seen in [[id:b9a24444-23bc-4ac9-b1b8-06ee664f15c5][OU:M208:Unit-A1:The Plane]], every line in the plane has an equation of the form:
+
+\begin{equation*}
+ax + by = c
+\end{equation*}
+
+It is possible to describe the same line in terms of vectors.
+
+Let \(P\) and \(Q\) be the points with position vectors \(\mathbf{p}\) and \(\mathbf{q\), respectively.
+Let \(l\) be the line that passes trough those two points.
+
+We find the an expression for the position vector \(\mathbf{r}\) of an arbitrary point \(R\) on \(l\) in terms of the position vectors.
+
+Since the vector \(\overrightarrow{PR}\) is parallel to the vector \(\overrightarrow{PQ}\), it must be a multiple of \(\overrightarrow{PQ}\) such that \(\overrightarrow{PR} = \lambda\overrightarrow{PQ}\), for some real number \(\lambda\).
+
+Now, based on the result in [[id:fadc4a97-3fab-4e20-96e2-a0d6259579b4][OU:M208:Unit-A1:Vectors:Position Vectors]], we have that:
+
+\(\overrightarrow{PR} = \mathbf{r} - \mathbf{p}\) and \(\overrightarrow{PQ} = \mathbf{q} - \mathbf{p}\).
+
+Hence:
+
+\begin{align*}
+\mathbf{r} - \mathbf{p} &= \lambda(\mathbf{q} - \mathbf{p}) \\
+\mathbf{r} &= \mathbf{p} + \lambda(\mathbf{q} - \mathbf{p}) \\
+\mathbf{r} &= \mathbf{p} + \lambda\mathbf{q} - \lambda\mathbf{p} \\
+\mathbf{r} &= (1 - \mathbf{p})\lambda + \lambda\mathbf{q} \\
+\end{align*}
+
+This is a general formula for the position vector of a point on the line, with each point corresponding to a particular value of \(\lambda\).
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Vector Form of the Equation of a Line]
+The equation of the line trough the points with position vector $\mathbf{p}$ and $\mathbf{q}$ is
+
+\begin{equation*}
+\mathbf{r} = (1 - \lambda)\mathbf{p} + \lambda\mathbf{q}, \ \text{where}\ \lambda \in \mathbb{R}
+\end{equation*}
+\end{tcolorbox}

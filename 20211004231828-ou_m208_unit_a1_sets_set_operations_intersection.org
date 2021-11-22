@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       05537c1b-010c-4195-ba03-98bb38f504d0
+:END:
+#+title: OU:M208:Unit-A1:Sets:Set Operations:Intersection
+#+filetags: OU M208 Mathematics Set-Theory Sets Operators Intersection Disjoint
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Set Intersection]
+Let $A$ and $B$ be any two sets; then the \textbf{intersection} of $A$ and $B$ is the set
+
+\begin{equation*}
+A \cap B = \{x : x \in A\ \text{and}\ x \in B\}
+\end{equation*}
+\end{tcolorbox}
+
+For example, if \(A = \{2,3,5\}\) and \(B = \{1,2,5,8\}\) then their
+intersection, the set of all elements belonging to both \(A\) and
+\(B\), is \(\{2,5\}\).
+
++ Disjoint Sets :: Two sets whose intersection is the empty set.

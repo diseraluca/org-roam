@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       fdbc0a73-a648-48f5-8222-18d68733a27e
+:END:
+#+title: OU:M208:Unit-A3:Mathematical Statements:Negating Conjunctions And Disjunctions
+#+filetags: OU M208 Mathematics Proofs Statements Conjunctions Disjunctions Negations
+
+[[id:e9ca943b-7537-4764-b218-b59db2ce82ce][OU:M208:Unit-A3:Mathematical Statements:Conjunctions And Disjunctions]] are correlated with regards to negation, see [[id:4b3532c9-547b-499f-940b-c43a492fbdbe][OU:M208:Unit-A3:Mathematical Statements:Statements And Negations]].
+
+- Since the statement "P and Q" is true exactly when both P and Q are true, its negation is true when at least one of P or Q is false.
+
+  Hence, the negation of a conjunction is "P and Q" is "not P or not Q"
+
+- The negation of the statement "P or Q" is true exactly when both P and Q are false.
+
+  Hence, the negation of a disjunction "P or Q" is "not P and not Q"

@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       3dc12e32-ae70-4853-826f-5a01f222ddce
+:END:
+#+title: OU:Unit-A1:Functions:Inverse Functions
+#+filetags: OU M208 Mathematics Functions Inverse One-To-One Many-To-One Inejctive Bijective
+
+Given some function \(f\), it is sometimes possible to define an inverse function that undoes the effect of \(f\).
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=One-To-One and Many-To-One Functions]
+A function $f : A \rightarrow B$ is \textbf{one-to-one} of each element of $f(A)$ is the image of exactly one element of $A$; that is,
+
+If $x_1, x_2 \in A$ and $f(x_1) = f(x_2)$ then $x_1 = x_2$
+
+A function that is not one-to-one is \textbf{many-to-one}
+
+\end{tcolorbox}
+
+ + Injective Function :: A function that is one-to-one
+
+Sometimes, it is impossible to find such a function.
+Consider for example:
+
+\begin{align*}
+f : &A \rightarrow B \\
+    &x \mapsto x^2
+\end{align*}
+
+where \(A = \{-3,-2,-1,0,1,2,3\}\) and \(B = \{0,1,2,3,4,5,6,7,8,9\}\).
+
+We know that \(f(-2) = f(2) = 4\) such that an inverse function would need to map \(4\) to both \(-2\) and \(2\), which is impossible.
+
+ * A function is reversible only if it is one-to-one
+ * To prove that a function \(f\) is not one-to-one, it is only necessary to find a pair of distinct element with the same image.
+
+\begin{tcolorbox}[title=Inverse Function]
+Let $f : A \rightarrow B$ be a one-to-one function. Then $f$ has an \textbf{inverse function} $f^{-1} : f(A) \rightarrow A$ with rule:
+
+$f^{-1}(y) = x$, where $y = f(x)$
+\end{tcolorbox}
+
+ + Bijective Function :: A function that \(f : A \rightarrow B\) that is both one-to-one and onto.
+
+   In this case, the inverse function is the inverse of \(f\) and \(f\) are inverses to each other.

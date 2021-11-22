@@ -1,0 +1,51 @@
+:PROPERTIES:
+:ID:       771f0a70-3a63-49fd-9665-4b1a14ac05d6
+:END:
+#+title: OU:M208:Unit-A1:Sets:Plane Sets:Half-planes, discs and other plane sets
+#+filetags: OU M208 Mathematics Set-Theory Sets Intervals Plane-Sets Points Circles Plane Half-Planes Discs
+
+Consider the line \(l = \{(x, y) \in \mathbb{R}^2 : y = 1 - x\}\).
+
+\(l\) Splits the plane into three separate parts, \(l\) itself, the set \(H_1\) of points above the line and the set \(H_2\) of points below the line.
+
+\(\forall P = (x, y) \in H_1\) the point \(Q = (x, 1 - x)\) lies on the line \(l\) directly below \(P\) such that \(y > 1 - x\).
+A similar concept can be applied to \(H_2\) resulting in \(y < 1 - x\).
+
+Hence:
+
+\begin{equation*}
+H_1 = \{(x, y) \in \mathbb{R}^2 : y > 1 - x\}
+\end{equation*}
+
+\begin{equation*}
+H_2 = \{(x, y) \in \mathbb{R}^2 : y < 1 - x\}
+\end{equation*}
+
++ Half-plane :: The set of points on one side of the line. Possibly containing all the points on the line itself too.
+
+Other plane sets can be considered in the same way.
+For example the unit circle \(U = \{(x,y) \in \mathbb{R}^2 : x^2 + y^2 = 1\}\).
+
+It splits the plane into three parts: the circle itself, the set of points lying inside the circle \(D_1\) and the set of points lying outside the circle \(D_2\).
+
+The condition for a point to be inside the circle is that the distance from the origin is less than 1 and the condition for a point to be outside the circle is for the distance from the origin to be greater than one.
+
+Hence:
+
+\(D_1 = \{(x,y) \in \mathbb{R}^2 : x^2 + y^2 < 1\}\)
+\(D_2 = \{(x,y) \in \mathbb{R}^2 : x^2 + y^2 > 1\}\)
+
++ Disc :: The set of points inside a circle.
+
+We identify the following conventions when drawing diagrams for a set of points:
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Convention for drawing a set of points in $\mathbb{R}$ and $\mathbb{R}^2$]
+In a diagram of a set of points in $\mathbb{R}$ or $\mathbb{R}^2$:
+
+\begin{itemize}
+\item included and excluded points are drawn as solid and hollow dots, respectively
+\item included and excluded boundaries are drawn as solid and broken lines, respectively
+\end{itemize}
+\end{tcolorbox}

@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       6274d52c-220c-4342-afe2-01b869ea0609
+:END:
+#+title: OU:M208:Unit-A2:Complex Numbers:Arithmetic of Complex Numbers
+#+filetags: OU M208 Mathematics Complex-Numbers Arithmetic Addition Subtraction Multiplication
+
+- Arithmetic on complex number is carried out the same as for reals but we substitute \(i\) for \(-1\) every time it occurs.
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Arithmetic of Complex Numbers]
+Let $z_1 = x_1 + iy_1$ and $z_2 = x_2 + iy_2$ be any complex numbers.
+
+Then the following operations can be applied:
+
+\begin{itemize}
+\item{Addition}
+\begin{equation*}
+z_1 + z_2 = (x_1 + x_2) + i(y_1 + y_2)
+\end{equation*}
+\item{Subtraction}
+\begin{equation*}
+z_1 - z_2 = (x_1 - x_2) + i(y_1 - y_2)
+\end{equation*}
+\item{Multiplication}
+\begin{equation*}
+z_1z_2 = (x_1x_2 - y_1y_2) + i(x_2y_1 - x_1y_2)
+\end{equation*}
+\end{itemize}
+\end{tcolorbox}

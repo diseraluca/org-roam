@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       cd51911a-6886-45df-9db2-303d39d2d736
+:END:
+#+title: OU:M208:Unit-A3:Mathematical Statements
+#+filetags: OU M208 Mathematics Proofs Statements
+
+
+See [[id:4b3532c9-547b-499f-940b-c43a492fbdbe][OU:M208:Unit-A2:Mathematical Statements:Statements And Negations]] for an introduction to the various forms of statements.
+
+See [[id:e9ca943b-7537-4764-b218-b59db2ce82ce][OU:M208:Unit-A3:Mathematical Statements:Conjunctions And Disjunctions]] for an introduction to conjunctions and disjunctions.
+
+See [[id:fdbc0a73-a648-48f5-8222-18d68733a27e][OU:M208:Unit-A2:Mathematical Statements:Negating Conjunctions And Disjunctions]] to understand how to negate a conjunction or a disjunction.
+
+See [[id:f756858e-424c-405c-969d-b83b35b665d5][OU:M208:Unit-A3:Mathematical Statements:Implications]] for an introduction to implications.
+
+See [[id:3d0c7bc7-ecf7-46f0-bffc-db9a76291868][OU:M208:Unit-A3:Mathematical Statements:The Negation of An Implication]] to learn that the negation of an implication is a conjunction.
+
+See [[id:ffb3dce2-cb3c-402a-8e1a-299dd053a93b][OU:M208:Unit-A3:Mathematical Statements:The Converse of an Implication]] to learn how to produce a converse from an implication.
+
+See [[id:741ceedd-4492-4600-bb82-e5a69a73b3a2][OU:M208:Unit-A3:Mathematical Statements:The Contrapositive of An Implication]] to learn how to form a contrapositive from an implication.
+
+See [[id:d7791bc5-95f0-4251-97a6-2a43e459ef93][OU:M208:Unit-A3:Mathematical Statements:Equivalences]] for an introduction to equivalences.
+
+See [[id:a130c0ad-fb49-4d07-8942-bb4e2435080b][OU:M208:Unit-A3:Mathematical Statements:Universal and Existential Statements]] for an introduction to universal and existential statements.

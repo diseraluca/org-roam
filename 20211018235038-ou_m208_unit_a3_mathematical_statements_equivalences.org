@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       d7791bc5-95f0-4251-97a6-2a43e459ef93
+:END:
+#+title: OU:M208:Unit-A3:Mathematical Statements:Equivalences
+#+filetags: OU M208 Mathematics Proofs Statements Equivalences
+
++ Equivalence :: A statement of the form "If P, then Q, and if Q, then P"
+  * More easily expressed as "P if and only if Q"
+
+An equivalence states that if either of the two elements holds, then the other must hold too.
+
+Equivalences can be expressed in different ways:
+
+ - P \(\iff\) Q
+ - P is equivalent to Q
+ - P is necessary and sufficient for Q
+
+Equivalences can be tought of as being composed of two [[id:f756858e-424c-405c-969d-b83b35b665d5][OU:M208:Unit-A3:Mathematical Statements:Implications]], "If P, then Q" and "If Q, then P".
+
+Similarly, they can be expressed trough [[id:741ceedd-4492-4600-bb82-e5a69a73b3a2][OU:M208:Unit-A3:Mathematical Statements:The Contrapositive of An Implication]], "If P, then Q" and "If not P, then not Q".

@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       4354c417-8206-4f2b-8022-dc74afc39d48
+:END:
+#+title: OU:M208:Unit-A1:Sets:Set Operations:Difference
+#+filetags: OU M208 Mathematics Set-Theory Sets Operators Difference
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Set Difference]
+Let $A$ and $B$ be any two sets; then the \textbf{difference} of $A$ and $B$ is the set
+
+\begin{equation*}
+A - B = \{x : x \in A\ \text{and}\ x \notin B\}
+\end{equation*}
+\end{tcolorbox}
+
+For example, if \(A = \{2,3,5\}\) and \(B = \{1,2,5,8\}\) then their
+difference, the set of all elements belonging to \(A\) but not to
+\(B\), is \(\{3\}\).
+
+Notice that the difference, contrary to the [[id:c8887135-e38c-4b1b-9400-21d8b2154560][OU:M208:Unit-A1:Sets:Set Operations:Union]] and the [[id:05537c1b-010c-4195-ba03-98bb38f504d0][OU:M208:Unit-A1:Sets:Set Operations:Intersection]] is not commutative.
+
+That is, \(A - B \neq B - A\).
+
+Furthermore, for every set \(A\), \(A - A = \emptyset\).

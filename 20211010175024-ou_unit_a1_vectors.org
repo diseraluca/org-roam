@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       05056803-78cd-4cce-9b0f-27fbe334e531
+:END:
+#+title: OU:Unit-A1:Vectors
+#+filetags: OU M208 Mathematics Vectors
+
+See [[id:46141a4a-a4e8-4e95-b22b-ce46e0adbac6][OU:Unit-A1:Vectors:What is a Vector?]] for an introduction to vectors.
+
+See [[id:e7f64c1f-25fd-40d8-8756-cd7b2c797d31][OU:M208:Unit-A1:Vectors:Components and the Arithmetic of vectors]] to understand how to describe a vector in component form and how to perform calculations on a component form vector.
+
+See [[id:83ae409f-ce1c-4267-aad8-01bab76c9fa2][OU:M208:Unit-A1:Vectors:Unit Vectors]] to understand how to derive a unit vector with the same direction as another vector.
+
+See [[id:fadc4a97-3fab-4e20-96e2-a0d6259579b4][OU:M208:Unit-A1:Vectors:Position Vectors]] to see how to describe a point trough the use of vectors.
+
+See [[id:9d3514cd-dc81-41b0-aafe-be554d7cce60][OU:M208:Unit-A1:Vectors:Vector Form of the Equation of a Line]] to see how to describe a line trough vectors.

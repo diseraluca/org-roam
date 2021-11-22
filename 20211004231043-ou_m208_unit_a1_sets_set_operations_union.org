@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       c8887135-e38c-4b1b-9400-21d8b2154560
+:END:
+#+title: OU:M208:Unit-A1:Sets:Set Operations:Union
+#+filetags: OU M208 Mathematics Set-Theory Sets Operators Union
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Set Union]
+Let $A$ and $B$ be any two sets; then the \textbf{union} of $A$ and $B$ is the set
+
+\begin{equation*}
+A \cup B = \{x : x \in A\ \text{or}\ x \in B\}
+\end{equation*}
+\end{tcolorbox}
+
+For example, if \(A = \{2,3,5\}\) and \(B = \{1,2,5,8\}\) then their union, the set of all elements belonging to at least one of \(A\) or \(B\), is \(\)\(\{1,2,3,5,8\}\).

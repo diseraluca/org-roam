@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       6db180d1-9a2f-4c08-a0b4-35f25ecdfa3a
+:END:
+#+title: Books:Wishlist
+#+roam_tags: books wishlist
+
++ [[https://mitpress.mit.edu/books/multi-agent-oriented-programming][Multi Agent Oriented Programming]]
++ [[https://mitpress.mit.edu/books/introduction-agent-based-modeling][An introduction to Agent-Based Modeling]]
++ [[https://www.manning.com/books/advanced-algorithms-and-data-structures][Advanced Algorithms and Data Structures]]

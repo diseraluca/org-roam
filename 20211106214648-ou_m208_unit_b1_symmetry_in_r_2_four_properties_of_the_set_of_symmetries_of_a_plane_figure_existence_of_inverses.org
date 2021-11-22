@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       c2c42ba5-f125-4c8a-98bb-de7a630e6028
+:END:
+#+title: OU:M208:Unit-B1:Symmetry in R^2:Four Properties of the Set of Symmetries of a Plane Figure:Existence of Inverses
+#+filetags: OU M208 Mathematics Group-Theory Symmetry Plane Inverses One-To-One Onto
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+Since a symmetry is an isometry, it maps \(\mathbb{R}^{2}\) rigidly onto itself, hence it is one-to-one and onto.
+
+A symmetry \(f \in S(F)\), Being one-to-one and onto, has an inverse function \(f^{-1}\).
+Moreover, since \(f\) preserves distances and maps \(F\) to itself, so must \(f^{-1}\), which is then a symmetry in \(S(F)\).
+
+\begin{tcolorbox}[title=Inverses Property for Symmetries]
+Each symmetry $f$ in the set $S(F)$ of symmetries of a
+
+plane figure $F$ has an \textbf{inverse} symmetry $f^{-1}$ in $S(F)$ such that
+
+\begin{equation*}
+f \circ f^{-1} = r = f^{-1} \circ f
+\end{equation*}
+\end{tcolorbox}

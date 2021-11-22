@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       2d5f0b9a-535a-40c9-9072-8c7e0ce966cb
+:END:
+#+title: OU:Unit-A1:Functions:Identity Functions
+#+filetags: OU M208 Mathematics Functions Identity
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=The Identity Function]
+The \textbf{identity function} on a set $A$ is the function
+
+\begin{align*}
+i_A : &A \rightarrow A \\
+      &x \mapsto x
+\end{align*}
+
+\end{tcolorbox}
+
+The *identity function* maps each element of the domain to itself.
+
+For example, given the set \(A = \{0,1,2,3\}\), the identity function \(i_A\) is:
+
+\begin{equation*}
+i_A(0) = 0
+\end{equation*}
+\begin{equation*}
+i_A(1) = 1
+\end{equation*}
+
+\begin{equation*}
+i_A(2) = 2
+\end{equation*}
+
+
+\begin{equation*}
+i_A(3) = 3
+\end{equation*}

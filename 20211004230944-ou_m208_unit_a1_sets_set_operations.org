@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       2e27059d-0716-4768-862d-9611c8c7ff79
+:END:
+#+title: OU:M208:Unit-A1:Sets:Set Operations
+#+filetags: OU M208 Mathematics Set-Theory Sets Operators
+
+See [[id:c8887135-e38c-4b1b-9400-21d8b2154560][OU:M208:Unit-A1:Sets:Set Operations:Union]] for the union operator that creates a new set containing all elements of the two sets.
+
+See [[id:05537c1b-010c-4195-ba03-98bb38f504d0][OU:M208:Unit-A1:Sets:Set Operations:Intersection]]  for the intersection operator that creates a new set containing the elements that are common to both sets.
+
+See [[id:4354c417-8206-4f2b-8022-dc74afc39d48][OU:M208:Unit-A1:Sets:Set Operations:Difference]]  for the difference operator that creates a new set containing all elements that are unique to the first set.

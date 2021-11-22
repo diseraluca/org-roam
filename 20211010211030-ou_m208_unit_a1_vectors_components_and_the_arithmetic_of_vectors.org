@@ -1,0 +1,102 @@
+:PROPERTIES:
+:ID:       e7f64c1f-25fd-40d8-8756-cd7b2c797d31
+:END:
+#+title: OU:M208:Unit-A1:Vectors:Components and the Arithmetic of vectors
+#+filetags: OU M208 Mathematics Vectors Unit-Vectors Component-Form Equality Zero-Vector Addition Subtraction Difference Scalar-Multiplication Magnitude
+
+We can simplify some manipulations over a vector by expressing them in component form.
+
+First, we need to define what a unit vector is:
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Unit Vectors]
+A \textbf{unit vector} is a vector of magnitude $1$.
+
+In $\mathbb{R}^2$, the vectors $\mathbf{i}$ and $\mathbf{j}$ are the unit vectors in the positive directions of the x- and y-axes, respectively.
+
+In $\mathbb{R}^3$, the vectors $\mathbf{i}$, $\mathbf{j}$ and $\mathbf{k}$ are the unit vectors in the positive directions of the x-, y- and z-axes, respectively.
+
+\end{tcolorbox}
+
+We can define any vector as a scalar multiple of those unit vectors:
+
+\begin{tcolorbox}[title=Component Form of Vectors]
+Any vector $\mathbf{p}$ in $\mathbb{R}^2$ can be expressed in \textbf{component form} as:
+
+\begin{equation*}
+\mathbf{p} = a_1\mathbf{i} + a_2\mathbf{j} \ \text{for some real numbers} \ a_1, a_2
+\end{equation*}
+
+Often, we write $\mathbf{p} = (a_1, a_2)$ for brevity.
+
+The numbers $a_1$ and $a_2$ are the \textbf{components} of $\mathbf{p}$ in the x- and y-directions, respectively.
+
+Any vector $\mathbf{p}$ in $\mathbb{R}^3$ can be expressed in \textbf{component form} as:
+
+\begin{equation*}
+\mathbf{p} = a_1\mathbf{i} + a_2\mathbf{j} + a_3\mathbf{k} \ \text{for some real numbers} \ a_1, a_2, a_3
+\end{equation*}
+
+Often, we write $\mathbf{p} = (a_1, a_2, a_3)$ for brevity.
+
+The numbers $a_1$, $a_2$ and $a_3$ are the \textbf{components} of $\mathbf{p}$ in the x-, y- and z-directions, respectively.
+
+
+\end{tcolorbox}
+
+Operations on vectors, see [[id:46141a4a-a4e8-4e95-b22b-ce46e0adbac6][OU:Unit-A1:Vectors:What is a Vector?]], can be expressed in component form as follows:
+
+\begin{tcolorbox}[title=Vector Arithmetic in Component Form]
+\begin{itemize}
+\item[Equality]
+Two vectors, both in $\mathbb{R}^2$ and $\mathbb{R}^3$, are equal if their corresponding components are equal.
+\item[Zero Vector]
+The zero vector is:
+
+\begin{align*}
+\mathbf{0} &= (0, 0)\ \text{in}\ \mathbb{R}^2 \\
+\mathbf{0} &= (0, 0, 0)\ \text{in}\ \mathbb{R}^3
+\end{align*}
+\item[Addition]
+To add vectors in $\mathbf{R}^2$ and $\mathbf{R}^3$, add their corresponding components:
+
+\begin{align*}
+(a_1, a_2) + (b_1, b_2) &= (a_1 + b_1, a_2 + b_2) \\
+(a_1, a_2, a_3) + (b_1, b_2, b_3) &= (a_1 + b_1, a_2 + b_2, a_3 + b_3)
+\end{align*}
+\item[Negatives]
+To find the negative of a vector in $\mathbb{R}^2$ and $\mathbb{R}^3$, take the negatives of its components:
+
+\begin{align*}
+-(a_1, a_2) &= (-a_1, -a_2) \\
+-(a_1, a_2, a_3) &= (-a_1, -a_2, -a_3) \\
+\end{align*}
+\item[Subtraction]
+To subtract vectors in $\mathbb{R}^2$ and $\mathbb{R}^3$, subtract the corresponding components:
+
+\begin{align*}
+(a_1, a_2) - (b_1, b_2) &= (a_1 - b_1, a_2 - b_2) \\
+(a_1, a_2, a_3) - (b_1, b_2, b_3) &= (a_1 - b_1, a_2 - b_2, a_3 - b_3)
+\end{align*}
+\item[Scalar Multiplication]
+To multiply a vector in $\mathbb{R}^2$ and $\mathbb{R}^3$ by a real number $k$, multiply each component by $k$:
+
+\begin{align*}
+k(a_1, a_2) &= (ka_1, ka_2) \\
+k(a_1, a_2, a_3) &= (ka_1, ka_2, ka_3)
+\end{align*}
+\item[Magnitude]
+The magnitude of the vector $(a_1, a_2)$ in $\mathbb{R}^2$ is:
+
+\begin{equation*}
+\sqrt{a_1^2 + a_2^2}
+\end{equation*}
+
+The magnitude of the vector $(a_1, a_2, a_3)$ in $\mathbb{R}^3$ is:
+
+\begin{equation*}
+\sqrt{a_1^2 + a_2^2 + a_3^2}
+\end{equation*}
+\end{itemize}
+\end{tcolorbox}

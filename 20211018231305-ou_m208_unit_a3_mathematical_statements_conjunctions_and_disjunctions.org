@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       e9ca943b-7537-4764-b218-b59db2ce82ce
+:END:
+#+title: OU:M208:Unit-A3:Mathematical Statements:Conjunctions And Disjunctions
+#+filetags: OU M208 Mathematics Proofs Statements Conjunctions Disjunctions
+
+Statements can be combined in various way.
+
+Two such way are *Conjunctions* and *Disjunctions*.
+
++ Conjunction :: A compound statement that is true when both of its elements are true and false if at least one of them are false
+
+  * "A and B" is the conjunction of A and B
+
++ Disjunction :: A compound statement that is true when either one of its elements are true and false if they are both false
+
+  * "A or B" is the disjunction of A and B

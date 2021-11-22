@@ -1,0 +1,47 @@
+:PROPERTIES:
+:ID:       7a0328c3-1b86-4db5-bf1f-3c0073723c8b
+:END:
+#+title: OU:M208:Unit-A1:Sets:Set Notation
+#+filetags: OU M208 Mathematics Set-Theory Sets Notation
+
+We look at some formal ways of specifying a set.
+
+- A set with a small number of elements can be expressed by listing those elements between a pair of braces, each one separated with a comma.
+
+  \(A = \left\{ 1,2,3,4,5 \right\}\)
+
+  Sets are unordered and thus \(A = \left\{ 5,4,3,2,1 \right\}\) is equivalent to the above set.
+
+  Specifying an element more than once is superflous and does not change the set that is being talked about.
+  For example, \(\{1,2,3,3\}\) and \(\{1,2,3\}\) are equivalent.
+
+  If the set has many members with a common pattern we can define it using an ellipsis.
+  For example, \(\{1,2,3,\ldots,100\}\) is the set of the first \(100\) natural numbers.
+
+  This form can be useful to specify infinite sets such as \(\{1,2,3,\ldots\}\), the set of all natural numbers.
+
++ Singleton Set :: A set with a single element. For example \(\{2\}\).
+
+* Set Notation
+
+An alternative way to represent a set is to use Set Notation.
+
+We use a variable to build up object of the required type and the pose
+conditions that the variable must satisfy.
+
+For example, the set of all real numbers x such that \(x > 3\) can be written as \(\{x \in \mathbb{R} : x > 3\}\)
+
+We read this as:
+
+ - The set of \(\{\) \(x\) in \(\mathbb{R}\) such that \(x\) is greater than \(3\) \(\}\)
+
+When multiple conditions are necessary we write them separated by a comma or the word "and"
+
+  + \(\{x \in \mathbb{R} : x > 0, x \le 1\}\)
+  + \(\{x \in \mathbb{R} : x > 0\  \text{and}\  x \le 1\}\)
+  + The set can be further simplified by combining the inequalities such as \(\{x \in \mathbb{R} : 0 < x \le 1\}\)
+
+Sometimes, we might want to specify an expression instead of the variable.
+For example the set of even integers less than \(100\) might be written as \(\{2k : k \in \mathbb{Z} and k < 50\}\)
+
++ The Empty Set :: The set with no elements. It is written with the symbol \(\emptyset\).

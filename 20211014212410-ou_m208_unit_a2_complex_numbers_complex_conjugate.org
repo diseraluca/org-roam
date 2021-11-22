@@ -1,0 +1,69 @@
+:PROPERTIES:
+:ID:       e632b886-54fd-446e-9f73-8122f136206d
+:END:
+#+title: OU:M208:Unit-A2:Complex Numbers:Complex Conjugate
+#+filetags: OU M208 Mathematics Complex-Numbers Complex-Conjugate
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=The Complex Conjugate]
+The \textbf{complex conjugate} $\overline{z}$ of the complex number $z = x + iy$ is the complex number $x - iy$.
+\end{tcolorbox}
+
+  * For example, the complex conjugate of $z = 1 - 2i$ is \(\overline{z} = 1 + 2i\)
+
+The folowing useful properties apply to complex conjugations:
+
+\begin{tcolorbox}[title=Properties of Complex Conjugates]
+Let $z_1, z_2$ and $z$ be any complex numbers. Then:
+
+\begin{enumerate}
+\item $\overline{z_1 + z_2} = \overline{z_1} + \overline{z_2}$
+\item $\overline{z_1z_2} = \overline{z_1} \times \overline{z_2}$
+\item $z + \overline{z} = 2\text{Re}\ z$
+\item $z - \overline{z} = 2\text{Im}\ z$
+\end{enumerate}
+\end{tcolorbox}
+
+- For the following proofs, see [[id:6274d52c-220c-4342-afe2-01b869ea0609][OU:M208:Unit-A2:Complex Numbers:Arithmetic of Complex Numbers]] to understand why the operations are expanded in this way.
+
+* Proof of property 1
+
+\begin{align*}
+\overline{z_1 + z_2} &= \overline{(x_1 + x_2) + i(y_1 + y_2)} \\
+                     &= (x_1 + x_2) - i(y_1 + y_2) \\
+                     &= (x_1 + x_2) - iy_1 - iy_2 \\
+                     &= (x_1 - iy_1) + (x_2 - iy_2) \\
+                     &= \overline{z_1} + \overline{z_2}
+\end{align*}
+
+* Proof of property 2
+
+\begin{align*}
+\overline{z_1z_2} &= \overline{(x_1x_2 - y_1y_2) + i(x_2y_1 - x_1y_2)} \\
+                  &= (x_1x_2 - y_1y_2) - i(x_2y_1 - x_1y_2) \\
+                  &= x_1x_2 - y_1y_2 - ix_2y_1 + ix_1y_2 \\
+                  &= x_1x_2 + i^2y_1y_2 - ix_2y_1 + ix_1y_2 \\
+                  &= (x_1 - iy_1)(x_2 - iy_2) \\
+                  &= \overline{z_1}\times\overline{z_2}
+\end{align*}
+
+* Proof of property 3
+
+\begin{align*}
+z + \overline{z} &= (x + iy) + \overline{(x + iy)} \\
+                 &= (x + iy) + (x - iy) \\
+                 &= x + iy + x - iy \\
+                 &= 2x \\
+                 &= 2\text{Re}\ z
+\end{align*}
+
+* Proof of property 4
+
+\begin{align*}
+z - \overline{z} &= (x + iy) - \overline{(x + iy)} \\
+                 &= (x + iy) - (x - iy) \\
+                 &= x + iy - x + iy \\
+                 &= 2iy \\
+                 &= 2i\text{Im}\ z
+\end{align*}

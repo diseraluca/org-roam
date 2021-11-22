@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       6ceb989c-0a33-4950-9ded-c9cea24ac146
+:END:
+#+title: OU:M208:Unit-B1:Symmetry in R^2:Direct and Indirect Symmetries
+#+filetags: OU M208 Mathematics Group-Theory Symmetry Plane
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Diect and Indirect Symmetries]
+We call direct symmetries those that we can demonstrate with a paper model without lifting it out of the plane.
+
+The set of direct symmetries is denoted by $S^{+}(F).
+
+All other symmetries are called indirect.
+\end{tcolorbox}
+
+If a plane figure has a finite number of symmetries, then either:
+
+ * All the symmetries are direct
+ * Half are direct and half are indirect
+
+For a bounded plane figure the direct symmetries are rotations an the indirect symmetries are reflections.
+
+You saw in [[id:cd9bed5e-2bc3-4582-bfbe-04ccdd1137a9][OU:M208:Unit-B1:Symmetry in R^2:Four Properties of the Set of Symmetries of a Plane Figure:Closure]] that the composition of rotations and reflections follows a pattern.
+
+We can generalize this pattern to one about direct and indirect symmetries.
+
+| \(\circ\)    | direct   | indirect |
+|----------+----------+----------+
+| direct   | direct   | indirect |
+| indirect | indirect | direct   |

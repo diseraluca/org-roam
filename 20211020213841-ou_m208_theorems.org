@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       ab001674-f12f-4a62-962d-c46aabf9a52c
+:END:
+#+title: OU:M208:Theorems
+#+filetags: OU M208 Mathematics Theorems
+
++ [[id:13fef626-d6f5-40ba-a58b-cc641cf41372][OU:M208:Theorems:A2:Factor Theorem (in R)]]
++ [[id:54a763f3-464b-4fe9-acf2-d57f10ab0fc2][OU:M208:Theorems:A12:Geometric Series Identity]]
++ [[id:a47c99d5-0c55-40a0-ba19-99748b94a5fd][OU:M208:Theorems:A13:Fundamental Theorem of Arithmetic]]

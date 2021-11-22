@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       f756858e-424c-405c-969d-b83b35b665d5
+:END:
+#+title: OU:M208:Unit-A3:Mathematical Statements:Implications
+#+filetags: OU M208 Mathematics Proofs Statements Implications Hypothesis Conclusions
+
++ Implication :: A statement of the form "If P, then Q"
+
+  + Hypothesis :: The part of an implication that stands after the "if" and before the "Q"
+  + Conclusion :: The part of an implication that stands after the "then"
+
+An implication "If P, then Q" asserts that when P is true then Q must be true.
+Nonetheless, it does not assert anything about the truth or falsity of Q when P is false.
+
+An implication can be written in many ways:
+
+ - P implies Q
+ - P \(\implies\) Q
+ - P is sufficient for Q
+ - P only if Q
+ - Q whenever P
+ - Q follows from P
+ - Q is necessary for P
+ - Q provided that P

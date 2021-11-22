@@ -1,0 +1,44 @@
+:PROPERTIES:
+:ID:       e5ef161f-83e0-49d8-a4b9-e02eb660efe8
+:END:
+#+title: OU:M208:Unit-A2:Complex Numbers:What is a Complex Number?
+#+filetags: OU M208 Mathematics Complex-Numbers Imaginary-Numbers Real-Part Imaginary-Part Reals
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Complex Numbers]
+A \textbf{complex number} is an expression of the form $x + iy$, where $x$ and $y$ are real numbers and $i^2 = -1$.
+The set of all complex numbers is denoted by $\mathbb{C}$.
+
+A complex number $z = x + iy$ has a \textbf{real part} $x$ and \textbf{imaginary part} $y$.
+We write:
+
+\begin{equation*}
+\text{Re}\ z = x \ \text{and}\ \text{Im}\ z = y
+\end{equation*}
+
+Two complex numbers are equal when their real parts and their imaginary parts are equal.
+\end{tcolorbox}
+
+Some characteristics:
+
+ - Every real number $x$ can be written in the form $x + i0$. In this sense, $\mathbb{R} \subset \mathbb{C}$.
+ - The complex number $0 + i0$ is written as $0$; thus $x + iy = 0 \iff x = y = 0$.
+ - A general complex number is written $x + iy$ but a specific complex number is written with the $i$ after the imaginary part.
+
+   For example \(2 + 3i\)
+
+   In case of a root imaginary part we write the $i$ in front of the root to avoid any confusion.
+ - Both Re \(z\) and Im \(z\) are real numbers.
+
++ Imaginary Number :: A complex number where the real part is \(0\) and the imaginary part is different than \(0\),
+
+\begin{tcolorbox}[title=Square Roots of a Negative Real Number]
+For a positive real number $d$, the square roots of $-d$ are $\pm i\sqrt{d}$
+\end{tcolorbox}
+
+  * To see that this is the case with arithmetic:
+
+    \(\left(\pm i\sqrt{d}\right)^2 = i^2\left(\sqrt{d}\right)^2 = \left(-1\right) \times d = -d\)
+
++ Using the above, we can solve quadratic equations that have no solutions in the real.

@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       2c066fbf-dd7b-4fa3-bd0f-9ce667832ab5
+:END:
+#+title: OU:M208:Unit-B1:Representing Symmetries
+#+filetags: OU M208 Mathematics Group-Theory Symmetry Plane Representation Notation
+
+
+See [[id:12a576b2-cda0-4507-becc-b974ec844e7b][OU:M208:Unit-B1:Representing Symmetries:Two-line Symbols]] to learn a notation to represent symmetries.

@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       4b3532c9-547b-499f-940b-c43a492fbdbe
+:END:
+#+title: OU:M208:Unit-A3:Mathematical Statements:Statements And Negations
+#+filetags: OU M208 Mathematics Proofs Statements Negations Variable-Propositions Theorems Lemmas Corolarries
+
++ Statement :: An assertion that is either true or false
+  * Also called *proposition*
+  * Usually denoted by capital letters \(P, Q, R, \ldots\)
+
++ Variable Proposition :: A statement whose truthness or falseness depends on the value of one or more variables
+ * For example : \(x\) is greater than \(0\)
+ * Usually denoted by the containing variables \(P(x), Q(x), R(x), \ldots\)
+
++ Theorem :: A statement that is true
+  * Generally reserved for a statement that is of some importance and whose truthness, which is not obvious, is to be proved
+  * Sometimes called a Result
+
++ Proposition :: A theorem that is "less important"
++ Lemma :: A theorem that is used in the proof of other theorems
++ Corollary :: A theorem that follows trivially from another theorem
+
++ Negation :: A statement related to another statement which is true when the original statement is false and vice versa

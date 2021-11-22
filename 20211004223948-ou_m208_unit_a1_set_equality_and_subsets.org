@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       2aaa6837-de1a-4056-8fe4-682f2f89ac04
+:END:
+#+title: OU:M208:Unit-A1:Sets:Set equality and subsets
+#+filetags: OU M208 Mathematics Set-Theory Sets Subsets Equality Proper-Subsets
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=The Equality of Sets]
+Two sets $A$ and $B$ are \textbf{equal} if they have exactly the same elements; we write $A = B$.
+\end{tcolorbox}
+
+For example, the sets \(A = \{1, -1\}\) and \(B = \{x \in \mathbb{R} : x^2 - 1 = 0\}\) are written differently but have exactly the same elements and are thus equal.
+
+
+\begin{tcolorbox}[title=Subset]
+A set $A$ is a \textbf{subset} of a set $B$ if each element of $A$ is also an element of $B$. We also say that $A$ is contained in $B$ and we write $A \subseteq B$.
+
+The converse of this, $A$ is not contained in $B$, is written $A \nsubseteq B$.
+
+For every set $B$:
+
+\begin{itemize}
+\item $B$ is a subset of itself, that is $B \subseteq B$.
+\item The empty set $\emptyset$ is a subset of $B$, that is $\emptyset \subseteq B$.
+\end{itemize}
+\end{tcolorbox}
+
+For example \(\{1\} \subseteq \{1,2,3\}\).
+
+ * To show that a set is a subset of another set we can either check each element one by one, if the set is small, or check algebraically that a set is contained by the other.
+ * To show that a set is not a subset of another set we need to find any element of the set that is not contained by the other set.
+
+\begin{tcolorbox}[title=Proper Subset]
+A set $A$ is a \textbf{proper subset} of a set $B$ if $A \subseteq B$ and $A \neq B$.
+
+We write this as $A \subset B$.
+\end{tcolorbox}
+
+ * To show that $A$ is a proper subset of $B$ we must show that $A$ is a subset of $B$ and that there is an element in $B$ that is not in $A$.
+
+- To show that two sets are equal:
+
+  * Show that \(A \subseteq B\)
+  * Show that $B \subseteq A$

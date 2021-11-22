@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       cd9bed5e-2bc3-4582-bfbe-04ccdd1137a9
+:END:
+#+title: OU:M208:Unit-B1:Symmetry in R^2:Four Properties of the Set of Symmetries of a Plane Figure:Closure
+#+filetags: OU M208 Mathematics Group-Theory Symmetry Plane Closure Commutativity Reflections Rotations
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Closure Properties For Symmetries]
+The set of symmetries $S(F)$ of a plane figure $F$ is \textbf{closed} under composition of functions.
+
+For all elements $f$ and $g$ of $S(F)$,
+
+the composite $g \circ f$ is an element of $S(F)$
+\end{tcolorbox}
+
+There are some interesting properties when composing the symmetries of a figure \(F\):
+
+- If \(f, g \in S(F)\), then \(g \circ f\) may or may not be equal to \(f \circ g\), that is, the composition of symmetries is not commutative.
+- Composition of rotational and reflectional symmetries follows a standard pattern:
+
+    | \(\circ\)      | rotation   | reflection |
+    |------------+------------+------------|
+    | rotation   | rotation   | reflection |
+    | reflection | reflection | rotation   |
+
+- Composing a reflection with itself gives the identity symmetry \(e\).

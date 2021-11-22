@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       562cc21f-4eed-453c-a81f-36247f4a2742
+:END:
+#+title: OU:M208:Unit-A1:Functions
+#+filetags: OU M208 Mathematics Functions
+
+See [[id:b2142967-fc72-4d58-ac2c-8667a3e59c17][OU:M208:Unit-A1:Functions:What is a function?]] for an introduction to the concept of a function.
+
+See [[id:3f232da0-da26-4433-80a8-10d31908a1c2][OU:M208:Unit-A1:Functions:Real Functions]] for functions that have domain and codomain \(\mathbb{R}\).
+
+See [[id:89d29b2c-994b-43d9-800a-4c4d9de795a0][OU:M208:Unit-A1:Functions:Distance Function]] for functions that can be used to work with points in the plane.
+
+See[[id:fd11961e-cccf-4d15-ba30-9b5816456457][ OU:Unit-A1:Functions:Transformations Of The Plane]] for functions that represents geometrical transformations.
+
+See [[id:58349770-1e48-46f2-9e48-2b28b079788c][OU:Unit-A1:Functions:Functions whose domains are finite sets]] for an example of mapping and drawing a diagram for functions with a small domain and a small codomain.
+
+See [[id:2d5f0b9a-535a-40c9-9072-8c7e0ce966cb][OU:Unit-A1:Functions:Identity Functions]] for the identity functions, mapping each element to itself.
+
+See [[id:a6b8108b-7c1d-4b6b-8c05-411a28bd1dc9][OU:Unit-A1:Functions:Image Set of a Function]] to see how to find the image and imageset of some function.
+
+See [[id:3dc12e32-ae70-4853-826f-5a01f222ddce][OU:Unit-A1:Functions:Inverse Functions]] to see how to reverse the effect of some functions.
+
+See [[id:2372a63f-1011-4338-8450-122b164e2f35][OU:Unit-A1:Functions:Restrictions]] to see how to derive functions that zoom-in on the behavior of some function on a subset of its domain.

@@ -1,0 +1,50 @@
+:PROPERTIES:
+:ID:       d74b714c-2686-43af-a158-470e77f0dff4
+:END:
+#+title: OU:M208:Unit-B1:Symmetry in R^2:Symmetries of Plane Figures
+#+filetags: OU M208 Mathematics Group-Theory Symmetry Plane Plane-Figure Isometry Rotation Translation Reflection Glide-Reflection Equality
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+- Plane Figure :: Any subset of the plane in \(\mathbb{R}^{2}\)
+- Bounded Plane Figure :: A plane figure that can be surrounded by a circle of finite radius
+
+  For example, an infinitely long straight line is a plain figure but it is not bounded.
+  A square is a plane figure that is bounded.
+
+- Isometry :: A function \(f : \mathbb{R}^{2} \longrightarrow \mathbb{R}^{2}\) that preserves distances.
+
+  For all points \(X, Y \in \mathbb{R}^{2}\), the distance between \(f(X)\) and \(f(Y)\) is the same for as the distance between \(X\) and \(Y\).
+
+- Symmetry :: A symmetry on a plane figure \(F\) is an isometry that maps \(F\) to itself.
+
+  That is, an isometry \(f : \mathbb{R}^{2} \longrightarrow \mathbb{R}^{2}\) such that \(f(F) = F\).
+
+There are four type of isometries in the plane:
+
+ * Rotation
+ * Reflection
+ * Translation
+ * Glide-Reflection
+
+On any bounded plane figure, any non-zero translation is not a symmetry as it does not map the figure to itself.
+It follows that the same is true for glide-reflections as they imply a translation.
+
+The types of isometries in the plane that are potential symmetries on a bounded plane figure are:
+
+ * The identity transformation
+
+   Can be considered a zero rotation or a zero translation.
+ * A rotation
+ * A reflection specified on an axis of symmetry
+
++ Identity Symmetry :: The symmetry of the identity transformation.
+
+  Also known as *trivial symmetry*.
++ Rotational Symmetry :: A symmetry that is a rotation.
++ Reflectional Symmetry :: A symmetry that is a reflection.
+
+
+- Two symmetries of a figure are equal if they are equal isometries such that their effects on each point of \(\mathbb{R}^{2}\)  is the same.
+
+  For example, the identity symmetry and a rotation trough \(2\pi\) radians are the same symmetry.

@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       8c8a2c64-6de1-445e-8c46-ba89ac6c712a
+:END:
+#+title: OU:M208:Unit-A1:Distance Between Two Point in the Three-Dimensional Space
+#+filetags: OU M208 Mathematics Geometry 3d-space 3d-points Distance
+
+Let \(P(x_1, y_1, z_1)\) and \(Q(x_2, y_2, z_2)\) be two points in \(\mathbb{R}^3\).
+
+Let \(M\) be the poiunt \((x_2, y_2, z_1)\) then \(M\) must lie in the same horizontal plane as \(P\) and \(MQ\) is parallel to z-axis.
+
+Then, let \(N\) be the poiunt \((x_1, y_2, z_1)\); then \(N\) must also lie in the same horizontal plane as \(P\) and \(MN\) and \(NP\) are parallel, respectively, to the x and y axes.
+
+The triangles \(PQM\) and \(PMN\) are both right-angled triangles with right-angles at, respectively, \(M\) and \(N\).
+
+The length of \(PN\) is \(\left| y2 - y1 \right|\) and the length of \(NM\) is \(\left| x2 - x1 \right|\) .
+
+It follows from /Pythagoras' Theorem/ that:
+
+    \begin{equation*}
+    PM^2 = NM^2 + PN^2
+    \end{equation*}
+
+So that
+
+
+    \begin{equation*}
+    PM^2 = (x_2 - x_1)^2 + (y2 - y1)^2
+    \end{equation*}
+
+Applying the same theorem again we get that:
+
+
+    \begin{equation*}
+    PQ^2 = PM^2 + MQ^2
+    \end{equation*}
+
+And since \(MQ\) is \(\left| z2 - z1 \right|\) we obtain:
+
+
+    \begin{equation*}
+    PQ^2 = (x_2 - x_1)^2 + (y2 - y1)^2 + (z_2 - z_1)^2
+    \end{equation*}
+
+That is:
+
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Distance formula for $\mathbb{R}^3$]
+The distance between the two points $(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$ in the three-dimensional space is
+
+\begin{equation*}
+\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}
+\end{equation*}
+
+\end{tcolorbox}

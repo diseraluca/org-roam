@@ -1,0 +1,48 @@
+:PROPERTIES:
+:ID:       d5109354-9545-4719-9967-4cd4f9a72595
+:END:
+#+title: OU:M208:Unit-A2:Real Numbers:Arithmetic of Real Numbers
+#+filetags: OU M208 Mathematics Reals Number-Systems Addition Multiplication Commutativity Associativity Closure Additive-Identity Additive-Inverse Multiplicative-Identity Multiplicative-Inverse Distributivity Arithmetic Algebra Fields
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Arithmetic in $\mathbb{R}$]
+\begin{itemize}
+\item[Properties for Addition]
+\begin{itemize}
+\item[A1 Closure]
+For all $a,b \in \mathbb{R}$, $a + b \in \mathbb{R}$
+\item[A2 Associativity]
+For all $a,b,c \in \mathbb{R}$, $(a + b) + c = a + (b + c)$.
+\item[A3 Additive Identity]
+For all $a \in \mathbb{R}$, $a + 0 = a = 0 + a$.
+\item[A4 Additive Inverses]
+For each $a \in \mathb{R}$ there is a number $-a \in \mathbb{R}$ such that $a + (-a)$ = 0 = (-a) + a
+\item[A5 Commutativity]
+For all $a,b \in \mathbb{R}$, $a + b = b + a$.
+\end{itemize}
+\item[Properties for Multiplication]
+\begin{itemize}
+\item[M1 Closure]
+For all $a,b \in \mathbb{R}$, $a \times b \in \mathbb{R}$.
+\item[M2 Associativity]
+For all $a,b,c \in \mathbb{R}$, $(a \times b) \times c = a \times (b \times c)$.
+\item[M3 Multiplicative Identity]
+For all $a \in \mathbb{R}$, $a \times 1 = a = 1 \times a$.
+\item[M4 Multiplicative Inverses]
+For each $a \in \mathbb{R}^*$ there exist a number $a^{-1} \in \mathbb{R}$ such that $a \times a^{-1} = 1 = a^{-1} \times a$.
+\item[M5 Commutativity]
+For all $a,b \in \mathbb{R}$, $a \times b = b \times a$.
+\end{itemize}
+\item[Property combining addition and multiplication]
+\begin{itemize}
+\item[D1 Distributivity]
+For all $a,b,c \in \mathbb{R}$, $a \times (b + c) = (a \times b) + (a \times c)$
+\end{itemize}
+\end{itemize}
+\end{tcolorbox}
+
+ * Subtraction can be expressed based on the additive inverses as \(a - b = a + (-b)\)
+ * Division can be expressed based on theh multiplicative inverses as \(a \div b = a \times b^{-1}\)
+
++ Field :: A set of numbers that satisfies the above eleven properties.

@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       b2142967-fc72-4d58-ac2c-8667a3e59c17
+:END:
+#+title: OU:M208:Unit-A1:Functions:What is a function?
+#+filetags: OU M208 Mathematics Functions
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[Function]
+A \textbf{function} $f$ is defined by specifying:
+
+\begin{itemize}
+\item A set $A$, called the \textbf{domain} of $f$
+\item A set $B$, called the \textbf{codomain} of $f$
+\item A \textbf{rule} $x \mapsto f(x)$ that associates each element $x \in A$ with a unique element $f(x) \in B$
+\end{itemize}
+
+The element $f(x)$ is the \textbf{image} of $x$ under $f$.
+
+Symbolically we write
+
+\begin{align*}
+f : &A \rightarrow B \\
+    &x \mapsto f(x)
+\end{align*}
+\end{tcolorbox}
+
+ + Mapping :: Alternative name for a function.
+
+   We say that \(f\) *maps* \(A\) to \(B\) and \(x\) to \(f(x)\).

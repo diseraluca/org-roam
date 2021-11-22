@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       02233714-a191-4b57-b0e5-9a2413cc224c
+:END:
+#+title: OU:M208:Unit-B1:Symmetry in R^2
+#+filetags: OU M208 Mathematics Group-Theory Symmetry Plane
+
+See [[id:d74b714c-2686-43af-a158-470e77f0dff4][OU:M208:Unit-B1:Symmetry in R^2:Symmetries of Plane Figures]] for an introduction to the symmetries of the plane.
+
+See [[id:c589f045-fd41-4287-aa0f-9c4b894713e0][OU:M208:Unit-B1:Symmetry in R^2:Symmetries of a Regular Polygon]] for the general rules regarding the symmetries of polygons with sides of equal length.
+
+See [[id:c7e28d34-6bcf-4d3b-80ee-7dd4bf25e699][OU:M208:Unit-B1:Symmetry in R^2:Four Properties of the Set of Symmetries of a Plane Figure]] for some important properties that each set of symmetries for a plane figure has.
+
+See [[id:788254ec-5364-4cc2-ade1-b1db072581f6][OU:M208:Unit-B1:Symmetry in R^2:Symmetries of the Disc]] for the infinite symmetries that a disk has.
+
+See [[id:6ceb989c-0a33-4950-9ded-c9cea24ac146][OU:M208:Unit-B1:Symmetry in R^2:Direct and Indirect Symmetries]] for the definition of direct and indirect symmetries.

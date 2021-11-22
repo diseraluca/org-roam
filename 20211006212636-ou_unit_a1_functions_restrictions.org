@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       2372a63f-1011-4338-8450-122b164e2f35
+:END:
+#+title: OU:Unit-A1:Functions:Restrictions
+#+filetags: OU M208 Mathematics Functions Restrictions Domain
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Restriction of a function]
+Let $f : A \rightarrow B$ and let $C$ be a subset of the domain $A$.
+
+Then the function $g : C \rightarrow B$ defined by
+
+\begin{equation*}
+g(x) = f(x), \ \text{for}\ x \in C
+\end{equation*}
+
+is the \textbf{restriction} of $f$ to $C$
+\end{tcolorbox}
+
+Restrictions are useful when we want to concentrate on the behavior of \(f\) over  small part of its domain.
+
+For example, \(f(x) = x^2\) is not one-to-one and doesn't have an [[id:3dc12e32-ae70-4853-826f-5a01f222ddce][OU:Unit-A1:Functions:Inverse Functions]] .
+However. if the domain of $f$ is replace with its positive subset, the we obtain a related function with the same rule that is now one-to-one.

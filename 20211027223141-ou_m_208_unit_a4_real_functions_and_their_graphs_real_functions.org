@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       7fd298b1-ac82-4721-96a7-27cc637a1724
+:END:
+#+title: OU:M-208:Unit-A4:Real Functions And Their Graphs:Real Functions
+#+filetags: OU M208 Mathematics Graphs Real-Functions
+
+In [[id:3f232da0-da26-4433-80a8-10d31908a1c2][OU:M208:Unit-A1:Functions:Real Functions]] we saw that a *real function* is a function whose domain and codomain are both subsets of \(\mathbb{R}\).
+
+When specifying a real function during this unit, if the only specification given is a rule, then we understand the domain to be the set of all real numbers for which the rule is applicable and the codomain to be \(\mathbb{R}\).
+
+For example, \(f(x) \frac{1}{\sqrt{4 - x^{2}}\) does not have domain \(\mathbb{R}\) becuase the square root in it is a real number only when  \(4 - x^{2} > 0\).

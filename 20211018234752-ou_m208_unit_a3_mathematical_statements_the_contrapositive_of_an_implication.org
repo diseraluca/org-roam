@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       741ceedd-4492-4600-bb82-e5a69a73b3a2
+:END:
+#+title: OU:M208:Unit-A3:Mathematical Statements:The Contrapositive of An Implication
+#+filetags: OU M208 Mathematics Proofs Statements Implications Contrapositives
+
++ Contrapositive :: Given any implication "If P, then Q" its contrapostiive is "If not Q, then not P".
+
+The contrapositive of an implication is equivalent to the original implication.
+It is false when the implication is false and true when the implication is true.

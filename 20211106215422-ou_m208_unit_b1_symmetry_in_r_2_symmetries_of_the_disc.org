@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       788254ec-5364-4cc2-ade1-b1db072581f6
+:END:
+#+title: OU:M208:Unit-B1:Symmetry in R^2:Symmetries of the Disc
+#+filetags: OU M208 Mathematics Group-Theory Symmetry Plane Disc
+
++ Rotation about the centre trough any angle is a symmetry of the disc.
++ Reflection in any line trough the centre is a symmetry of the disc.
+
+ [[file:assets/images/symmetries_of_the_disc.png]]
+
+- The disc has infinitely many rotational and reflectional symmetries.
+
+
+For any integer \(k\), rotations trough \(\theta\) and \(\theta + 2k\pi\) produce the same effect.
+We can thus reduce the angles of rotations in the interval \([0, 2\pi)\).
+
+Reflection on a line at an angle \(\theta\) to the horizontal produces the same reflection as the one at angle \(\theta + \pi\).
+We can thus restrict the angles of axes of reflections to the interval \([0, \pi)\).
+
+The symmetries of a disc thus are:
+
+ + \(r_{\theta}\) :: Rotation trough an angle \(\theta\) along the centre, for \(\theta \in [0, 2\pi)\)
+ + \(q_{\theta}\) :: Reflection in the line trough the centre at an angle \(\theta\) to the horizontal, for \(\theta \in [0, \pi)\)
+
+
++ The identity symmetry is the zero rotation.
+
++ The set of symmetries of the disc is denoted \(S(\bigcirc)\):
+
+  \(S(\bigcirc) = \{r_{\theta} : \theta \in [0, 2\pi)\} \cup \{q_{\theta} : \theta \in [0, \pi)\}\)

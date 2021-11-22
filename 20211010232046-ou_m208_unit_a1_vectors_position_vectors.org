@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       fadc4a97-3fab-4e20-96e2-a0d6259579b4
+:END:
+#+title: OU:M208:Unit-A1:Vectors:Position Vectors
+#+filetags: 3d-space OU M208 Mathematics Vectors Geometry Plane Points
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}
+Let $P$ be any point in $\mathbb{R}^2$ or $\mathbb{R}^3$.
+The \textbf{position vector} of $P$ is the vector whose starting point is the origin and whose finishing point is $P$, that is, the vector $\overrightarrow{OP}$, where $O$ is the origin.
+\end{tcolorbox}
+
+ * For example, the position vector of \(P(2, -1)\) is \(\overrightarrow{OP} = 2\mathbf{i} - \mathbf{j}\).
+
+Let O be the origin, then:
+
+\begin{align*}
+\overrightarrow{AB} &= \overrightarrow{AO} + \overrightarrow{OB} \\
+                    &= -\overrightarrow{OA} + \overrightarrow{OB} \\
+                    &= -\mathbf{a} + \mathbf{b} \\
+                    &= \mathbf{b} - \mathbf{a} \\
+\end{align*}
+
+Thus, for any vector \(\overrightarrow{AB} = \mathbf{b} - \mathbf{a}\).

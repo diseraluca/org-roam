@@ -1,0 +1,58 @@
+:PROPERTIES:
+:ID:       c5b4589b-8871-43cc-b88b-b9d6e5d025b8
+:END:
+#+title: OU:M208:Unit-A2:Complex Numbers:Modulus of a Complex Number
+#+filetags: OU M208 Mathematics Complex-Numbers Modulus Absolute Distance Plane Conjugate
+
+Recall that the modulus of a real number $x$ is defined by:
+
+\begin{equation*}
+\left|x\right| = \begin{cases}
+x, \ \text{if}\ x \ge 0, \\
+-x, \ \text{if}\ x < 0
+\end{cases}
+\end{equation*}
+
+
+In other words, it is the distance from the point $x$ to the origin on the real line.
+
+We can extend this definition to the complex numbers.
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=The Modulus of a Complex Number]
+The \texbf{modulus} $\left|z\right|$ of a complex number $z$ is the distance from the point $z$ in the complex plane to the origin.
+
+Thus the modulus of the complex number $z = x + iy$ is
+
+\begin{equation*}
+\left|z\right| = \sqrt{x^2 + y^2}
+\end{equation*}
+\end{tcolorbox}
+
+Some properties of the modulus are the following:
+
+\begin{tcolorbox}[title=Properties of the Modulus]
+\begin{enumerate}
+\item $\left|z\right| \ge 0$ for any $z \in \mathbb{C}$ with equality only when $z = 0$.
+\item $\left|z_1z_2\right| = \left|z_1\right|\left|z_2\right|$ for any $z_1,z_2 \in \mathbb{C}$
+\end{enumerate}
+\end{tcolorbox}
+
+
+We can tie the distance formula for the complex plane to the modulus:
+
+[[./assets/images/ou_m208_unit_A2_distance_formula_in_c.png]]
+
+\begin{tcolorbox}[title=Distance Formula for $\mathbb{C}$]
+The distance between the points $z_1$ and $z_2$ in the complex plane is $\left|z_1 - z_2\right|
+\end{tcolorbox}
+
+There is a relationship between the modulus and the [[id:e632b886-54fd-446e-9f73-8122f136206d][OU:M208:Unit-A2:Complex Numbers:Complex Conjugate]] :
+
+\begin{tcolorbox}[title=Conjugate-Modulus Properties]
+\begin{enumerate}
+\item $\left|\overline{z}\right| = \left|z\right|$ for all $z \in \mathbb{C}$
+\item $z\overline{z} = \left|z\right|^2$ for all $z \in \mathbb{C}$
+\end{enumerate}
+\end{tcolorbox}

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       83ae409f-ce1c-4267-aad8-01bab76c9fa2
+:END:
+#+title: OU:M208:Unit-A1:Vectors:Unit Vectors
+#+filetags: OU M208 Mathematics Vectors Unit-Vectors Normalization Magnitude
+
+As we've seen in [[id:46141a4a-a4e8-4e95-b22b-ce46e0adbac6][OU:Unit-A1:Vectors:What is a Vector?]], a *unit vector* is a vector with a magnitude of \(1\).
+
+We denote the unit vector with the same direction as the vector \(\mathbf{v}\) as \(\hat{\mathbf{v}}\) and we find it by multiplying the vector by the reciprocal of its magnitude.
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Normalizing a Vector]
+The unit vector in the same direction as a vector $\mathbf{v}$ is:
+
+\begin{equation*}
+\hat{\mathbf{v}} = \frac{1}{\left|\mathbf{v}\right|}\mathbf{v}
+\end{equation*}
+\end{tcolorbox}

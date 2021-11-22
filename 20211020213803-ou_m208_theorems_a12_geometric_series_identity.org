@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       54a763f3-464b-4fe9-acf2-d57f10ab0fc2
+:END:
+#+title: OU:M208:Theorems:A12:Geometric Series Identity
+#+filetags: OU M208 Mathematics Theorems Series Geometric-Series
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Geometric Series Identity]
+Let $a, b \in \mathbb{R}$ and let $n$ be a positive integer. Then
+
+\begin{equation*}
+a ^{n} - b^{n} = (a - b)(a^{n - 1} + a^{n-2}b + \ldots + ab^{n-2} + b^{n-1})
+\end{equation*}
+\end{tcolorbox}
+
+* Proof
+
+Expanding the right side of the equality gives:
+
+\begin{align*}
+&\ &(a - b)(a^{n-1} + a^{n-2}b + \ldots + ab^{n - 2} + b^{n-1}) \\
+&=&a^{n} + a^{n-1}b +  \ldots + a^{2}b^{n-2} + ab^{n-1} - (a^{n-1}b + a^{n-2}b^{2} + \ldots + ab^{n-1} + b^{n}) \\
+&=&a^{n} - b^{n}
+\end{align*}

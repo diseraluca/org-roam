@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       3f232da0-da26-4433-80a8-10d31908a1c2
+:END:
+#+title: OU:M208:Unit-A1:Functions:Real Functions
+#+filetags: OU M208 Mathematics Functions Real-Functions Reals
+
++ Real Function :: A function whose domain and codomain are both subsets of \(\mathbb{R}\).
+
+  In some texts the restriction on the domain of a real function is lifted, meaning that, while the codomain still has to be a subset of \(\mathbb{R}\), the domain may be any set.
+
+For example:
+
+\begin{align*}
+f : &\mathbb{R}^* \rightarrow \mathbb{R} \\
+    &x \mapsto \frac{1}{x}
+\end{align*}
+
+And:
+
+\begin{align*}
+f : &\mathbb{R} \rightarrow \mathbb{R} \\
+    &x \mapsto 2x - 5
+\end{align*}

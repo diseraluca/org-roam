@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       f0ab7f1b-725e-46d8-a156-2c7ac090d02f
+:END:
+#+title: OU:M208:Unit-A2:Complex Numbers:Polar Form
+#+filetags: OU M208 Mathematics Complex-Numbers Polar-Form Polar-Coordinates Argument Principal-Argument
+
+Knowing tha the number \(x + iy\) corresponds to the point \((x,y)\) the plane, we can form an alternative description of complex numbers.
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[Polar Form]
+A non-zero complex number $z = x + iy$ is in \textbf{polar form} if it is expressed as
+
+\begin{equation*}
+z = r(\cos{\theta} + i\sin{\theta})
+\end{equation*}
+
+where $r = \left|z\right|$ and $\theta$ is any angle between the positive direction of the real axis and the line joining $z$ to the origin.
+
+Such an angle $\theta$ is called an \textbf{argument} of the complex number $z$, and is denoted by $\text{arg}\ z$.
+
+The \textbf{principal argument} of $z$ is the value of $\text{arg}\  z$ that lies in the interval $(-\pi. \pi]$ and is denoted by $\text{Arg}\ z$.
+\end{tcolorbox}

@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       ffb3dce2-cb3c-402a-8e1a-299dd053a93b
+:END:
+#+title: OU:M208:Unit-A3:Mathematical Statements:The Converse of an Implication
+#+filetags: OU M208 Mathematics Proofs Statements Implications Converses
+
++ Converse :: Given an implication "If P, then Q", its converse is "If Q, then P"
+
+It is possible for an implication to be true, while its converse is false.
+
+For example, consider the implication "If \(x > 2\), then \(x^2 > 4\)".
+Its converse is "If \(x^^2 > 4\), then \(x > 2\)".
+
+The original implication is trivially true but its converse is trivially false (consider \(-3\) for example).
+
+This is true for all combinations of truthness.
+That is, knowing whether an implication is true or false tells us nothing about its converse.

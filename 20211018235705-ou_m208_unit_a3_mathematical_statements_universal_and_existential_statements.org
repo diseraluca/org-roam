@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       a130c0ad-fb49-4d07-8942-bb4e2435080b
+:END:
+#+title: OU:M208:Unit-A3:Mathematical Statements:Universal and Existential Statements
+#+filetags: OU M208 Mathematics Proofs Statements Existential-Statements Universal-Statements Universal-Quantifier Existential-Quantifier Negation
+
++ Universal Statement :: A statement of the form "For all x, P".
+  * "For all" and similar phrases are called *Universal Quantifier*
+  * Written as \(\forall x, P \)
+
++ Existential Statement :: A statement of the form "There exist x, P".
+  * "There exist" and similar phrases are called *Existential Quantifier*
+  * Written as \(\exists x, P \)
+
+
+Universal and Existential statements are correlated by negation, see [[id:4b3532c9-547b-499f-940b-c43a492fbdbe][OU:M208:Unit-A3:Mathematical Statements:Statements And Negations]].
+
+The negation of a universal statement is an existential statement and the negation of an existential statement is a universal statement.
+
+| Statement                                        | Negation                                          |
+|--------------------------------------------------+---------------------------------------------------|
+| Every Integer is a real number                   | There exists an integer that is not a real number |
+| There is an even prime number                    | Every prime number is odd                         |
+| The equation \(x^2 + 4 = 0\) has a real solution | For all real number x, \(x^{2} + 4 \neq 0\)          |

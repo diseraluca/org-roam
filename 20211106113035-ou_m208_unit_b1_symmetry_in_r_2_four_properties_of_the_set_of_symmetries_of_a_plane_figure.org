@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       c7e28d34-6bcf-4d3b-80ee-7dd4bf25e699
+:END:
+#+title: OU:M208:Unit-B1:Symmetry in R^2:Four Properties of the Set of Symmetries of a Plane Figure
+#+filetags: OU M208 Mathematics Group-Theory Symmetry Plane
+
+- For any plane figure \(F\), we denote the set of all symmetries of \(F\) by \(S(F)\).
+- Every figure \(F\) has at least one simmetry, namely the identity symmetry, usually denoted by \(e\).
+
+The set \(S(F)\) has four important properties:
+
+ * [[id:cd9bed5e-2bc3-4582-bfbe-04ccdd1137a9][OU:M208:Unit-B1:Symmetry in R^2:Four Properties of the Set of Symmetries of a Plane Figure :Group-Theory:M208:Mathematics:OU:Plane:Symmetry:Closure]]
+ * [[id:e83ac449-4f43-4cca-b743-7de273faf59d][OU:M208:Unit-B1:Symmetry in R^2:Four Properties of the Set of Symmetries of a Plane Figure:Associativity]]
+ * [[id:628cfdce-5aad-46f2-b7b9-eb2d46f97013][OU:M208:Unit-B1:Symmetry in R^2:Four Properties of the Set of Symmetries of a Plane Figure:Existence of an Identity]]
+ * [[id:c2c42ba5-f125-4c8a-98bb-de7a630e6028][OU:M208:Unit-B1:Symmetry in R^2:Four Properties of the Set of Symmetries of a Plane Figure:Existence of Inverses]]

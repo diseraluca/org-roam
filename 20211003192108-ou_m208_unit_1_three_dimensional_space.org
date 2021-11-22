@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       169f3dd8-1252-449d-8d7b-c40ac40a5d3d
+:END:
+#+title: OU:M208:Unit-A1:Three-Dimensional Space
+#+filetags: OU M208 Mathematics Geometry 3d-space
+
+A coordinate system in three-dimensional space uses three mutually perpendicular axis.
+
+ + Mutually Perpendicular :: For any pair of axis, they are perpendicular
+
+To build a three-dimensional space:
+
+ * Choose an origin *O*
+ * Choose an x-axis and y-axis that are perpendicular to each other
+ * Draw a line perpendicular to the x and y axes. This is the *z-axis*
+ * Chose the positive direction of the z-axis so that the x, y and z axes form a right-handed system of axes
+
+    + Right-handed coordinate system :: A system for which holding the thumb, first-finger and second-finger of your right hand such that they are at right angles with each other and labeling them x, y and z, in the same order allows you to turn your hand such that each finger points in the positive direction of the corresponing axis
+ * Choose a unit of distance
+
+A point in a three-dimensional space is an ordered triple \((a, b, c)\) of real numbers.

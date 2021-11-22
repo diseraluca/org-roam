@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       87d790d0-c010-46bb-847a-ea5a85e0dbf8
+:END:
+#+title: OU:M208:Unit-A1:Sets:Plane Sets:Lines as Plane Sets
+#+filetags: OU M208 Mathematics Set-Theory Sets Intervals Plane-Sets Points Lines Plane
+
+Consider the line \(l_1\) with gradient \(m\) and y-intercept \(c\).
+This line is the set of all points \((x, y)\) for which \(y = mx + c\) holds.
+
+Using set notation we write that \(l_1 = \{ (x, y) \in \mathbb{R}^2 : y = mx + c\}\)
+ * Alternatively, we can use an expression for the coordinates.
+   For example \(l_1 = \{(x, mx + c) : x \in \mathbb{R}^2\}\)
+
+For a line \(l_2\) that is parallel to the y-axis and with x-intercept
+\(a\) we write \({l_2 = \{(x, y) \in \mathbb{R}^2 : x = a\}\)

@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       b955172e-62eb-4b93-885b-cd93655bade2
+:END:
+#+title: OU:M208:Unit-A1:Sets:Plane Sets:Circles as plane sets
+#+filetags: OU M208 Mathematics Set-Theory Sets Intervals Plane-Sets Points Circles Plane
+
+Consider a circle \(C\) with centre \((a, b)\) and radius \(r\). This
+circle is the set of all points \((x, y)\) such that \((x - a)^2 +
+(y - b)^2 = r^2\) holds.
+
+We can write this in set notation as \(C = \{(x, y) \in \mathbb{R}^2 :
+(x - a)^2 + (y - b)^2 = r^2\}\).
++ Unit Circle :: The circle centered at the origin with radius 1.
+
+The unit circle \(U\) is formed by all points that are at a distance of 1 from the origin.
+
+Thus we can write it as \(U = \{(x, y) \in \mathbb{R}^2 : x + y = 1\}\).

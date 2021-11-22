@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       5d3e062b-c447-4cc0-bce8-3d8c63ac3274
+:END:
+#+title: OU:M208:Unit-A3:Direct Proof:Proving Existential and Universal Statement
+#+filetags: Universal-Statements:OU M208 Mathematics Proofs Statements Direct-Proof Existential Statements
+
+
+Consider the existential statement "There is a real number x such that cos x = x".
+
+Sometimes we can prove such statements by constructing an object that satisfies the requirements.
+
+For example:
+
+ Prove that there is a positive real number x such that \(x < \sqrt{x}\).
+
+ Since we assume that \(x\) is positive, the condition is equivalent to \(x^{2} < x = x^{2} - x < 0\) .
+
+ Now, \(x^{2} - x < 0 \iff x(x - 1) < 0\).
+
+ \(x(x-1) < 0\) only if one of \(x\) and \(x - 1\) is positive and the other is negative.
+
+ Since we assume \(x\) to be positive, any positive value of \(X\) such that \(x < 1\) satisfies the condition.
+
+ For example, \(\frac{1}{9}\).
+
+
+Sometimes it will not be possible or it will be very hard to construct an object that satisfies a statement. In those cases other proof methods are more suited.
+
+To prove a universal statement a single example is not enough and we always need a general argument.

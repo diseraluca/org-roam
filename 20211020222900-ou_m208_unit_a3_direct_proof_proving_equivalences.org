@@ -1,0 +1,59 @@
+:PROPERTIES:
+:ID:       8f4cf6f6-e56a-48d7-813e-9158ee8c982a
+:END:
+#+title: OU:M208:Unit-A3:Direct Proof:Proving Equivalences
+#+filetags: OU M208 Mathematics Proofs Statements Direct-Proof Equivalences Converses
+
+Remember from [[id:d7791bc5-95f0-4251-97a6-2a43e459ef93][OU:M208:Unit-A3:Mathematical Statements:Equivalences]] that the equivalence \(P \iff Q\) asserts that both \(P \implies Q\) and its converse \(Q \implies P\)  are true.
+
+The best way to prove an equivalence is to prove both implication separately.
+
+Sometimes, if the proof is simple, it is possible to show the converse by "reversing the arrows".
+That is, from a proof \(P \implies P_{1} \implies P_{2} \implies \ldots \implies P_{n} \implies Q\), you may find that the reversed sequence is \(Q \implies P_{n} \implies \ldots \implies P_{2} \implies P_{1} \implies P \) is true.
+
+In this case, the proof may be presented as:
+
+\begin{equation*}
+P \iff P_{1} \iff P_{2} \iff \ldots \iff P_{n} \iff Q
+\end{equation*}
+
+For example:
+
++ Prove that \(x(x-2) = 3\) if and only if \(x = -1\) or \(x = 3\)
+
+  \begin{align*}
+x(x - 2)= 3 &\iff x^{2} - 2x - 3 = 0 \\
+            &\iff (x + 1)(x - 3) = 0 \\
+            &\iff x + 1 = 0 \ \text{or}\ x - 3 = 0\\
+            &\iff x = -1 \ \text{or}\ x = 3\\
+  \end{align*}
+
+Remember that an equivalence can be described in term of an implication and its [[id:741ceedd-4492-4600-bb82-e5a69a73b3a2][OU:M208:Unit-A3:Mathematical Statements:The Contrapositive of An Implication]].
+
+Sometimes, this is convenient to build a proof of the equivalence.
+
+For example:
+
++ Let \(n\) be a positive integer. Prove that \(n\) is even \(\iff\) \(n^{3}\) is even.
+
+  We start by proving the implication \(n\) is even \(\implies\) \(n^{3}\) is even.
+
+  * Let \(n\) be an even integer. Then \(n = 2k\) for some integer \(k\).
+
+    Hence \(n^{3} = (2k)^{3} = 2 \times 4k^{3}\).
+
+    Since \(4k^{3}\) is an integer, this shows that \(n^{3}\) is an even integer.
+
+  Then we try to prove the opposite direction. Assuming that \(n\) is even does not help, thus we try assuming that \(n\) is odd.
+
+  * Assume that \(n\) is odd. Then \(n = 2k + 1\)  for some integer \(k\).
+
+    Hence:
+
+    \begin{equation*}
+    n^{3} = (2k + 1)^{3} = 8k^{3} + 12k^{2} + 6k + 1 = 2(4k^{3} + 6k^{2} + 3k) + 1
+    \end{equation*}
+
+    Since \(4k^{3} + 6k + 3k\) is an integer, this shows that \(n^{3}\) is an odd integer.
+
+    Then we have shown that if \(n\) is odd, then \(n^{3}\) is odd, which is equivalent to the statement that \(n\) is even whenever \(n^{3}\) is even.

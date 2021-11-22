@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       2646d013-1152-4176-8b6e-f60b2be27f0d
+:END:
+#+title: OU:M208:Unit-A2:Complex Numbers:Arithmetic Properties of Complex Numbers
+#+filetags: OU M208 Mathematics Complex-Numbers Addition Multiplication Commutativity Associativity Closure Additive-Identity Additive-Inverse Multiplicative-Identity Multiplicative-Inverse Distributivity Arithmetic Algebra Fields
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Arithmetic in $\mathbb{C}$]
+\begin{itemize}
+\item[Properties for Addition]
+\begin{itemize}
+\item[A1 Closure]
+For all $z_1,z_2 \in \mathbb{C}$, $z_1 + z_2 \in \mathbb{C}$
+\item[A2 Associativity]
+For all $z_1,z_2,z_3 \in \mathbb{C}$, $(z_1 + z_2) + z_3 = z_1 + (z_2 + z_3)$.
+\item[A3 Additive Identity]
+For all $z \in \mathbb{C}$, $z + 0 = z = 0 + z$.
+\item[A4 Additive Inverses]
+For each $z \in \mathb{C}$ there is a number $-z \in \mathbb{C}$ such that $z + (-z) = 0 = (-z) + z$
+\item[A5 Commutativity]
+For all $z_1,z_2 \in \mathbb{C}$, $z_1 + z_2 = z_2 + z_1$.
+\end{itemize}
+\item[Properties for Multiplication]
+\begin{itemize}
+\item[M1 Closure]
+For all $z_1,z_2 \in \mathbb{C}$, $z_1 \times z_2 \in \mathbb{C}$.
+\item[M2 Associativity]
+For all $z_1,z_2,z_3 \in \mathbb{C}$, $(z_1 \times z_2) \times z_3 = z_1 \times (z_2 \times z_3)$.
+\item[M3 Multiplicative Identity]
+For all $z \in \mathbb{C}$, $z \times 1 = z = 1 \times z$.
+\item[M4 Multiplicative Inverses]
+For each $z \in \mathbb{C} - \{0\}$ there exist a number $z^{-1} \in \mathbb{C}$ such that $z \times z^{-1} = 1 = z^{-1} \times z$.
+\item[M5 Commutativity]
+For all $z_1,z_2 \in \mathbb{C}$, $z_1 \times z_2 = z_2 \times z_1$.
+\end{itemize}
+\item[Property combining addition and multiplication]
+\begin{itemize}
+\item[D1 Distributivity]
+For all $z_1,z_2,z_3 \in \mathbb{C}$, $z_1 \times (z_2 + z_3) = (z_1 \times z_2) + (z_1 \times z_3)$
+\end{itemize}
+\end{itemize}
+\end{tcolorbox}
+
+
+- One important difference between the set of reals and the set of complex numbers is that complex numbers are not ordered.

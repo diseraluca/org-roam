@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       13fef626-d6f5-40ba-a58b-cc641cf41372
+:END:
+#+title: OU:M208:Theorems:A2:Factor Theorem (in R)
+#+filetags: OU M208 Mathematics Theorems Reals Factors
+
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Factor Theore (in $\mathbb{R}$)]
+Let $p(x)$ be a real polynomial and let $\alpha \in \mathbb{R}$.
+
+Then $p(\alpha) = 0$ if and only if $x - \alpha$ is a factor of $p(x)$.
+\end{tcolorbox}
+
+* Proof
+
+Assume first that \(x - \alpha\) is a factor of \(p(x)\), that is, assume that:
+
+\(p(x) = (x - \alpha)q(x)\)
+
+for some real polynomial \(q(x)\) whose degree is lower than the degree of \(p(x)\).
+Then:
+
+\(p(\alpha) = (\alpha - \alpha)q(\alpha) = 0\)
+
+as required.
+
+Now assume that \(p(\alpha) = 0\) and let
+
+\(p(x) = a_{n}x^{n} + a_{n-1}x^{n -1} + \ldots + a_{1}x + a_{0} \)
+
+where \(a_{n} \neq 0\).
+
+Since \(p(\alpha) = 0\), we have:
+
+\begin{align*}
+p(x) &= p(x) - p(\alpha) \\
+     &= (a_{n}x^{n} + a_{n-1}x^{n -1} + \ldots + a_{1}x + a_{0}) - (a_{n}\alpha^{n} + a_{n-1}\alpha^{n -1} + \ldots + a_{1}\alpha + a_{0}) \\
+     &= a_{n}(x^{n} - \alpha^{n}) + a_{n-1}(x^{n-1} - \alpha^{n-1}) + \ldots + a_{1}(x - \alpha)
+\end{align*}
+
+Since the constant terms \(a_{0}\) cancel.
+
+Now, by [[id:54a763f3-464b-4fe9-acf2-d57f10ab0fc2][OU:M208:Theorems:A12:Geometric Series Identity]], we know that \(x - \alpha\) is a factor of each of the bracketed terms in this last expression and so it is a factor of \(p(x)\) as required.

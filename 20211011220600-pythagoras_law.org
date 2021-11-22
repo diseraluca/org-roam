@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       d2840559-6452-4ec8-b052-67325746aff6
+:END:
+#+title: Pythagoras' Law
+#+filetags: Mathematics Pythagoras

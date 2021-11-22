@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       a47c99d5-0c55-40a0-ba19-99748b94a5fd
+:END:
+#+title: OU:M208:Theorems:A13:Fundamental Theorem of Arithmetic
+#+filetags: OU M208 Mathematics Theorems Primes Factors
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Fundamental Theorem of Arithmetic]
+Every integer greater than 1 can be written as a product of prime numbers.
+The factorisation is unique up to the order of the factors.
+\end{tcolorbox}

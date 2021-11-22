@@ -1,0 +1,52 @@
+:PROPERTIES:
+:ID:       454ae869-8636-4f9d-a293-ef958408f918
+:END:
+#+title: OU:M208:Unit-A3:Mathematical Statements:Direct Proof:Proving Implications
+#+filetags: OU M208 Mathematics Proofs Statements Direct-Proof Implications
+
+Suppose that we wish to prove that the implication \(P \implies Q\) is true.
+We have to prove that whenever the statement \(P\) is true then statement \(Q\)
+is also true.
+
+One way to do this is to assume that \(P\) is true and generate a series of steps that we know to be true under the assumption of \(P\) and finish until we can derive \(Q\) from one of the intermediate steps:
+
+\begin{equation*}
+P \implies P_{1} \implies P_{2} \implies \ldots P_{n} \implies Q
+\end{equation*}
+
+#+begin_example
+Prove that if n is odd, then n squared is odd.
+
+Let n be an odd integer. Then n = 2k + 1 for some integer k.
+
+Hence:
+
+n^2 = (2k + 1)^2 = 4k^2 + 4k + 1 = 2(2k^2 + 2k) + 1
+
+Since 2k^2 + 2k is an integer, this shows that n^2 is an odd integer.
+#+end_example
+
+In this proof, each statement derives from the preceding step.
+Nonetheless, it is possible to include statements that we know to be true from previous mathematical knowledge.
+
+For example:
+
++ Prove that for every integer n, the number \(n^{3} + 3n^{2} + 2n\) is divisible by \(6\).
+
+  Let \(n\) be an intege. Now:
+
+  \begin{equation*}
+    n^{3} + 3n^{2} + 2n = n(n^{2} + 3n + 2) = n(n+1)(n+2)
+  \end{equation*}
+
+  Then \(n^{3} + 3n^{2} + 2n\) is the product of three consecutive integers.
+
+  We know that out of any two consecutive integers, one must be divisible by 2 and out of any three consecutive integers one must be divisible by 3.
+
+  If follows that the three factors \(n, n + 1\) and \(n + 2\) include at least one that is divisible by \(2\) and one that is divisible by \(3\).
+
+  Thus, both the primes \(2\) and \(3\) are factors of \(n^{3} + 3n + 2n\).
+
+  Hence, by the [[id:a47c99d5-0c55-40a0-ba19-99748b94a5fd][OU:M208:Theorems:A13:Fundamental Theorem of Arithmetic]], \(n^{3} + 3n^{2} + 2n\) can be expressed as \(2 \times 3 \times r\) for some integer \(r\).
+
+  Hence, it is divisible by \(6 = 2 \times 3\)

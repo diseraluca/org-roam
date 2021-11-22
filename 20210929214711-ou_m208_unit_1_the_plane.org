@@ -1,0 +1,60 @@
+:PROPERTIES:
+:ID:       b9a24444-23bc-4ac9-b1b8-06ee664f15c5
+:ROAM_ALIASES: OU
+:END:
+#+title: OU:M208:Unit-A1:The Plane
+#+filetags: OU M208 Mathematics Geometry Lines Points Plane
+* The Plane
+:PROPERTIES:
+:ID:       8ccde239-134c-4853-ae6b-0ff49d552437
+:END:
+
+ - Two dimensional space
+ - Denoted by \(\mathbb{R}^2\)
+
+ - Cartesian Axes :: Perpendicular lines that whose intersection defines the origin(O) of the plane, such that we can use it to specify locations on it.
+
+   * "Upward" axis is generally called the y axis.
+   * "Rightward" axis is generally called the x axis.
+
+ - Cartesian Coordinates :: An ordered pair of real numbers (a, b) that give the positions of a point in the plane.
+
+   + a is the position on the x axis.
+   + b is the position on the y axis.
+
+   * We denote the point A with coordinates a and b as /A(a, b)/.
+
+ + Together with an *origin* /O/ and a pair of axes is known as *two-dimensional Euclidean space*.
+
+** Lines
+
+ + The equation of any straight line in \(\mathbb{R}^2\), except a line parallel to the y-axis, can be written in the form:
+
+   \(y = mx + c\)
+
+   where \(m,c \in \mathbb{R}\).
+
+   * \(m\) is the *gradient* of the line, given by:
+
+     \(m = \frac{y2 - y1}{x2 - x1}\)
+
+     where \((x1, y1)\) and \((x2, y2)\) are any two points on the line such that \(x1 \neq x2\).
+
+   * \(c\) is the y-*intercept* of the line such that \((0, c)\) is the point at which the line crosses the y-axis.
+
+ + The line with gradient \(m\) that crosses the y-axis at the origin is \(y = mx\)
+ + The horizontal line with y-intercept \(c\) is \(y = c\)
+ + A line parallel to the y-axis cannot be written in this form, as the gradient would have a denominator of 0.
+
+
+ * Any general equation of a line in \(\mathbb{R}^2\) is:
+
+   \(ax + by = c\)
+
+   where \(a\), \(b\), \(c\) are some real numbers and \(a\) and \(b\) are not both zero.
+
+ From, the formula for the gradient we derive that the line with gradient \(m\) that passes troug the point \((x1, y1)\) is:
+
+   \(y - y1 = m(x - x1)\)
+
+where \(y\) and \(x\) are the coordinate of any other point on the line.

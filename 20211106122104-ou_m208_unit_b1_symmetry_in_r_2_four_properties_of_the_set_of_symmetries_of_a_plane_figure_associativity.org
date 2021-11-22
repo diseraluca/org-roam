@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       e83ac449-4f43-4cca-b743-7de273faf59d
+:END:
+#+title: OU:M208:Unit-B1:Symmetry in R^2:Four Properties of the Set of Symmetries of a Plane Figure:Associativity
+#+filetags: OU M208 Mathematics Group-Theory Symmetry Plane Associativity
+
+#+LATEX_HEADER: \usepackage{tcolorbox}
+
+\begin{tcolorbox}[title=Associativity property of symmetries]
+Composition of symmetries is associative.
+
+If $F$ is a plane figure, for all $f,g,h \in S(F)$,
+\begin{equation*}
+(f \circ g) \circ h = f \circ (g \circ h)
+\end{equation*}
+\end{tcolorbox}

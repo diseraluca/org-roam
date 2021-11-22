@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       1ae75249-51e2-458a-a6c9-5849b297abdd
+:END:
+#+title: OU:M208:Unit-A3:Direct Proof:Counterexamples
+#+filetags: OU M208 Mathematics Proofs Statements Direct-Proof Counterexamples
+
+Sometimes, it might be easier to prove that a statement is false.
+
+Consider statements of the form \(P(x) \implies Q(x)\).
+Those statements are [[id:a130c0ad-fb49-4d07-8942-bb4e2435080b][Universal Statements]] where the universal quantifier is implicit.
+
+Hence, the negation of such a statement is "There is x such that P(x) and not Q(x)".
+
+Meaning that instead of a general argument we need a single example to prove that the statement is false.
+
++ Counterexample :: An example of an object that shows that a statement is false.

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       99d17515-73f1-4823-be94-fc95c17dae2e
+:END:
+#+title: OU:M208:Unit-A2:Real Numbers
+#+filetags: OU M208 Mathematics Reals Number-Systems
+
+See [[id:a8575bed-6c18-4667-a31f-5e19581a3d7c][OU:M208:Unit-A2:Real Numbers: Standard Subsets of the Real Numbers]] for an introduction to \(\mathbb{R}\) and some of its common subsets.
+
+See [[id:0cdda29a-8ff4-4d17-9d1a-458ec28fe782][OU:M208:Unit-A2:Real Numbers:Rational Numbers and Irrational Numbers]] for a proof that there are numbers in \(\mathbb{R}\) that cannot be expressed in \(\mathbb{Q}\).
+
+See [[id:d5109354-9545-4719-9967-4cd4f9a72595][OU:M208:Unit-A2:Real Numbers:Arithmetic of Real Numbers]] for some operations on real numbers and their properties.
+
+See [[id:50b6e4b3-4284-410d-ac85-d175965453b2][OU:M208:Unit-A2:Real Numbers:Solutions of Polynomial Equations]] for the definition of a polynomial equation and a way to solve them.
