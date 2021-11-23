@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       569012eb-23b3-41e9-b7ec-d2e215499969
+:ROAM_ALIASES: MIME
+:END:
+#+title: Multipurpose Internet Mail Extensions

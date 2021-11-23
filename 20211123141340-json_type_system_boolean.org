@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       726309c0-c7e7-4650-9f6f-6159a6d10081
+:ROAM_REFS: https://www.ietf.org/rfc/rfc4627.html
+:END:
+#+title: JSON:Type System:Boolean
+#+filetags: :JSON:Type System:Type:Boolean:
+
+A Boolean value represent one of two possible values:
+ * The literal true
+ * The literal false
+
+* Grammar
+
+false <- %x66.61.6c.73.65   ; false
+true  <- %x74.72.75.65      ; true

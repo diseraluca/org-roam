@@ -1,0 +1,141 @@
+:PROPERTIES:
+:ID:       2193ddf4-f5ec-4204-ab78-b8f6cdc772a7
+:ROAM_REFS: https://www.jsonrpc.org/specification
+:END:
+#+title: JSON-RPC:2.0
+#+filetags: :JSON-RPC:JSON:RPC:Tech:
+
+* The JSON-RPC 2.0 Specification
+
+ - A stateless, light-weight [[id:474045db-b918-4ea3-bae6-4acedaebfcd8][Remote Procedure Call]] protocol.
+ - The protocol is transport agnostic.
+ - It uses [[id:a51c2cf3-c79d-464d-bc7e-45c8f44c1734][JSON]] as the data format.
+    * Hence, it uses the [[id:27e965e0-db53-4e39-9f9a-c6e01427701e][JSON:Type System]] for its types.
+
+** Convntions
+
++ Primitive Type :: One of [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]], [[id:18188d0a-f0bd-4e20-84c3-5291da9736c6][JSON:Type System:Number]], [[id:726309c0-c7e7-4650-9f6f-6159a6d10081][JSON:Type System:Boolean]] or [[id:f7e11bf7-91ea-46e1-b9c4-643bbe508e06][JSON:Type System:Null]],
++ Primitive Value :: A value of a Primitive Type.
+
++ Structured Type :: Either [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] or [[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type System:Array]].
++ Structured Value :: A value of a Structured Type.
+
++ Client :: The originator of Request Objects.
++ Server :: The originator of Response Objects.
+
+*** Usage
+
+An RPC call is executed by sending a request object to a Server which
+will then answer with a Response Object.
+
+ + See [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]] for the format of request objects.
+ + See [[id:a42a0131-45f9-4bd2-8727-9bdf29f9674b][JSON-RPC:2.0:Response]] for the format of response objects.
+ + See [[id:9c855010-37d7-446b-804e-56d8a1222289][JSON-RPC:2.0:Batch]] for a way to send multiple requests at once.
+
+* Example
+
+ - --> data sent to Server
+ - <-- data sent to Client
+
+#+CAPTION: RPC call with positional parameters
+#+BEGIN_EXAMPLE
+--> {"jsonrpc": "2.0", "method": "subtract", "params": [42, 23], "id": 1}
+<-- {"jsonrpc": "2.0", "result": 19, "id": 1}
+
+--> {"jsonrpc": "2.0", "method": "subtract", "params": [23, 42], "id": 2}
+<-- {"jsonrpc": "2.0", "result": -19, "id": 2}
+#+END_EXAMPLE
+
+#+CAPTION: RPC call with named parameters
+#+BEGIN_EXAMPLE
+--> {"jsonrpc": "2.0", "method": "subtract", "params": {"subtrahend": 23, "minuend": 42}, "id": 3}
+<-- {"jsonrpc": "2.0", "result": 19, "id": 3}
+
+--> {"jsonrpc": "2.0", "method": "subtract", "params": {"minuend": 42, "subtrahend": 23}, "id": 4}
+<-- {"jsonrpc": "2.0", "result": 19, "id": 4}
+#+END_EXAMPLE
+
+#+CAPTION: A Notification
+#+BEGIN_EXAMPLE
+--> {"jsonrpc": "2.0", "method": "update", "params": [1,2,3,4,5]}
+--> {"jsonrpc": "2.0", "method": "foobar"}
+#+END_EXAMPLE
+
+#+CAPTION: RPC call of non-existent method
+#+BEGIN_EXAMPLE
+--> {"jsonrpc": "2.0", "method": "foobar", "id": "1"}
+<-- {"jsonrpc": "2.0", "error": {"code": -32601, "message": "Method not found"}, "id": "1"}
+#+END_EXAMPLE
+
+#+CAPTION: RPC call with invalid JSON
+#+BEGIN_EXAMPLE
+--> {"jsonrpc": "2.0", "method": "foobar, "params": "bar", "baz]
+<-- {"jsonrpc": "2.0", "error": {"code": -32700, "message": "Parse error"}, "id": null}
+#+END_EXAMPLE
+
+#+CAPTION: RPC call with invalid Request Object
+#+BEGIN_EXAMPLE
+--> {"jsonrpc": "2.0", "method": 1, "params": "bar"}
+<-- {"jsonrpc": "2.0", "error": {"code": -32600, "message": "Invalid Request"}, "id": null}
+#+END_EXAMPLE
+
+#+CAPTION: RPC call Batch, invalid JSON
+#+BEGIN_EXAMPLE
+--> [
+  {"jsonrpc": "2.0", "method": "sum", "params": [1,2,4], "id": "1"},
+  {"jsonrpc": "2.0", "method"
+]
+<-- {"jsonrpc": "2.0", "error": {"code": -32700, "message": "Parse error"}, "id": null}
+#+END_EXAMPLE
+
+#+CAPTION: RPC call with an empty Array
+#+BEGIN_EXAMPLE
+--> []
+<-- {"jsonrpc": "2.0", "error": {"code": -32600, "message": "Invalid Request"}, "id": null}
+#+END_EXAMPLE
+
+#+CAPTION: RPC call with invalid Batch (but not empty)
+#+BEGIN_EXAMPLE
+--> [1]
+<-- [
+  {"jsonrpc": "2.0", "error": {"code": -32600, "message": "Invalid Request"}, "id": null}
+]
+#+END_EXAMPLE
+
+#+CAPTION: RPC call with invalid Batch
+#+BEGIN_EXAMPLE
+--> [1,2,3]
+<-- [
+  {"jsonrpc": "2.0", "error": {"code": -32600, "message": "Invalid Request"}, "id": null},
+  {"jsonrpc": "2.0", "error": {"code": -32600, "message": "Invalid Request"}, "id": null},
+  {"jsonrpc": "2.0", "error": {"code": -32600, "message": "Invalid Request"}, "id": null}
+]
+#+END_EXAMPLE
+
+#+CAPTION: RPC call Batcg
+#+BEGIN_EXAMPLE
+--> [
+        {"jsonrpc": "2.0", "method": "sum", "params": [1,2,4], "id": "1"},
+        {"jsonrpc": "2.0", "method": "notify_hello", "params": [7]},
+        {"jsonrpc": "2.0", "method": "subtract", "params": [42,23], "id": "2"},
+        {"foo": "boo"},
+        {"jsonrpc": "2.0", "method": "foo.get", "params": {"name": "myself"}, "id": "5"},
+        {"jsonrpc": "2.0", "method": "get_data", "id": "9"}
+    ]
+<-- [
+        {"jsonrpc": "2.0", "result": 7, "id": "1"},
+        {"jsonrpc": "2.0", "result": 19, "id": "2"},
+        {"jsonrpc": "2.0", "error": {"code": -32600, "message": "Invalid Request"}, "id": null},
+        {"jsonrpc": "2.0", "error": {"code": -32601, "message": "Method not found"}, "id": "5"},
+        {"jsonrpc": "2.0", "result": ["hello", 5], "id": "9"}
+    ]
+#+END_EXAMPLE
+
+#+CAPTION: RPC call Batch (all notifications)
+#+BEGIN_EXAMPLE
+--> [
+        {"jsonrpc": "2.0", "method": "notify_sum", "params": [1,2,4]},
+        {"jsonrpc": "2.0", "method": "notify_hello", "params": [7]}
+    ]
+<-- //Nothing is returned for all notification batches
+#+END_EXAMPLE

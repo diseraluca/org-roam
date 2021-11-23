@@ -1,0 +1,41 @@
+:PROPERTIES:
+:ID:       27e965e0-db53-4e39-9f9a-c6e01427701e
+:ROAM_REFS: https://www.ietf.org/rfc/rfc4627.html
+:END:
+#+title: JSON:Type System
+#+filetags: :JSON:Type System:
+
+[[id:a51c2cf3-c79d-464d-bc7e-45c8f44c1734][JSON]] allows four primitive types and two structured types.
+
+
+The primitive types are:
+
+ * [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]]
+ * [[id:18188d0a-f0bd-4e20-84c3-5291da9736c6][JSON:Type System:Number]]
+ * [[id:726309c0-c7e7-4650-9f6f-6159a6d10081][JSON:Type System:Boolean]]
+ * [[id:f7e11bf7-91ea-46e1-b9c4-643bbe508e06][JSON:Type System:Null]]
+
+The structured types are:
+
+ * [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]]
+ * [[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type System:Array]]
+
+* Values
+
+ Elements of the above types are called values.
+
+ A value is, hence, one of:
+
+  * An Object
+  * An Array
+  * A Number
+  * A String
+  * The literal false
+  * The literal true
+  * The literal null
+    - The literals are case-sensitive, such that they must be lowercase.
+    - Other than the three literals above, no literal is allowed.
+
+* Grammar
+
+ value <- false | null | true | object | array | number | string

@@ -1,0 +1,54 @@
+:PROPERTIES:
+:ID:       40b19f64-f8b5-49ec-9d7b-f095062801df
+:ROAM_REFS: https://www.ietf.org/rfc/rfc4627.html
+:END:
+#+title: JSON:Type System:String
+#+filetags: :JSON:Type System:Type:String:
+
+A string is a sequence of zero of more unicode characters.
+
+ * A string begins and ends with quotation marks.
+ * Any unicode character may be placed withing the quotation marks
+   apart from the following characters which must be escaped.
+
+   - Quotation Mark
+   - Reverse Solidus
+   - [[id:c9b3c1c3-8b19-4be9-b9c6-f7879fd125a6][Unicode:Control Characters:C0]]
+
+Any character may be escaped.
+ * Characters in the [[id:db9567c8-bade-416e-a91b-becebf4a6184][Unicode:Basic Multilingual Plane]] can be represented as a six-character sequence:
+    - A reverse solidus
+    - The lowercase letter u
+    - Four hexadecimal digits that encode the character's code point
+
+   For example, a string containing a single reverse solidus can be
+
+   represented as ~"/u005C"~. To simplify the escaping of some popular
+   characters some special two-characters sequences are provided.
+
+   Hence, the string containing only a reverse solidus can be represented as ~"\\"~
+
+   Extended characters not in the [[id:db9567c8-bade-416e-a91b-becebf4a6184][Unicode:Basic Multilingual Plane]] are
+   represented by a twelve-character sequence when escaped, encoding
+   the [[id:19f49943-24fa-464c-a3eb-bfb8d9392f04][Unicode:UTF-16]] surrogate pair.
+
+   For example, a string containing only 𝄞 (01D11E) may be represented
+   as ~"\uD834\uDD1E"~.
+
+* Grammar
+
+string <- quotation-mark char* quotation-mark
+char <- unescaped | escape (
+    %x22 |          ; "    quotation mark  U+0022
+    %x5C |          ; \    reverse solidus U+005C
+    %x2F |          ; /    solidus         U+002F
+    %x62 |          ; b    backspace       U+0008
+    %x66 |          ; f    form feed       U+000C
+    %x6E |          ; n    line feed       U+000A
+    %x72 |          ; r    carriage return U+000D
+    %x74 |          ; t    tab             U+0009
+    %x75 4HEXDIG    ; uXXXX                U+XXXX
+)
+escape <- %x5C ; \
+quotation-mark <- %x22 ; "
+unescaped <- %x20-21 | %x23-5B | %x5D-10FFFF

@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       18188d0a-f0bd-4e20-84c3-5291da9736c6
+:ROAM_REFS: https://www.ietf.org/rfc/rfc4627.html
+:END:
+#+title: JSON:Type System:Number
+#+filetags: :JSON:Type System:Type:Number:
+
+A number contains an integer component, prefixed with an optional
+minus sign, which may be followed by a fraction part and/or an
+exponent part.
+
+- Octal and hex form are disallowed.
+- Leading zeroes are disallowed.
+- Numeric values that cannot be represented as sequences of digits are not permitted (e.g. [[id:8fbce65e-c5f9-4b27-bda9-d37181013c58][Floating Point Arithmetic:IEEE 754:NaN]] )
+
++ Fraction Part :: A decimal point followed by one or more digits.
++ Exponent Part :: The letter E, uppercase or lowercase, followed, optionally, by plus or minus sign and ending with one or more digits.
+
+* Grammar
+
+ number <- [ minus ] int [ frac ] [ exp ]
+ decimal-point <- %x2E ; .
+ digit1-9 <- %x31-39 ; 1-9
+ e <- %x65 | %x45 ; e E
+ exp <- e [ minus | plus ] 1 DIGIT*
+ frac <- decimal-point 1 DIGIT *
+ int = zero | digit1-9 DIGIT*
+ minus = %x2D ; -
+ plus = $x2B ; +
+ zero = %x30 ; 0

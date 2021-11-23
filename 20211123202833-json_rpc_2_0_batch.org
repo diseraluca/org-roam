@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       9c855010-37d7-446b-804e-56d8a1222289
+:ROAM_REFS: https://www.jsonrpc.org/specification
+:END:
+#+title: JSON-RPC:2.0:Batch
+#+filetags: :JSON-RPC:JSON:RPC:Batch:Tech:
+
+A Client may send multiple requests at once by sending an [[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type
+System:Array]] filled with [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]] Objects.
+
+Any order may be used for the responses in the array.
+
+The Server should respond with an [[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type System:Array]] containing a
+[[id:a42a0131-45f9-4bd2-8727-9bdf29f9674b][JSON-RPC:2.0:Response]] Object for each request.
+
+The Server must not include a response for any sent [[id:7e17801e-eb31-4e80-b723-59d55e62dc05][JSON-RPC:2.0:Request:Notification]].
+
+If the batch fails to be recognized as a valid [[id:a51c2cf3-c79d-464d-bc7e-45c8f44c1734][JSON]] or as an [[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type System:Array]] with at least one value, the Server must responde with a single Response Object.
+
+If there are no Response Object the server must not return an empty
+[[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type System:Array]]. Don't return anything instead.
+
+- The Server can process the requests concurrently.

@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       8fbce65e-c5f9-4b27-bda9-d37181013c58
+:END:
+#+title: Floating Point Arithmetic:IEEE 754:NaN

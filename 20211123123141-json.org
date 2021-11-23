@@ -1,0 +1,120 @@
+:PROPERTIES:
+:ID:       a51c2cf3-c79d-464d-bc7e-45c8f44c1734
+:ROAM_ALIASES: JSON
+:ROAM_REFS: https://www.ietf.org/rfc/rfc4627.txt
+:END:
+#+title: Javascript Object Notation
+#+filetags: :JSON:Format:
+
+* Introduction
+
+JSON is a lightweight, text-based, language-independent data
+interchange format.
+
+It was designed to be minimal, portable and textual.
+
+It can represent four primitive types and two structured types. See
+[[id:27e965e0-db53-4e39-9f9a-c6e01427701e][JSON:Type System]].
+
+* Format
+
+ A JSON text is a sequence of tokens.
+
+ The set of tokens contains:
+  * Six structural characters
+
+    begin-array    <- ws %x5B ws  ; [ left square bracket
+    begin-object   <- ws %x7B ws  ; { left curly bracket
+    end-array      <- ws %x5D ws  ; ] right square bracket
+    end-object     <- ws %x7D ws  ; } right curly bracket
+    name-separator <- ws %x3A ws  ; : colon
+    value-separator<- ws %x2C ws  ; , comma
+
+     * Insignificant whitespace is allowed before or after any of the structural characters.
+
+        ws <- (
+            %x20 |              ; Space
+            %x09 |              ; Horizontal tab
+            %x0A |              ; Line feed or New line
+            %x0D                ; Carriage return
+        )*
+
+  * Strings
+  * Numbers
+  * Three literal names
+
+* Encoding
+
+Default encoding is [[id:aa9c0f8c-a64a-4271-8440-dc0254fbfdb2][Unicode:UTF-8]] but a JSON text can be encoded in
+other variants.
+
+Since the first two characters of a JSON text are always ASCII, it is
+possible to determine the encoding by looking at the patterns of null
+characters in the first four octects.
+
+| 00 00 00 xx | UTF-32BE |
+| 00 xx 00 xx | UTF-16BE |
+| xx 00 00 00 | UTF-32LE |
+| xx 00 xx 00 | UTF-16LE |
+| xx xx xx xx | UTF-8    |
+
+* Miscellaneous
+
+The [[id:569012eb-23b3-41e9-b7ec-d2e215499969][Multipurpose Internet Mail Extensions]] for JSON is =application/json=.
+
+* Grammar
+
+ JSON-text <- object | array
+
+ object <- begin-object [ member ( value-separator member  )* ] end-object
+ member <- string name-separator value
+
+ array <- begin-array [ value ( value-separator value )* ] end-array
+
+ value <- false | null | true | object | array | number | string
+
+ false <- %x66.61.6c.73.65   ; false
+ true  <- %x74.72.75.65      ; true
+ null  <- %x6e.75.6c.6c      ; null
+
+
+ number <- [ minus ] int [ frac ] [ exp ]
+ decimal-point <- %x2E ; .
+ digit1-9 <- %x31-39 ; 1-9
+ e <- %x65 | %x45 ; e E
+ exp <- e [ minus | plus ] 1 DIGIT*
+ frac <- decimal-point 1 DIGIT *
+ int = zero | digit1-9 DIGIT*
+ minus = %x2D ; -
+ plus = $x2B ; +
+ zero = %x30 ; 0
+
+ string <- quotation-mark char* quotation-mark
+ char <- unescaped | escape (
+     %x22 |          ; "    quotation mark  U+0022
+     %x5C |          ; \    reverse solidus U+005C
+     %x2F |          ; /    solidus         U+002F
+     %x62 |          ; b    backspace       U+0008
+     %x66 |          ; f    form feed       U+000C
+     %x6E |          ; n    line feed       U+000A
+     %x72 |          ; r    carriage return U+000D
+     %x74 |          ; t    tab             U+0009
+     %x75 4HEXDIG    ; uXXXX                U+XXXX
+ )
+ escape <- %x5C ; \
+ quotation-mark <- %x22 ; "
+ unescaped <- %x20-21 | %x23-5B | %x5D-10FFFF
+
+ begin-array    <- ws %x5B ws  ; [ left square bracket
+ begin-object   <- ws %x7B ws  ; { left curly bracket
+ end-array      <- ws %x5D ws  ; ] right square bracket
+ end-object     <- ws %x7D ws  ; } right curly bracket
+ name-separator <- ws %x3A ws  ; : colon
+ value-separator<- ws %x2C ws  ; , comma
+
+ ws <- (
+     %x20 |              ; Space
+     %x09 |              ; Horizontal tab
+     %x0A |              ; Line feed or New line
+     %x0D                ; Carriage return
+ )*

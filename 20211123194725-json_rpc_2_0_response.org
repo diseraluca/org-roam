@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       a42a0131-45f9-4bd2-8727-9bdf29f9674b
+:ROAM_REFS: https://www.jsonrpc.org/specification
+:END:
+#+title: JSON-RPC:2.0:Response
+#+filetags: :JSON-RPC:JSON:RPC:Response:Tech:
+
+When an [[id:474045db-b918-4ea3-bae6-4acedaebfcd8][RPC]] call is made the Server must reply with a Response.
+ * When the [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]] is a [[id:7e17801e-eb31-4e80-b723-59d55e62dc05][JSON-RPC:2.0:Request:Notification]] the Server must not respond.
+
+A Response Object is a [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] that has the following members:
+
+ + jsonrpc :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the version of [[id:2193ddf4-f5ec-4204-ab78-b8f6cdc772a7][JSON-RPC:2.0]] protocol.
+
+   For JSON-RPC 2.0 it must be precisely ~"2.0"~.
+
+ + result :: The value of this member depends on the method that was invoked.
+
+   This member must be present when the call was a success.
+   This member must be omitted when an error was raised during the invocation.
+
+ + error :: The value of this member must be an [[id:6c220bbe-849f-4012-924c-30e04977c69e][JSON-RPC:2.0:Response:Error]].
+
+   This member must be present when an error was raised during the invocation.
+   This member must be omitted when the call was a success.
+
+ + id :: The value of this member must be the same as the id member of the [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]] Object that was sent.
+
+   This member must always be present.
+   If there was an error when detecting the id of the Request, this member must be null.
+
+- Either the result or error member must be present in each json object but not both.
+
+See [[id:6c220bbe-849f-4012-924c-30e04977c69e][JSON-RPC:2.0:Response:Error]] for the details of the value of an error member.

@@ -1,0 +1,46 @@
+:PROPERTIES:
+:ID:       c9b3c1c3-8b19-4be9-b9c6-f7879fd125a6
+:ROAM_REFS: https://www.unicode.org/charts/PDF/U0000.pdf
+:END:
+#+title: Unicode:Control Characters:C0
+
+Control characters are special characters that have no visual or
+spatial representation. The control codes in the C0 category are used
+in ASCII systems to provide additional information about the text.
+
+C0 characters are in the range 00-1F.
+
+* Character List
+
+ * 0000 :: NULL
+ * 0001 :: START OF HEADING
+ * 0002 :: START OF TEXT
+ * 0003 :: END OF TEXT
+ * 0004 :: END OF TRANSMISSION
+ * 0005 :: ENQUIRY
+ * 0006 :: ACKNOWLEDGE
+ * 0007 :: BELL
+ * 0008 :: BACKSPACE
+ * 0009 :: CHARACTER TABULATION = horizontal tabulation (HT) = tab
+ * 000A :: LINE FEED (LF) = new line (NL) = end of line (EOL)
+ * 000B :: LINE TABULATION = vertical tabulation (VT)
+ * 000C :: FORM FEED (FF)
+ * 000D :: CARRIAGE RETURN (CR)
+ * 000E :: SHIFT OUT
+ * 000F :: SHIFT IN
+ * 0010 :: DATA LINK ESCAPE
+ * 0011 :: DEVICE CONTROL ONE
+ * 0012 :: DEVICE CONTROL TWO
+ * 0013 :: DEVICE CONTROL THREE
+ * 0014 :: DEVICE CONTROL FOUR
+ * 0015 :: NEGATIVE ACKNOWLEDGE
+ * 0016 :: SYNCHRONOUS IDLE
+ * 0017 :: END OF TRANSMISSION BLOCK
+ * 0018 :: CANCEL
+ * 0019 :: END OF MEDIUM
+ * 001A :: SUBSTITUTE -> FFFD replacement character
+ * 001B :: ESCAPE
+ * 001C :: INFORMATION SEPARATOR FOUR = file separator (FS)
+ * 001D :: INFORMATION SEPARATOR THREE = group separator (GS)
+ * 001E :: INFORMATION SEPARATOR TWO = record separator (RS)
+ * 001F :: INFORMATION SEPARATOR ONE = unit separator (US)

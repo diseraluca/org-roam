@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       7e17801e-eb31-4e80-b723-59d55e62dc05
+:ROAM_REFS: https://www.jsonrpc.org/specification
+:END:
+#+title: JSON-RPC:2.0:Request:Notification
+#+filetags: :JSON-RPC:JSON:RPC:Request:Notification:Tech:
+
+A Request Object without an /id/ parameter.
+
+A Request Object that is a notification signifies a lack of intrest in the [[id:a42a0131-45f9-4bd2-8727-9bdf29f9674b][JSON-RPC:2.0:Response]] by the part of the client.
+
+The Server must not reply to a notification.

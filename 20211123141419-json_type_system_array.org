@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       efb9cf9c-b39d-4400-844d-3d9c7f5d1c18
+:ROAM_REFS: https://www.ietf.org/rfc/rfc4627.html
+:END:
+#+title: JSON:Type System:Array
+#+filetags: :JSON:Type System:Type:Array:
+
+An array is one of the two structured types that represents a
+heteregenous sequence of values.
+
+It is represented as square brackets surrounding zero or more values (also called elements).
+Elements are separated by commas.
+
+* Grammar
+
+array <- begin-array [ value ( value-separator value )* ] end-array

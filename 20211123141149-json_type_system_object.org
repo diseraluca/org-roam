@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       2b6c48db-b918-46db-86be-d1cbdf5f5bef
+:ROAM_REFS: https://www.ietf.org/rfc/rfc4627.html
+:END:
+#+title: JSON:Type System:Object
+#+filetags: :JSON:Type System:Type:Object:
+
+One of the two structured types, akin to a map of key-value pairs.
+
+An object is represented as a pair of curly brackets surround zero or
+more name-value pairs (also called members).
+ * A name is a string that must be followed by a colon, separating it
+   from the value.
+ * A single comma separates a value from a following name.
+ * A value is anything of the types in [[id:27e965e0-db53-4e39-9f9a-c6e01427701e][JSON:Type System]] .
+
+* Grammar
+
+ object <- begin-object [ member ( value-separator member  )* ] end-object
+ member <- string name-separator value

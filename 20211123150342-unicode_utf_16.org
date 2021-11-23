@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       19f49943-24fa-464c-a3eb-bfb8d9392f04
+:END:
+#+title: Unicode:UTF-16

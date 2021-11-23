@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       474045db-b918-4ea3-bae6-4acedaebfcd8
+:ROAM_ALIASES: RPC
+:END:
+#+title: Remote Procedure Call

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       f7e11bf7-91ea-46e1-b9c4-643bbe508e06
+:ROAM_REFS: https://www.ietf.org/rfc/rfc4627.html
+:END:
+#+title: JSON:Type System:Null
+#+filetags: :JSON:Type System:Type:Null:
+
+A type with a single value, the literal null.
+
+* Grammar
+
+null  <- %x6e.75.6c.6c ; null

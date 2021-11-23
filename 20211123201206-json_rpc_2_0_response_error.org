@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       6c220bbe-849f-4012-924c-30e04977c69e
+:ROAM_REFS: https://www.jsonrpc.org/specification
+:END:
+#+title: JSON-RPC:2.0:Response:Error
+#+filetags: :JSON-RPC:JSON:RPC:Response:Error:Tech:
+
+When an [[id:474045db-b918-4ea3-bae6-4acedaebfcd8][RPC]] call encounters an error the [[id:a42a0131-45f9-4bd2-8727-9bdf29f9674b][JSON-RPC:2.0:Response]] Object must contain an Error Object with the following members:
+
+ + code :: A [[id:18188d0a-f0bd-4e20-84c3-5291da9736c6][JSON:Type System:Number]] that indicates the error type that occurred.
+
+   This number must be an integer.
+
+ + message :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] providing a short description of the error.
+
+   It is advised to keep the message as a concise single sentence.
+
+ + data :: A Primitive or Structured Value that contains additional information about the error.
+
+   This member is optional.
+
+   The value of this member is defined by the Server.
+
+- Error codes in the range [-32768, -32000] are reserved for predefined errors and their meaning respects the following table:
+
+  |             code | message          | meaning                                           |
+  |------------------+------------------+---------------------------------------------------|
+  |           -32700 | Parse Error      | Invalid JSON was received  by the server          |
+  |           -32600 | Invalid Request  | The JSON sent is not a valid Request Object       |
+  |           -32601 | Method Not Found | The JSON sent is not a valid Request Object       |
+  |           -32603 | Invalid params   | Invalid method parameters                         |
+  |           -32603 | Internal error   | Internal JSON-RPC error                           |
+  | -32000 to -32099 | Server Error     | Reserved for implementation defined server errors |
