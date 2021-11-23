@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       a3f8827a-6d31-4a82-a522-5c817b953a7c
+:ROAM_REFS: https://datatracker.ietf.org/doc/html/rfc7230#section-3.2
+:END:
+#+title: HTTP:Header Fields:Semantic

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       32cf0cba-b76d-46ad-be0b-4f5e45faa990
+:ROAM_ALIASES: LSP
+:END:
+#+title: Language Server Protocol
+#+filetags: :LSP:Tech:Languages:Tooling:
+
+The Language Server Protocol is a [[id:2193ddf4-f5ec-4204-ab78-b8f6cdc772a7][JSON-RPC:2.0]]-based protocol that
+helps with providing IDE like capabilities to source code editor, by
+abstracting the language-specific processing to common interfaces.
+
++ [[id:0606fc03-0a74-4412-89d5-ca7136bb3a81][Language Server Protocol:3.16]]

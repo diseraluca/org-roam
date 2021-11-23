@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       dcef3ddb-01cb-4b08-9438-fa0a302eb00b
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/
+:END:
+#+title: Language Server Protocol:3.16:Header Part
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:Header:
+
++ An Header Part is composed of header fields.
++ Each field is comprised of a name and a value, separated by ~": "~
+  - Header Fields conform to [[id:a3f8827a-6d31-4a82-a522-5c817b953a7c][HTTP:Header Fields:Semantic]].
+  - Each fiels is terminated by =\r\n=.

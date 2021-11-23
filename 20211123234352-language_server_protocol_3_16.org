@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0606fc03-0a74-4412-89d5-ca7136bb3a81
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/
+:END:
+#+title: Language Server Protocol:3.16
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:
+
+The base protocol consists of an [[id:dcef3ddb-01cb-4b08-9438-fa0a302eb00b][Language Server Protocol:3.16:Header Part]] and a [[id:b86ebe32-9f26-4373-a25a-47fed4cdd936][Language Server Protocol:3.16:Content Part]].
+
+Those two parts are separated by a =\r\n=,
