@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       de0f2168-8d6c-416e-865e-e66ab7863c13
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#diagnostic
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:Diagnostic:DiagnosticRelatedInformation
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Diagnostic:
+
+Represents something that is related to a diagnostic. For example,
+some text that may be the cause or is related to the diagnostic.
+
+This is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following parameters:
+
+ + location :: [[id:2ac71a9e-7b0a-4b75-bbb0-697e68cf9c3f][Language Server Protocol:3.16:Basic JSON Structures:Text
+   Document:Location]] representing the related element.
+
+ + message :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] explaining how this element
+   relates to the diagnostic.

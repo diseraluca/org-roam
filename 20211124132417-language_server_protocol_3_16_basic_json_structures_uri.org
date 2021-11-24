@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       6aa63177-4b85-4aaa-a9fc-defe52b31ab4
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#uri
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:URI
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:URI:
+
+Used to pass a [[id:b7bef7b4-5fbc-40f5-ba18-0769d40025ad][Uniform Resource Identifier]].
+
+URIs are represented as [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]].
+
++ See [[id:34b77302-2633-4aa0-bc51-7317ff45a7ad][Language Server Protocol:3.16:Basic JSON
+  Structures:URI:DocumentUri]] for a typed URI which represents a
+  document.

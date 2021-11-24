@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       29468fb7-96ec-4917-a066-ca28ab7d7636
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#enumerations
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Enumerations
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Enumeration:
+
+The protocol support enumerations of two kinds:
+
+ + Integer Based Enumerations :: Enumerations that usually start at 1.
+
+   Some do not start at 1 for historical reasons and are kept for
+   backward compatibilities.
+
+   The set of values available for an enumeration is usually announced
+   by the side that defines it (Client or Server) and transmitted
+   during the [[id:ea926146-df61-4748-807d-0b51eef341e9][Language Server Protocol:3.16:Actual Protocol:Initialize]]
+   handshake.
+
+ + String Based Enumerations :: Collection of named values.
+
+To support forward compatibility, the consuming side of an Enumeration should not fail when receiving an enumeration value that is not known.
+Instead, it should ignore it while trying to preserve it between furhter communication.

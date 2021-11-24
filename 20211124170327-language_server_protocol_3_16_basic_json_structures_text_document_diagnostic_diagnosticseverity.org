@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       6664fac5-e0a9-4c24-8e35-321c8697903f
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#diagnostic
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:Diagnostic:DiagnosticSeverity
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Diagnostic:Severity:
+
+Represents the severity of a [[id:f5519331-7775-4cae-a969-797d2712e8da][Language Server Protocol:3.16:Basic JSON
+Structures:Text Document:Diagnostic]].
+
+The available values for the severity are:
+
+    | Severity    | Value |
+    |-------------+-------|
+    | Error       |     1 |
+    | Warning     |     2 |
+    | Information |     3 |
+    | Hint        |     4 |

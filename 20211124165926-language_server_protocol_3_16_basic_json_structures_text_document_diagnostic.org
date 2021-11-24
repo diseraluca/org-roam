@@ -1,0 +1,68 @@
+:PROPERTIES:
+:ID:       f5519331-7775-4cae-a969-797d2712e8da
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#diagnostic
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:Diagnostic
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Diagnostic:Error:Warning:
+
+Represents a diagnostic, such as a compiler error or warning.
+
+Diagnostics are only valid within a specific resource.
+
+A Diagnostic is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + range :: A [[id:3c26503d-e6b4-4023-943f-8ba2dc90fee7][Language Server Protocol:3.16:Basic JSON Structures:Text
+   Document:Range]] that represent the span within which the diagnostic
+   applies.
+
+ + severity :: A [[id:6664fac5-e0a9-4c24-8e35-321c8697903f][Language Server Protocol:3.16:Basic JSON
+   Structures:Text Document:Diagnostic:DiagnosticSeverity]] representing
+   the severity of the diagnostic.
+
+   This is an optional value. When it is not provided, the client
+   should decide how to interpret the diagnostic.
+
+ + code :: A [[id:18188d0a-f0bd-4e20-84c3-5291da9736c6][JSON:Type System:Number]] with no fractional part or a
+   [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] that represents the diagnostic.
+
+   This might appear in the user interface.
+
+   This is an optional value.
+
+ + codeDescription :: A [[id:0902c49c-1c31-45ae-aca3-a5793153b4b9][Language Server Protocol:3.16:Basic JSON
+   Structures:Text Document:Diagnostic:CodeDescription]] that is used to
+   describe the meaning of the error code.
+
+   This is an optional value.
+
+ + source :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] that represents the originating
+   source of this diagnostic.
+
+   The string should be human-readable.
+   For example, ="typescript"= or ="super lint"=.
+
+   This is an optional value.
+
+ + message :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the message of
+   the diagnostic.
+
+ + tags :: An [[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type System:Array]] of [[id:9032921e-03f7-4e1d-b86a-ec798ce80f58][Language Server
+   Protocol:3.16:Basic JSON Structures:Text
+   Document:Diagnostic:DiagnosticTag]] providing more information about
+   the diagnostic and its visualization.
+
+   This is an optional value.
+
+ + relatedInformation? :: An [[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type System:Array]] of [[id:de0f2168-8d6c-416e-865e-e66ab7863c13][Language Server
+   Protocol:3.16:Basic JSON Structures:Text
+   Document:Diagnostic:DiagnosticRelatedInformation]] that provides
+   related diagnostic information.
+
+   This is an optional value.
+
+ + data :: A value of an arbitrary type that is preserved between
+   publishDiagnostic and codeAction.
+
+   This is an optional value.
+
+   #TODO:: Remember to add the links

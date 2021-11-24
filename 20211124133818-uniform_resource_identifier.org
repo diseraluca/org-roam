@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       b7bef7b4-5fbc-40f5-ba18-0769d40025ad
+:ROAM_ALIASES: URI
+:ROAM_REFS: https://datatracker.ietf.org/doc/html/rfc3986
+:END:
+#+title: Uniform Resource Identifier

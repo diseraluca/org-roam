@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       3f927819-d241-4972-bc15-3dc0b3e44a80
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textDocuments
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:
+
+The protocol is tailored for textual documents whose content can be
+represented as a string, i.e no support for binary documents is given.
+
+A series of structures are provided to relay information about a text document:
+
+ + [[id:18112c78-3797-40e6-b84a-ba6a070bc355][Language Server Protocol:3.16:Basic JSON Structures:Text Documents:Position]]
+ + [[id:3c26503d-e6b4-4023-943f-8ba2dc90fee7][Language Server Protocol:3.16:Basic JSON Structures:Text Document:Range]]
+ + [[id:2ac71a9e-7b0a-4b75-bbb0-697e68cf9c3f][Language Server Protocol:3.16:Basic JSON Structures:Text Document:Location]]
+ + [[id:b9bc4095-9393-4501-969e-63f31cda07f2][Language Server Protocol:3.16:Basic JSON Structures:Text Document:Location Link]]
+ + [[id:f5519331-7775-4cae-a969-797d2712e8da][Language Server Protocol:3.16:Basic JSON Structures:Text Document:Diagnostic]]

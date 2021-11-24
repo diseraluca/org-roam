@@ -1,0 +1,38 @@
+:PROPERTIES:
+:ID:       33384d37-eb2b-4fb4-8b34-60ccddb522f8
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#regExp
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Regular Expressions
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Regex:
+
+Allows to pass a [[id:48a4ff75-1d1d-4367-bbbe-d302bd6f391c][Regular Expression]].
+
+[[id:32cf0cba-b76d-46ad-be0b-4f5e45faa990][LSP]] uses a two step-approach to define the support for regular expressions.
+
+ + The Client announces which regular expression engine it uses. This
+   allows Server that are written for specific clients to make full
+   use of the capabilities of the Client.
+
+   The Client uses a [[id:e19bf896-7484-4451-af5c-fb0d555a4da4][Language Server Protocol:3.16:Actual Protocol:Initialize:Capabilities]] with the following properties to announce its regex support:
+
+    + ~property type: RegularExpressionsClientCapabilities~
+
+      Where ~RegularExpressionClientCapabilities~ is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+       + engine :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the name of the engine used by the client.
+       + version :: The version of the engine used by the client.
+
+         This member can be omitted.
+
+  + The specification defines a set of feature that should be supported by a client.
+
+    This set of features is the one provided by [[id:40a2d9b2-90c9-4993-8191-1416c496e5d0][ECMAScript:2020:Regular Expression Objects]] with the following modification:
+
+     + The following features are not mandatory for a client:
+
+       * Assertions :: Lookahed Assertion, Negative lookahed assertion, lookbehind assertion, negative lookbehind assertion.
+       * Character Classes :: Matching control characters and matching [[id:19f49943-24fa-464c-a3eb-bfb8d9392f04][Unicode:UTF-16]] code units.
+       * Group and Ranges :: Named capturing groups.
+       * Unicode property escapes :: None of the features need to be supported.
+
+     + The only regular expression flag that a client need to support is the case-insensitive search flag ~i~.

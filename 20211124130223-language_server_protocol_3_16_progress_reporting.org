@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       cb5fefd1-5e6a-41d2-b90d-29dc155a4a34
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#progress
+:END:
+#+title: Language Server Protocol:3.16:Progress Reporting
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:Progress:Asynchronous:
+
+The procotol further defines support for reporting on the progress of ongoing task.
+
+This can be used to either report how much of an ongoing task is
+completed or to report the partial result of an ongoing task.
+
+To give a progress report, a [[id:7e17801e-eb31-4e80-b723-59d55e62dc05][JSON-RPC:2.0:Request:Notification]] must be sent wth the following members:
+
+ * ~method: "$/progress"~
+ * ~params: ProgressParams~
+
+   Where ~ProgressParams~ is an object containing a ~token~, which is
+   either a [[id:18188d0a-f0bd-4e20-84c3-5291da9736c6][JSON:Type System:Number]] with no fractional part or a
+   [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]], and a ~value~ which can be ony type.
+
+   + token :: A value provided by the client or server to identify some task.
+
+     This is distinct from the ~id~ of a [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]].

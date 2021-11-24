@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       0902c49c-1c31-45ae-aca3-a5793153b4b9
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#diagnostic
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:Diagnostic:CodeDescription
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Diagnostic:Description:
+
+Describes the error code of a [[id:f5519331-7775-4cae-a969-797d2712e8da][Language Server Protocol:3.16:Basic JSON
+Structures:Text Document:Diagnostic]].
+
+It is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + href :: A [[id:6aa63177-4b85-4aaa-a9fc-defe52b31ab4][Language Server Protocol:3.16:Basic JSON Structures:URI]]
+   to open that provides more information about the relevant
+   diagnostic.

@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       b9bc4095-9393-4501-969e-63f31cda07f2
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#locationLink
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:Location Link
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Location:Link:
+
+Represents a connection between a source and target [[id:2ac71a9e-7b0a-4b75-bbb0-697e68cf9c3f][Language Server
+Protocol:3.16:Basic JSON Structures:Text Document:Location]].
+
+A LocationLink is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] that has the following members:
+
+ + originSelectionRange :: A [[id:3c26503d-e6b4-4023-943f-8ba2dc90fee7][Language Server Protocol:3.16:Basic JSON
+   Structures:Text Document:Range]] defining the span for mouse
+   interaction.
+
+   This is an optional value that defaults to the word at the mouse position.
+
+ + targetUri :: A [[id:34b77302-2633-4aa0-bc51-7317ff45a7ad][Language Server Protocol:3.16:Basic JSON
+   Structures:URI:DocumentUri]] that represents the target of the link.
+
+ + targetRange :: A [[id:3c26503d-e6b4-4023-943f-8ba2dc90fee7][Language Server Protocol:3.16:Basic JSON
+   Structures:Text Document:Range]] that represents the full area of the
+   link.
+
+   For example, if the target is a symbol, the range is the range that
+   encloses the symbol but does not include leading or trailing
+   whitespace.
+
+   This information is tipically used to highlight the range in the
+   editor.
+
+ + targetSelectionRange :: A [[id:3c26503d-e6b4-4023-943f-8ba2dc90fee7][Language Server Protocol:3.16:Basic JSON
+   Structures:Text Document:Range]] that represent the span that should
+   be selected and revealed when this link is being followed.
+
+   Must be contained by ~targetRange~.

@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       3c26503d-e6b4-4023-943f-8ba2dc90fee7
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#range
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:Range
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Range:Right Open:
+
+A pair of [[id:18112c78-3797-40e6-b84a-ba6a070bc355][Language Server Protocol:3.16:Basic JSON Structures:Text
+Document:Position]]s that is comparable to a selection in an editor.
+
+A range has a start and end position that are zero-based. The range is
+right open such that it doesn't include the end position.
+
+All positions "between" the start and end positions are considered
+part of the range.
+
++ To define a range that includes the end-of-line characters, use an
+  end position that denotes the start of the following line.
+
+A Range is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] that has the following members:
+
+ + start :: A [[id:18112c78-3797-40e6-b84a-ba6a070bc355][Language Server Protocol:3.16:Basic JSON Structures:Text
+   Document:Position]] that represents the start of the range.
+
+ + end :: A [[id:18112c78-3797-40e6-b84a-ba6a070bc355][Language Server Protocol:3.16:Basic JSON Structures:Text
+   Document:Position]] that represents the end of the range.
+
+   The end position itself is not included in the range.

@@ -9,3 +9,14 @@
 + Each field is comprised of a name and a value, separated by ~": "~
   - Header Fields conform to [[id:a3f8827a-6d31-4a82-a522-5c817b953a7c][HTTP:Header Fields:Semantic]].
   - Each fiels is terminated by =\r\n=.
+
++ At least one header is mandatory.
+
+The currently supported headers fields are:
+
+| Header Field Name | Value Type | Description                                                                                | Required |
+|-------------------+------------+--------------------------------------------------------------------------------------------+----------|
+| Content-Lenght    | Number     | The lenght of the [[id:b86ebe32-9f26-4373-a25a-47fed4cdd936][Language Server Protocol:3.16:Content Part]] in bytes.                     | Yes      |
+| Content-Type      | String     | The [[id:569012eb-23b3-41e9-b7ec-d2e215499969][MIME]] type of the content part. Defaults to  =application/vscode-jsonrpc;charset=utf-8= | No       |
+
++ The header part is encoded in [[id:73547def-2ca0-4016-9feb-c252178b6735][ASCII]].

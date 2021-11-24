@@ -1,0 +1,43 @@
+:PROPERTIES:
+:ID:       18112c78-3797-40e6-b84a-ba6a070bc355
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#position
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:Position
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Position:Monodimensional:
+
+Represent a position inside a [[id:3f927819-d241-4972-bc15-3dc0b3e44a80][Language Server Protocol:3.16:Basic JSON
+Structures:Text Document]].
+
++ Positions are zero-based line and character offsets.
++ A Position is between two characters similar to the insert mode cursor in an editor.
++ The offsets are calculated based on a [[id:19f49943-24fa-464c-a3eb-bfb8d9392f04][Unicode:UTF-16]] string representation.
+
+  For instance, a string of the form ="a𐐀b"= has the character ~a~ at
+  offset 0, the character ~𐐀~ at offset 1 and the character ~b~ at
+  offset 3, since ~𐐀~ is represented using two code units.
+
++ To ensure that both client and server split the string in the same
+  line representation, the protocol defines the following end-of-line
+  sequences:
+
+   * ="\n"=
+   * ="\r"=
+   * ="\r\n"=
+
++ Positions are end-of-line character agnostic and it thus impossible
+  to specify a position that denotes =\r|\n= or =\n|=, where =|=
+  represents the character offset.
+
+A position is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] that has the following members:
+
+ + line :: A [[id:18188d0a-f0bd-4e20-84c3-5291da9736c6][JSON:Type System:Number]] that has no fractional part and is greater than or equal to 0.
+
+   Represent the line in the document that the position is at.
+
+ + character :: A [[id:18188d0a-f0bd-4e20-84c3-5291da9736c6][JSON:Type System:Number]] that has no fractional part and is greater than or equal to 0.
+
+   Assuming a line that is represented as a string, it represents the
+   gap between the `character` value and `character + 1`.
+
+   A character value that is greater than the length of the line
+   should be treated as being equal to the length of the line.

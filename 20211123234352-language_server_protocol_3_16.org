@@ -5,6 +5,61 @@
 #+title: Language Server Protocol:3.16
 #+filetags: :LSP:Tech:Languages:Tooling:Specification:
 
+* Base Protocol
+
 The base protocol consists of an [[id:dcef3ddb-01cb-4b08-9438-fa0a302eb00b][Language Server Protocol:3.16:Header Part]] and a [[id:b86ebe32-9f26-4373-a25a-47fed4cdd936][Language Server Protocol:3.16:Content Part]].
 
-Those two parts are separated by a =\r\n=,
+Those two parts are separated by a =\r\n=.
+
++ The base protocol uses [[id:2193ddf4-f5ec-4204-ab78-b8f6cdc772a7][JSON-RPC:2.0]] for the content part.
+  + On top of the reserved error codes in JSON-RPC, see
+    [[id:6c220bbe-849f-4012-924c-30e04977c69e][JSON-RPC:2.0:Response:Error]], LSP reserves number in the range
+    [-32899, -32800].
+
+    The following codes have a defined meaning:
+
+    |   Code | Name             |
+    |--------+------------------|
+    | -32801 | ContentModified  |
+    | -32800 | RequestCancelled |
+
+  + [[id:7e17801e-eb31-4e80-b723-59d55e62dc05][JSON-RPC:2.0:Request:Notification]]s and [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]]s that
+    whose method member starts with =$/= are implementation dependent
+    and might not be implementable on all client or servers.
+
+    * A server or client that receives a notification whose method starts with =$/= can ignore the notification.
+    * A server or client that receives a request whose method starts with =$/= must respond with error code ~MethodNotFound~ (~-32601~).
+
++ On top of the base protocol LSP defines support for [[id:e9013e32-c7a5-403d-9711-df7bf939f4c4][Language Server Protocol:3.16:Cancellation Of Requests]].
+
++ On top of the base protocol LSP defines support for [[id:cb5fefd1-5e6a-41d2-b90d-29dc155a4a34][Language Server Protocol:3.16:Progress Reporting]].
+
+#+BEGIN_EXAMPLE
+Content-Length: ...\r\n
+\r\n
+{
+	"jsonrpc": "2.0",
+	"id": 1,
+	"method": "textDocument/didOpen",
+	"params": {
+		...
+	}
+}
+#+END_EXAMPLE
+
+* Language Server Protocol
+
+ The protocol defines a set of [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]], [[id:a42a0131-45f9-4bd2-8727-9bdf29f9674b][JSON-RPC:2.0:Response]] and [[id:7e17801e-eb31-4e80-b723-59d55e62dc05][JSON-RPC:2.0:Request:Notification]] on top of [[id:2193ddf4-f5ec-4204-ab78-b8f6cdc772a7][JSON-RPC:2.0]].
+
+ The protocol supports generic JSON-RPC messages that can be modeled
+ as desired as long as they respect the JSON-RPC format. By
+ convention, the messages defined by the protocol requires all
+ parameters passed by [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]]s or
+ [[id:7e17801e-eb31-4e80-b723-59d55e62dc05][JSON-RPC:2.0:Request:Notification]]s to be an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]].
+
+ The procotol is built around the assumption that one server serves
+ one tool. No support is provided to share one server between
+ different tools and such a support might additional protocols, for
+ example to lock a document to support concurrent editing.
+
+ + See [[id:60435a41-7dcd-4d9c-8a3a-b7f9f262dde5][Language Server Protocol:3.16:Basic JSON Structures]] for the [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]]s used by the protocol.

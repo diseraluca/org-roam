@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       e9013e32-c7a5-403d-9711-df7bf939f4c4
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#cancelRequest
+:END:
+#+title: Language Server Protocol:3.16:Cancellation Of Requests
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:Cancellation:Asynchronous:
+
+The procotol further defines support for cancellation of ongoing requests.
+
+To cancel a request, a [[id:7e17801e-eb31-4e80-b723-59d55e62dc05][JSON-RPC:2.0:Request:Notification]] must be sent wth the following members:
+
+ * ~method: "$/cancelRequest"~
+ * ~params: CancelParams~
+
+    Where ~CancelParams~ is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with an ~id~ name whose value is either a [[id:18188d0a-f0bd-4e20-84c3-5291da9736c6][JSON:Type System:Number]] with no fractional part or a [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]].
+    ~id~ must match the ~id~ of the [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]] for whose cancellation is desired.
+
+    + As per the [[id:2193ddf4-f5ec-4204-ab78-b8f6cdc772a7][JSON-RPC:2.0]] protocol one needs to respond to a [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]]  even if it is cancelled.
+
+    This can be used to either return partial results or to notify of an error on cancellation.
+    If an [[id:6c220bbe-849f-4012-924c-30e04977c69e][JSON-RPC:2.0:Response:Error]] is sent, it is advised to set the code to ~RequestCancelled~ (~-32800~)

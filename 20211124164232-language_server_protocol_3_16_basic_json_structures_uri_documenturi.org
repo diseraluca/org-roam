@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       34b77302-2633-4aa0-bc51-7317ff45a7ad
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#uri
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:URI:DocumentUri
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:URI:Document:
+
+A special type of URI is ~DocumentUri~, which is equivalent to a
+[[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]], that specifically represent the path to a
+document.
+
+~DocumentUri~ must guarantee that the its content as a string can be parsed as a valid URI.

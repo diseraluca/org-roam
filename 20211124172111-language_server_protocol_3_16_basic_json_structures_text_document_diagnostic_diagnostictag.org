@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       9032921e-03f7-4e1d-b86a-ec798ce80f58
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#diagnostic
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:Diagnostic:DiagnosticTag
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Diagnostic:Tag:
+
+Represents additional information about a diagnostic and it may be
+visualized.
+
+Two values are allowed for a DiagnosticTag:
+
+| Tag         | Value | Visualization                                                     |
+|-------------+-------+-------------------------------------------------------------------|
+| Unnecessary |     1 | Allows the client to show the diagnostic with a faded out text.   |
+| Deprecated  |     2 | Allows the client to show the diagnostic with strike-trough text. |

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       2ac71a9e-7b0a-4b75-bbb0-697e68cf9c3f
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#location
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:Location
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Location:
+
+Represents a location inside a resource, such as a line inside a text file.
+
+A Location is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] that has the following members:
+
+ + uri :: A [[id:34b77302-2633-4aa0-bc51-7317ff45a7ad][Language Server Protocol:3.16:Basic JSON
+   Structures:URI:DocumentUri]] that represents the relevant resource.
+ + range :: A [[id:3c26503d-e6b4-4023-943f-8ba2dc90fee7][Language Server Protocol:3.16:Basic JSON Structures:Text
+   Document:Range]] that represent the relevant element in the resource.

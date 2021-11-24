@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       e19bf896-7484-4451-af5c-fb0d555a4da4
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Initialize:ClientCapabilities

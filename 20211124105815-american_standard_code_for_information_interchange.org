@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       73547def-2ca0-4016-9feb-c252178b6735
+:ROAM_ALIASES: ASCII
+:END:
+#+title: American Standard Code For Information Interchange

@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       60435a41-7dcd-4d9c-8a3a-b7f9f262dde5
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:
+
+[[id:32cf0cba-b76d-46ad-be0b-4f5e45faa990][LSP]] employs a series of [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]]s that are used as parameters for [[id:2193ddf4-f5ec-4204-ab78-b8f6cdc772a7][JSON-RPC:2.0]] messages.
+
+The following structures are provided:
+
+ + [[id:6aa63177-4b85-4aaa-a9fc-defe52b31ab4][Language Server Protocol:3.16:Basic JSON Structures:URI]]
+ + [[id:33384d37-eb2b-4fb4-8b34-60ccddb522f8][Language Server Protocol:3.16:Basic JSON Structures:Regular Expressions]]
+ + [[id:29468fb7-96ec-4917-a066-ca28ab7d7636][Language Server Protocol:3.16:Basic JSON Structures:Enumerations]]
+ + [[id:3f927819-d241-4972-bc15-3dc0b3e44a80][Language Server Protocol:3.16:Basic JSON Structures:Text Documents]]
