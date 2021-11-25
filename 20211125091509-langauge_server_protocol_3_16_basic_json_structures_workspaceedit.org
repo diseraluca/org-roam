@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       89b94911-36bc-45fb-85cd-c44d0c48d44e
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#workspaceEdit
+:END:
+#+title: Langauge Server Protocol:3.16:Basic JSON Structures:WorkspaceEdit
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Workspace:
+
+Represents changes to many resources managed in the workspace.
+
+A WorkspaceEdit is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + changes :: An [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] whose keys are [[id:34b77302-2633-4aa0-bc51-7317ff45a7ad][Language
+   Server Protocol:3.16:Basic JSON Structures:URI:DocumentUri]] and
+   whose values are [[id:546e4f09-6dd1-4465-bfa7-bcaf41536d12][Language Server Protocol:3.16:Basic JSON
+   Structures:Text Document:TextEdit]].
+
+   Represents the changes to apply to and the document they should
+   apply to.
+
+   Either this or ~documentChanges~ must be provided.
+
+   This is an optional value.
+
+ + documentChanges :: Depending on ?? #TODO add capabilities and document.
+
+ + changeAnnotations :: A [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] whose keys are
+   [[id:45adb360-4c20-4648-a2f7-bd0f24f4523e][Language Server Protocol:3.16:Basic JSON Structure:Text
+   Document:TextEdit:AnnotatedTextEdit:ChangeAnnotationIdentifier]] and
+   whose values are [[id:e41e7bd8-5a6b-4cbe-88a3-2fb89edc32de][Language Server Protocol:3.16:Basic JSON
+   Structure:Text
+   Document:TextEdit:AnnotatedTextEdit:ChangeAnnotation]].
+
+   A map of annotation that can be referenced by the changes in
+   ~documentChanges~.
+
+   #TODO: Add capability here
+
+#TODO: Add reference to capabilities.
+
+#TODO Finish this

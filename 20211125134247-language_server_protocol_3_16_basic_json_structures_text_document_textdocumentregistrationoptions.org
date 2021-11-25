@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       07747b8e-32ec-4b67-b5a3-dbd85dbeaf21
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textDocumentRegistrationOptions
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:TextDocumentRegistrationOptions
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Option:
+
+A structure that can be used to customize a request to register a set of text documents.
+
+TextDocumentRegistrationOptions is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] that has the following members:
+
+ + documentSelector :: A [[id:f8a4d203-30f6-43bf-8f62-c9b3c15b65d6][Language Server Protocol:3.16:Basic JSON
+   Structures:Text Document:DocumentSelector]] or [[id:f7e11bf7-91ea-46e1-b9c4-643bbe508e06][JSON:Type System:Null]]
+   that identifies the scope of the registration.
+
+   When set to null the client will provide the selection of documents.

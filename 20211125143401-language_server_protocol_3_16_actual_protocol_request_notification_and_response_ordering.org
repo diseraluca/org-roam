@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       5d4c804c-0c3b-490e-858e-ce498b2803ee
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Request, Notification and Response ordering
+
+#TODO: Fill

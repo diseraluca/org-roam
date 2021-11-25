@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       4fd3efbf-93c6-4efd-8dc6-bc16be9abb0c
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#resourceChanges
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:File Resource Changes:DeleteFile
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Resource:File:Delete:
+
+Deletes a file or folder.
+
+A DeleteFile is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + kind :: The literal [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] 'delete'.
+
+ + uri :: A [[id:34b77302-2633-4aa0-bc51-7317ff45a7ad][Language Server Protocol:3.16:Basic JSON
+   Structures:URI:DocumentUri]] the resource to delete.
+
+ + options :: A [[id:81224b6a-52b7-47e0-b5fb-192313f0e15f][Language Server Protocol:3.16:Basic JSON
+   Structures:File Resource Changes:DeleteFile:DeleteFileOptions]] that
+   provide additional information about the change.
+
+   This is an optional value.
+
+ + annotationId :: A [[id:45adb360-4c20-4648-a2f7-bd0f24f4523e][Language Server Protocol:3.16:Basic JSON
+   Structure:Text
+   Document:TextEdit:AnnotatedTextEdit:ChangeAnnotationIdentifier]] that
+   identifies an annotation that describes the operation.
+
+   This is an optional value.

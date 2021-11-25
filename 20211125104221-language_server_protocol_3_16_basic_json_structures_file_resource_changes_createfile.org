@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       0ff98d5b-49e5-4897-a452-611d32aee5df
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#resourceChanges
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:File Resource Changes:CreateFile
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Resource:File:Create:
+
+Creates a file or folder.
+
+A CreateFile is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + kind :: The literal [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] 'create'.
+
+ + uri :: A [[id:34b77302-2633-4aa0-bc51-7317ff45a7ad][Language Server Protocol:3.16:Basic JSON
+   Structures:URI:DocumentUri]] representing the resource to create.
+
+ + options :: A [[id:108a7582-14cc-49ef-8a35-2cc918c7d577][Language Server Protocol:3.16:Basic JSON
+   Structures:File Resource Changes:CreateFile:CreateFileOptions]] that
+   provide additional information about the change.
+
+   This is an optional value.
+
+ + annotationId :: A [[id:45adb360-4c20-4648-a2f7-bd0f24f4523e][Language Server Protocol:3.16:Basic JSON
+   Structure:Text
+   Document:TextEdit:AnnotatedTextEdit:ChangeAnnotationIdentifier]] that
+   identifies an annotation that describes the operation.
+
+   This is an optional value.

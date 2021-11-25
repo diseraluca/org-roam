@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       ab8d1fc8-4efa-4a3e-8b11-6318cfb770c6
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#markupContent
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:MarkupContent:MarkupKind
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Markup:
+
+Describes the format of the content of a [[id:d87aac57-c4c8-44b8-9149-dd2927988027][Language Server Protocol:3.16:Basic JSON Structures:MarkupContent]].
+
+Currently, two values are available for MarkupKind:
+
+| Kind      | Value       | Format                                               |
+|-----------+-------------+------------------------------------------------------|
+| PlainText | "plaintext" | Content in plain text format.                        |
+| Markdown  | "markdown"  | Content in [[id:0c2eef6b-c94b-435d-b078-a0615a73b3aa][Markdown:Github Flavored Markdown]] format. |
+
++ The value of MarkupKinds must not start with a ="$"= as those kinds
+  are reserved for internal usage.

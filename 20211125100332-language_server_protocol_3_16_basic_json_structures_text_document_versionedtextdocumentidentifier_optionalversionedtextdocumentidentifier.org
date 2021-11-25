@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       e62d1351-aad7-4bf4-84d7-2db2b0871279
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#versionedTextDocumentIdentifier
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:TextDocumentIdentifier:OptionalVersionedTextDocumentIdentifier
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Identifier:Versioning:
+
+An identifier which optionally contains information about the version
+of a document.
+
+An OptionalVersionedTextDocumentIdentifier is a [[id:ad9b0e8a-84cb-48a4-8e3a-9effcf1a7d22][Language Server Protocol:3.16:Basic JSON Structures:Text Document:TextDocumentIdentifier]] with the following additional members:
+
+ + version :: A [[id:18188d0a-f0bd-4e20-84c3-5291da9736c6][JSON:Type System:Number]] with no fractional part or
+   [[id:f7e11bf7-91ea-46e1-b9c4-643bbe508e06][JSON:Type System:Null]] that denotes the version of the document when
+   it is not null.
+
+   When an OptionalVersionedTextDocumentIdentifier is sent from the
+   Server to the Client and the file is not open in the editor the
+   server can send `null` to indicate that the version and content on
+   disk is the current version.
+
+   After any change, the version will increase, including undos and
+   redos.
+
+   It is not required for the increase to be of 1.
+
+ + OptionalVersionedTextDocumentIdentifier flows from a Server to a Client.
+
+   See [[id:121dd10b-63a5-4a29-bf22-6700dae9b778][Language Server Protocol:3.16:Basic JSON Structures:Text
+   Document:TextDocumentIdentifier:VersionedTextDocumentIdentifier]] for
+   the equivalent structure that flows from a Client to a Server.

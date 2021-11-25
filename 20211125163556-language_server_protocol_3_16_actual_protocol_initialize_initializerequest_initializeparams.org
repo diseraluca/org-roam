@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       4938cbb5-4558-4bcc-aea0-8baf6ed95024
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#initialize
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Initialize:InitializeRequest:InitializeParams
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Initialize:Parameter:
+
+The parameters used for an [[id:9cdab890-0d6e-43b8-8882-bf5c157fe24e][Language Server Protocol:3.16:Actual Protocol:Initialize:InitializeRequest]].
+
+InitializeParams is a

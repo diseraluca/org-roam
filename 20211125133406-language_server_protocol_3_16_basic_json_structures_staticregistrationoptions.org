@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       59f2b283-579a-4d6f-8925-9587ab69669f
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/staticRegistrationOptions
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:StaticRegistrationOptions
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Option:
+
+A structure that can be used to register a feature in the result of [[id:ea926146-df61-4748-807d-0b51eef341e9][Language Server Protocol:3.16:Actual Protocol:Initialize]].
+
+StaticRegistrationOptions is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + id :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] identifying the feature request.
+
+   ~id~ can later be used to deregister the request.
+
+   This is an optional value.

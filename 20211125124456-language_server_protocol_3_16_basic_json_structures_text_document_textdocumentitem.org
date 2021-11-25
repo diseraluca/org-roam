@@ -1,0 +1,89 @@
+:PROPERTIES:
+:ID:       57796d9d-c1db-456b-ab6c-dc85820e1c12
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textDocumentItem
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:TextDocumentItem
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Editing:
+
+Represent a way to transfer a document from a Client to a Server.
+
+A TextDocumentItem is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + uri :: A [[id:34b77302-2633-4aa0-bc51-7317ff45a7ad][Language Server Protocol:3.16:Basic JSON
+   Structures:URI:DocumentUri]] representing the document.
+
+ + languageId :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the language
+   of the transferred document.
+
+   This is used to avoid having Server re-interpret the file extension
+   when it handles more than one language.
+
+   By convetion, the following identifier are used for the relevant languages:
+
+   | Language            | Identifier                                                 |
+   |---------------------+------------------------------------------------------------|
+   | ABAP                | abap                                                       |
+   | Windows Bat         | bat                                                        |
+   | BibTeX              | bibtex                                                     |
+   | Clojure             | clojure                                                    |
+   | Coffeescript        | coffeescript                                               |
+   | C                   | c                                                          |
+   | C++                 | cpp                                                        |
+   | C#                  | csharp                                                     |
+   | CSS                 | css                                                        |
+   | Diff                | diff                                                       |
+   | Dart                | dart                                                       |
+   | Dockerfile          | dockerfile                                                 |
+   | Elixir              | elixir                                                     |
+   | Erlang              | erlang                                                     |
+   | F#                  | fsharp                                                     |
+   | Git                 | git-commit or git-rebase                                   |
+   | Go                  | go                                                         |
+   | Groovy              | groovy                                                     |
+   | Handlebars          | handlebars                                                 |
+   | HTML                | html                                                       |
+   | Ini                 | ini                                                        |
+   | Java                | java                                                       |
+   | JavaScript          | javascript                                                 |
+   | JavaScript React    | javascriptreact                                            |
+   | JSON                | json                                                       |
+   | LaTeX               | latex                                                      |
+   | Less                | less                                                       |
+   | Lua                 | lua                                                        |
+   | Makefile            | makefile                                                   |
+   | Markdown            | markdown                                                   |
+   | Objective-C         | objective-c                                                |
+   | Objective-C++       | objective-cpp                                              |
+   | Perl                | perl                                                       |
+   | Perl 6              | perl6                                                      |
+   | PHP                 | php                                                        |
+   | Powershell          | powershell                                                 |
+   | Pug                 | jade                                                       |
+   | Python              | python                                                     |
+   | R                   | r                                                          |
+   | Razor (cshtml)      | razor                                                      |
+   | Ruby                | ruby                                                       |
+   | Rust                | rust                                                       |
+   | SCSS                | scss (syntax using curly brackets), sass (indented syntax) |
+   | Scala               | scala                                                      |
+   | ShaderLab           | shaderlab                                                  |
+   | Shell Script (Bash) | shellscript                                                |
+   | SQL                 | sql                                                        |
+   | Swift               | swift                                                      |
+   | TypeScript          | typescript                                                 |
+   | TypeScript React    | typescriptreact                                            |
+   | TeX                 | tex                                                        |
+   | Visual Basic        | vb                                                         |
+   | XML                 | xml                                                        |
+   | XSL                 | xsl                                                        |
+   | YAML                | yaml                                                       |
+
+
+  + version :: An [[id:18188d0a-f0bd-4e20-84c3-5291da9736c6][JSON:Type System:Number]] with no fractional part that
+    represent the version of this document.
+
+    Behaves like the ~version~ member in [[id:121dd10b-63a5-4a29-bf22-6700dae9b778][Language Server
+    Protocol:3.16:Basic JSON Structures:Text
+    Document:TextDocumentIdentifier:VersionedTextDocumentIdentifier]].
+
+  + text :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the content of the document.

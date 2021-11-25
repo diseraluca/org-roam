@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       d87aac57-c4c8-44b8-9149-dd2927988027
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#markupContent
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:MarkupContent
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Markup:
+
+Represents a string value whose properties can be expressed in different formats.
+
+The content of a MarkupContent are interpreted based on the value of
+its ~kind~ member.
+
++ The Client might sanitize the content depending on the format.
+
+  For example, it might remove HTML elements from the markdown to
+  avoid script execution.
+
+MarkupContent is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + kind :: A [[id:ab8d1fc8-4efa-4a3e-8b11-6318cfb770c6][Language Server Protocol:3.16:Basic JSON
+   Structures:MarkupContent:MarkupKind]] that identifies the format of
+   the content.
+
+ + value :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the content.
+
+#TODO: Notify about the capability part.

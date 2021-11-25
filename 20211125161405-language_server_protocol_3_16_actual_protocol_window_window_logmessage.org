@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       7975210d-4ee2-47b1-bbf6-e0cca28548b9
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Window:window/logMessage

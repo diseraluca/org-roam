@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       ad9b0e8a-84cb-48a4-8e3a-9effcf1a7d22
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textDocumentIdentifier
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:TextDocumentIdentifier
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Identifier:
+
+[[id:3f927819-d241-4972-bc15-3dc0b3e44a80][Language Server Protocol:3.16:Basic JSON Structures:Text Document]] are
+identifier trough [[id:6aa63177-4b85-4aaa-a9fc-defe52b31ab4][Language Server Protocol:3.16:Basic JSON
+Structures:URI]]s which are passed as [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] ath the
+protocol level.
+
+A TextDocumentIdentifier represents the same information as a URI but
+as a structured type.
+
+A TextDocumentIdentifier is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + uri :: A [[id:34b77302-2633-4aa0-bc51-7317ff45a7ad][Language Server Protocol:3.16:Basic JSON
+   Structures:URI:DocumentUri]] representing the document.
+
++ See [[id:121dd10b-63a5-4a29-bf22-6700dae9b778][Language Server Protocol:3.16:Basic JSON Structures:Text
+  Document:TextDocumentIdentifier:VersionedTextDocumentIdentifier]] and
+  [[id:e62d1351-aad7-4bf4-84d7-2db2b0871279][Language Server Protocol:3.16:Basic JSON Structures:Text
+  Document:TextDocumentIdentifier:OptionalVersionedTextDocumentIdentifier]]
+  for a version of this structure that contain versioning information.

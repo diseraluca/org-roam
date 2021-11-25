@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       108a7582-14cc-49ef-8a35-2cc918c7d577
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#resourceChanges
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:File Resource Changes:CreateFile:CreateFileOptions
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Resource:File:Create:Option:
+
+Options for a [[id:0ff98d5b-49e5-4897-a452-611d32aee5df][Language Server Protocol:3.16:Basic JSON Structures:File Resource Changes:CreateFile]] operation.
+
+CreateFileOptions is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + overwrite :: Overwrite the file or folder if it exists.
+
+   This has precedence over ~ignoreIfExists~.
+
+   This is an optional value.
+
+ + ignoreIfExists :: A [[id:726309c0-c7e7-4650-9f6f-6159a6d10081][JSON:Type System:Boolean]] that ignore the
+   operation if the file or folder already exists.
+
+   This is an optional value.

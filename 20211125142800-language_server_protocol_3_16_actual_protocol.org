@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       3daece1b-744b-4b09-913b-0f2872c70d97
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:
+
+A series of [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]]s and [[id:a42a0131-45f9-4bd2-8727-9bdf29f9674b][JSON-RPC:2.0:Response]]s are
+defined over the [[id:60435a41-7dcd-4d9c-8a3a-b7f9f262dde5][Language Server Protocol:3.16:Basic JSON Structures]]
+that specificy how the proctocol allows the communication between a
+Client and a Server.
+
++ See [[id:5d4c804c-0c3b-490e-858e-ce498b2803ee][Language Server Protocol:3.16:Actual Protocol:Request,
+  Notification and Response ordering]] for the ordering requirement over
+  the communication.
+
+ + See [[id:dea0e7eb-f38a-494d-91a5-1beb46844cae][Language Server Protocol:3.16:Actual Protocol:Server Lifetime]]
+   to learn how to manage the life of a Server.

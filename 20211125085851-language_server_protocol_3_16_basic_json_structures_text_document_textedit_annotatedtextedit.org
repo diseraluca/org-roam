@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       971d903c-c2dc-4316-bf30-6f40a4227239
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textEdit
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:TextEdit:AnnotatedTextEdit
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Editing:Annotation:
+
+A structure representing a [[id:546e4f09-6dd1-4465-bfa7-bcaf41536d12][Language Server Protocol:3.16:Basic JSON
+Structures:Text Document:TextEdit]] with additional metadata describing
+the edit.
+
++ An annotation data is represented by [[id:e41e7bd8-5a6b-4cbe-88a3-2fb89edc32de][Language Server
+  Protocol:3.16:Basic JSON Structure:Text
+  Document:TextEdit:AnnotatedTextEdit:ChangeAnnotation]] and each
+  ChangeAnnotation is represented by a unique [[id:45adb360-4c20-4648-a2f7-bd0f24f4523e][Language Server
+  Protocol:3.16:Basic JSON Structure:Text
+  Document:TextEdit:AnnotatedTextEdit:ChangeAnnotationIdentifier]].
+
++ The purpose of [[id:45adb360-4c20-4648-a2f7-bd0f24f4523e][Language Server Protocol:3.16:Basic JSON
+  Structure:Text
+  Document:TextEdit:AnnotatedTextEdit:ChangeAnnotationIdentifier]] is to
+  allow the client to group an edit with its annotation and to allow
+  an annotation to be reused between multiple operations.
+
++ The annotations and their identifiers are managed via [[id:89b94911-36bc-45fb-85cd-c44d0c48d44e][Langauge
+  Server Protocol:3.16:Basic JSON Structures:WorkspaceEdit]].
+
+An AnnotatedTextEdit is [[id:546e4f09-6dd1-4465-bfa7-bcaf41536d12][Language Server Protocol:3.16:Basic JSON Structures:Text Document:TextEdit]] with the following additional members:
+
+ + annotationId :: An [[id:45adb360-4c20-4648-a2f7-bd0f24f4523e][Language Server Protocol:3.16:Basic JSON
+   Structure:Text
+   Document:TextEdit:AnnotatedTextEdit:ChangeAnnotationIdentifier]]
+   representing the annotation that describes this change.

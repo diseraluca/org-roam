@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       dc8ea10e-6807-4f25-9711-1bc1d466d325
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#command
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Command
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Command:
+
+Represents a command call.
+
++ It is recommended to handle the execution of commands Server-side when
+client and server provide the adeguate capabilities.
+
++ The protocol does not specify a set of specific commands.
+
+A Command is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + title :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] that representes the name of the
+   command, such as ~"save"~.
+
+ + command :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] that represent an identifier
+   for the command handler.
+
+ + arguments :: An heterogenous [[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type System:Array]] of arbitrarily
+   typed arguments that the command handler should be invoked with.
+
+   This is an optional value.

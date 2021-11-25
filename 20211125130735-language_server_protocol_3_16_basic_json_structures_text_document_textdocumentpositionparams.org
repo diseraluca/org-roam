@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       b45e0e39-5ff3-4dbb-b154-97753832067c
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textDocumentPositionParams
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:TextDocumentPositionParams
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Paramater:Position:
+
+A structure used in requests to pass a text document and a position
+inside that document.
+
+A TextDocumentPositionParams is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + textDocument :: A [[id:ad9b0e8a-84cb-48a4-8e3a-9effcf1a7d22][Language Server Protocol:3.16:Basic JSON
+   Structures:Text Document:TextDocumentIdentifier]] denoting the
+   document.
+
+ + position :: A [[id:18112c78-3797-40e6-b84a-ba6a070bc355][Language Server Protocol:3.16:Basic JSON
+   Structures:Text Document:Position]] that identifies the part of the
+   document that we are denoting.

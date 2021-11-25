@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       3c1d641d-0490-43bf-8e2f-4fe2fe74bf18
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textDocumentEdit
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:TextDocumentEdit
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Editing:
+
+Describe a textual change on a single text document.
+
+After all the changes are applied the document increases its current version.
+
+A TextDocumentEdit is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + textDocument :: A [[id:e62d1351-aad7-4bf4-84d7-2db2b0871279][Language Server Protocol:3.16:Basic JSON
+   Structures:Text
+   Document:VersionedTextDocumentIdentifier:OptionalVersionedTextDocumentIdentifier]]
+   that represents the document to which changes should be applied.
+
+ + edits :: An [[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type System:Array]] of [[id:546e4f09-6dd1-4465-bfa7-bcaf41536d12][Language Server
+   Protocol:3.16:Basic JSON Structures:Text Document:TextEdit]] and
+   [[id:971d903c-c2dc-4316-bf30-6f40a4227239][Language Server Protocol:3.16:Basic JSON Structures:Text
+   Document:TextEdit:AnnotatedTextEdit]] that represent the changes to
+   apply.
+
+   The changes should be non-overlapping.
+
+   The use of AnnotatedTextEdits is allowed or disallowd based on ?? #TODO: Add capability here.

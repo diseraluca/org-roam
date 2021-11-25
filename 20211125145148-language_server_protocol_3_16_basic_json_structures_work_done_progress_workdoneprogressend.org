@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       52a104ca-490b-4de5-8df9-e86dcedd15bc
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#workDoneProgressEnd
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:WorkDoneProgressEnd
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Progress:Asynchronous:End:
+
+The payload that signals the end of a [[id:cb5fefd1-5e6a-41d2-b90d-29dc155a4a34][Language Server Protocol:3.16:Progress Reporting]].
+
+WorkDoneProgressEnd is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + kind :: The literal [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] ="end"=.
+
+ + message :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] providing details about
+   outcome of the operation.
+
+   This is an optional value.

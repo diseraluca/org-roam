@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       68b43437-3bb2-4b8a-8183-8d49d784c63e
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#resourceChanges
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:File Resource Changes:RenameFile
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Resource:File:Rename:
+
+Renames a file or folder.
+
+A RenameFile is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + kind :: The literal [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] 'rename'.
+
+ + oldUri :: A [[id:34b77302-2633-4aa0-bc51-7317ff45a7ad][Language Server Protocol:3.16:Basic JSON
+   Structures:URI:DocumentUri]] representing the existing resource.
+
+ + newUri :: A [[id:34b77302-2633-4aa0-bc51-7317ff45a7ad][Language Server Protocol:3.16:Basic JSON
+   Structures:URI:DocumentUri]] representing the location of the new
+   resource.
+
+ + options :: A [[id:8b62913f-eadc-43a7-892b-9eeb3780a6a9][Language Server Protocol:3.16:Basic JSON
+   Structures:File Resource Changes:RenameFile:RenameFileOptions]] that
+   provide additional information about the change.
+
+   This is an optional value.
+
+ + annotationId :: A [[id:45adb360-4c20-4648-a2f7-bd0f24f4523e][Language Server Protocol:3.16:Basic JSON
+   Structure:Text
+   Document:TextEdit:AnnotatedTextEdit:ChangeAnnotationIdentifier]] that
+   identifies an annotation that describes the operation.
+
+   This is an optional value.

@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       34a4d30d-299f-4311-9e21-9a632531c664
+:END:
+#+title: Glob Pattern

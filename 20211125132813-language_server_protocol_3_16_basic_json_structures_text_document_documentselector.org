@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       f8a4d203-30f6-43bf-8f62-c9b3c15b65d6
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#documentFilter
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:DocumentSelector
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Filter:Selector:
+
+Identifies documents trough a collection of filters.
+
+DocumentSelection is an [[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type System:Array]] of [[id:38c7c5ac-e93d-40c1-9e50-c81f2ca15a58][Language Server Protocol:3.16:Basic JSON Structures:Text Document:DocumentFilter]].

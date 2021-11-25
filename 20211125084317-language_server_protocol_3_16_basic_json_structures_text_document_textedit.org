@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       546e4f09-6dd1-4465-bfa7-bcaf41536d12
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textEdit
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:TextEdit
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Editing:
+
+Represents an edit that is applicable to a text document.
+
+A TextEdit is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + range :: A [[id:3c26503d-e6b4-4023-943f-8ba2dc90fee7][Language Server Protocol:3.16:Basic JSON Structures:Text
+   Document:Range]] representing the span of text that should be
+   manipulated.
+
+   To represent text insertion use a range where ~start~ and ~end~ are
+   equal.
+
+ + newText :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] that represents the text to be
+   inserted.
+
+   To represent a delete operation use an empty string.
+
++ See [[id:971d903c-c2dc-4316-bf30-6f40a4227239][Language Server Protocol:3.16:Basic JSON Structures:Text
+Document:TextEdit:AnnotatedTextEdit]] for a way to add more information
+about a specific TextEdit.
+
++ To describe complex changes, an [[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type System:Array]] of TextEdits or
+  AnnotatedTextEdit can be used.
+
+  Such an array is considered a single change.
+
+  In a such a case, the ~range~ members of the edits must not overlap.
+
+  It is, tough, possible to have multiple edits with the same start
+  position. That is, any number of inserts followed by a single remove
+  or replace.
+
+  When multiple inserts have the same position, the order in the array
+  defines the order of execution.

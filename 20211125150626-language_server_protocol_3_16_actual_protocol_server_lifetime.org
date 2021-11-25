@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       dea0e7eb-f38a-494d-91a5-1beb46844cae
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Server Lifetime
+
+Currently, the protocol is defined such that the Client manages the
+lifetime of a Server (process-wise).
+
+ + See [[id:ea926146-df61-4748-807d-0b51eef341e9][Language Server Protocol:3.16:Actual Protocol:Initialize]] to
+   learn how to start the communication between a Client and a Server.

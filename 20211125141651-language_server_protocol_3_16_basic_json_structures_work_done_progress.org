@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       8f4163c7-6821-4998-b909-66db9b9d5c53
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#workDoneProgress
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Progress:Asynchronous:
+
+There are three structures that are used with [[id:cb5fefd1-5e6a-41d2-b90d-29dc155a4a34][Language Server Protocol:3.16:Progress Reporting]] notification:
+
+ + [[id:d22db88c-1e4c-45aa-a721-dc13e6484924][Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:WorkDoneProgressBegin]]
+ + [[id:8a5b957d-3154-478a-aee2-390b09a90f34][Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:WorkDoneProgressReport]]
+ + [[id:52a104ca-490b-4de5-8df9-e86dcedd15bc][Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:WorkDoneProgressEnd]]
+
+There are two ways to initiate a Work Done Progress exchange:
+
+ + By the sender of a [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]], by adding using the
+   ~workDoneToken~ property in the parameters.
+
+   This kind of progress is referred to as [[id:da92f55e-c96a-47f2-abc4-90d9038e1476][Language Server
+   Protocol:3.16:Basic JSON Structures:Work Done Progress:Client
+   Initiated Progress]].
+
+ + By a Server using the [[id:1dff4101-0c29-4382-af29-d6375e09eb77][Language Server Protocol:3.16:Actual
+   Protocol:Window:window/workDoneProgress/create]] request,
+
+   This kind of progress is referred to as [[id:71802b44-59af-4666-937b-2f0daaf5d8d9][Language Server
+   Protocol:3.16:Basic JSON Structures:Work Done Progress:Server
+   Initiated Progress]].

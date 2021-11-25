@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       e41e7bd8-5a6b-4cbe-88a3-2fb89edc32de
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textEdit
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structure:Text Document:TextEdit:AnnotatedTextEdit:ChangeAnnotation
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Editing:Annotation:
+
+Provides additional information about a document change.
+
+A ChangeAnnotation is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + label :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] describing the change in a
+   human-readable form.
+
+   This is rendered in the user interface.
+
+ + needsConfirmation :: A [[id:726309c0-c7e7-4650-9f6f-6159a6d10081][JSON:Type System:Boolean]] that indicates that
+   user confirmation should be asked for before applying the change.
+
+   This is an optional value.
+
+ + description :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] adding information about
+   the change in human-readable form.
+
+   This is rendered in the user interface but less prominently than
+   ~label~.

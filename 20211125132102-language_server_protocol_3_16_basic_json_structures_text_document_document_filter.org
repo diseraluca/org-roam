@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       38c7c5ac-e93d-40c1-9e50-c81f2ca15a58
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#documentFilter
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Text Document:DocumentFilter
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Filter:
+
+Denotes a document trough a variety of properties.
+
+A DocumentFilter is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + language :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] identifying the language.
+
+   This acts as the ~language~ member in [[id:57796d9d-c1db-456b-ab6c-dc85820e1c12][Language Server
+   Protocol:3.16:Basic JSON Structures:Text Document:TextDocumentItem]].
+
+   This is an optional value.
+
+ + scheme :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] denoting a URI.
+
+   This is an optional value.
+
+ + pattern :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing a [[id:34a4d30d-299f-4311-9e21-9a632531c664][Glob Pattern]].

@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       e26844a2-2f21-496f-9df5-05f59cc3308a
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#resourceChanges
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:File Resource Changes
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Resource:
+
+File Resource Changes allow the server to create, rename and delete
+files or folders via the client.
+
++ Changes support the use of [[id:45adb360-4c20-4648-a2f7-bd0f24f4523e][Language Server Protocol:3.16:Basic JSON
+  Structure:Text
+  Document:TextEdit:AnnotatedTextEdit:ChangeAnnotationIdentifier]] to
+  add information about the change.
+
+  This support depends on ?? #TODO: Add capability here.
+
+
+
+The following changes are available:
+
+ + [[id:0ff98d5b-49e5-4897-a452-611d32aee5df][Language Server Protocol:3.16:Basic JSON Structures:File Resource Changes:CreateFile]]
+ + [[id:68b43437-3bb2-4b8a-8183-8d49d784c63e][Language Server Protocol:3.16:Basic JSON Structures:File Resource Changes:RenameFile]]
+ + [[id:4fd3efbf-93c6-4efd-8dc6-bc16be9abb0c][Language Server Protocol:3.16:Basic JSON Structures:File Resource Changes:DeleteFile]]

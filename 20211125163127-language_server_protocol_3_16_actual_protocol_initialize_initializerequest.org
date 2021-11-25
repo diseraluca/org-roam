@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       9cdab890-0d6e-43b8-8882-bf5c157fe24e
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#initialize
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Initialize:InitializeRequest
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Initialize:Request:
+
+The [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]] that is sent to call the ~initialize~ method.
+
++ The ~initialize~ request can be sent only once.
+
+The request uses [[id:4938cbb5-4558-4bcc-aea0-8baf6ed95024][Language Server Protocol:3.16:Actual
+Protocol:Initialize:InitializeRequest:InitializeParams]] for the
+parameters member of the request.

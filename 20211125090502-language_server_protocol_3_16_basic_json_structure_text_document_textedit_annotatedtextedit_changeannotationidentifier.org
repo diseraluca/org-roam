@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       45adb360-4c20-4648-a2f7-bd0f24f4523e
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#textEdit
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structure:Text Document:TextEdit:AnnotatedTextEdit:ChangeAnnotationIdentifier
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Text:Editing:Annotation:Identifier:
+
+A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] identifying a specific [[id:e41e7bd8-5a6b-4cbe-88a3-2fb89edc32de][Language Server
+Protocol:3.16:Basic JSON Structure:Text
+Document:TextEdit:AnnotatedTextEdit:ChangeAnnotation]].

@@ -1,0 +1,50 @@
+:PROPERTIES:
+:ID:       8a5b957d-3154-478a-aee2-390b09a90f34
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#workDoneProgressReport
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:WorkDoneProgressReport
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Progress:Asynchronous:Report:
+
+The payload that is used to for reports subsequent to a [[id:d22db88c-1e4c-45aa-a721-dc13e6484924][Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:WorkDoneProgressBegin]].
+
+WorkDoneProgressReport is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + kind :: The literal [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] ="report"=.
+
+ + title :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the name of the
+   progress operation.
+
+   For example, "Indexing" or "Linking Dependencies".
+
+ + cancellable :: A [[id:726309c0-c7e7-4650-9f6f-6159a6d10081][JSON:Type System:Boolean]] indicating whether a
+   cancellation button should be shown.
+
+   Clients that do not support [[id:e9013e32-c7a5-403d-9711-df7bf939f4c4][Language Server
+   Protocol:3.16:Cancellation Of Requests]] and Clients that do not
+   support dynamically enabling or disabling the cancel button can
+   ignore this member.
+
+   This is an optional value.
+
+ + message :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] providing details about the
+   associated progress.
+
+   If this is not set, the last reported message is to be considered
+   valid.
+
+   This is an optional value.
+
+ + percentage :: A [[id:18188d0a-f0bd-4e20-84c3-5291da9736c6][JSON:Type System:Number]] with no fractional part in
+   the range [0, 100].
+
+   Identifies a percentage representing the amount of work that is
+   completed.
+
+   If this value is not provided an infinite progress is assumed and
+   the Client is allowed to ignore the ~percentage~ member in
+   subsequent reports.
+
+   The value must always be rising. Clients are free to ignore values
+   that have not increased since the last report.
+
+   This is an optional value.

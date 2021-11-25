@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       da92f55e-c96a-47f2-abc4-90d9038e1476
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#workDoneProgress
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:Client Initiated Progress
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Progress:Asynchronous:Client:
+
+A progress report that is initiated by sending a

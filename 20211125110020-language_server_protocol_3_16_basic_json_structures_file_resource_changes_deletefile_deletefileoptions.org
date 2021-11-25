@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       81224b6a-52b7-47e0-b5fb-192313f0e15f
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#resourceChanges
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:File Resource Changes:DeleteFile:DeleteFileOptions
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Documents:Resource:File:Delete:Option:
+
+Options for a [[id:4fd3efbf-93c6-4efd-8dc6-bc16be9abb0c][Language Server Protocol:3.16:Basic JSON Structures:File Resource Changes:DeleteFile]] operation.
+
+DeleteFileOptions is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + recursive :: A [[id:726309c0-c7e7-4650-9f6f-6159a6d10081][JSON:Type System:Boolean]] that mark the content for
+   recursive deletion whent the target is a folder.
+
+   This is an optional value.
+
+ + ignoreIfNotExists :: A [[id:726309c0-c7e7-4650-9f6f-6159a6d10081][JSON:Type System:Boolean]] that ignore the
+   operation if the file or folder doesn't exist.
+
+   This is an optional value.

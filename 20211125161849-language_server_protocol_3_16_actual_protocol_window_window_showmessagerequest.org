@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       6dbf834c-5794-41fe-9e53-41bbc7c08e50
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Window:window/showMessageRequest

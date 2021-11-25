@@ -1,0 +1,5 @@
+:PROPERTIES:
+:ID:       1ba0783e-3a86-49de-a655-ef4db771c772
+:ROAM_ALIASES: "Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:Client Initiated Progress:workDoneToken"
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:Client Initiated Progress:WorkDoneProgressParams

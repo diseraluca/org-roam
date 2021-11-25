@@ -1,4 +1,39 @@
 :PROPERTIES:
 :ID:       ea926146-df61-4748-807d-0b51eef341e9
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#initialize
 :END:
 #+title: Language Server Protocol:3.16:Actual Protocol:Initialize
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Initialize:
+
+This is the first method that the Client must call on the Server.
+
+ + If a [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]] is sent to the Server before
+   ~initialize~, the Server should responde with an error using code
+   ~-32002~ and any message it desires.
+
+ + If a [[id:7e17801e-eb31-4e80-b723-59d55e62dc05][JSON-RPC:2.0:Request:Notification]] is sent to the Server before
+   ~initialize~, the Server should drop the notification, unless it is
+   the [[id:eee9d62f-c455-49c6-93f7-9b025deaa93c][Language Server Protocol:3.16:Actual Protocol:Exit
+   Notification]].
+
+   This allows the Server to end its process without requiring the
+   initialization to complete.
+
+Unless the Server responds positively to the ~initialize~ request, the
+Client must not send any more requests or notifications.
+
+Similarly, the Server is not allowed to send any request or
+notification to the client unless it has already responded positively
+to the ~initialize~ request.
+ + As an exception to this, the Server can send [[id:6ad70fa7-8ab8-4d31-9d30-d6a61388a545][Language Server
+   Protocol:3.16:Actual Protocol:Window:window/showMessage]], [[id:7975210d-4ee2-47b1-bbf6-e0cca28548b9][Language
+   Server Protocol:3.16:Actual Protocol:Window:window/logMessage]],
+   [[id:6dbf834c-5794-41fe-9e53-41bbc7c08e50][Language Server Protocol:3.16:Actual
+   Protocol:Window:window/showMessageRequest]] and [[id:dbac984a-bcc6-497b-bef8-01ff18cf73ac][Language Server
+   Protocol:3.16:Actual Protocol:Telemetry:telemetry/event]] during the
+   processing of the ~initialize~ request.
+
+   If the Client sets up a progress token the Server can also send
+   [[id:cb5fefd1-5e6a-41d2-b90d-29dc155a4a34][Language Server Protocol:3.16:Progress Reporting]] notifications.
+
++ See [[id:9cdab890-0d6e-43b8-8882-bf5c157fe24e][Language Server Protocol:3.16:Actual Protocol:Initialize:InitializeRequest]]
