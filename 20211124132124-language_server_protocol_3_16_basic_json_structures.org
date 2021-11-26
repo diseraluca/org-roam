@@ -19,3 +19,4 @@ The following structures are provided:
  + [[id:59f2b283-579a-4d6f-8925-9587ab69669f][Language Server Protocol:3.16:Basic JSON Structures:StaticRegistrationOptions]]
  + [[id:d87aac57-c4c8-44b8-9149-dd2927988027][Language Server Protocol:3.16:Basic JSON Structures:MarkupContent]]
  + [[id:8f4163c7-6821-4998-b909-66db9b9d5c53][Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress]]
+ + [[id:233cf4fb-bef1-4c0b-9917-3112b3f0b312][Language Server Protocol:3.16:Basic JSON Structures:TraceValue]]

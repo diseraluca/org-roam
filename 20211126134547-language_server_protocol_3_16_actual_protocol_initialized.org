@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       e8928aa4-be3b-4b14-be8c-e47a345eae09
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#initialized
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Initialized
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Initialiazed:Method:
+
++ See [[id:6d1dd845-e513-419a-a595-33272478fb13][Language Server Protocol:3.16:Actual
+  Protocol:Initialized:InitializedNotification]] for a way to call this
+  method.

@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       60d892f2-195a-42d8-89b3-ceeb7b79ab9f
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#shutdown
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Shutdown:ShutdownRequest
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Shutdown:Request:Client:
+
+The [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]] used to call the [[id:acc76869-7516-4b09-a07a-6cce3542b7c4][Language Server
+Protocol:3.16:Actual Protocol:Shutdown]] method.
+
+Asks the Server to shutdown but not to [[id:f249818a-31e2-4084-8c84-b3a6737d485f][Language Server
+Protocol:3.16:Actual Protocol:Server Lifetime:Exit]] (as to allow the
+delivering response to the Client).
+
+Clients must not send any notification other than the [[id:eee9d62f-c455-49c6-93f7-9b025deaa93c][Language Server
+Protocol:3.16:Actual Protocol:Exit Notification]] after sending this
+request.
+
+Furthermore, Clients should wait for the [[id:af8a9cd0-4ad5-41ff-971f-ef09cb8b6758][Language Server
+Protocol:3.16:Actual Protocol:Shutdown:ShutdownResponse]] before sendin
+the exit notification.
+
+A Server that receives a request after the shutdown request should
+always respond with an ~InvalidRequest~ [[id:6c220bbe-849f-4012-924c-30e04977c69e][JSON-RPC:2.0:Response:Error]].
+
++ This request doesn't use a ~params~ member.
+
++ This request is sent from the client to the server.

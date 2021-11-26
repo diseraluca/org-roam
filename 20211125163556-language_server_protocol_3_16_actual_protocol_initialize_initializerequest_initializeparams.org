@@ -3,8 +3,86 @@
 :ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#initialize
 :END:
 #+title: Language Server Protocol:3.16:Actual Protocol:Initialize:InitializeRequest:InitializeParams
-#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Initialize:Parameter:
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Initialize:Parameter:Client:
 
 The parameters used for an [[id:9cdab890-0d6e-43b8-8882-bf5c157fe24e][Language Server Protocol:3.16:Actual Protocol:Initialize:InitializeRequest]].
 
-InitializeParams is a
+InitializeParams is a [[id:1a217943-dd12-40bd-a958-48602385f00f][Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:Client Initiated Progress:WorkDoneProgressParams]] with the following additional members:
+
+ + processId :: A [[id:18188d0a-f0bd-4e20-84c3-5291da9736c6][JSON:Type System:Number]] with no fractional part or [[id:f7e11bf7-91ea-46e1-b9c4-643bbe508e06][JSON:Type System:Null]]..
+
+   This represent the process id of the parent process that started
+   the server.
+
+   If the parent process is not alive, the Server should [[id:f249818a-31e2-4084-8c84-b3a6737d485f][Language
+   Server Protocol:3.16:Actual Protocol:Server Lifetime:Exit]].
+
+ + clientInfo :: An [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] that has the following members:
+
+    + name :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the name of the Client.
+
+    + version :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the version of the Client.
+
+      This is an optional value.
+
+   It provides information about the Client that the Server will deal with.
+
+   This is an optional value.
+
+ + locale :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the locale the
+   Client is showing information in.
+
+   Uses [[id:392a5dda-6563-4fe9-aea8-0d18c9ad6c9b][IETF Language Tag]] as the value's syntax.
+
+   This is an optional value.
+
+ + rootPath :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] or [[id:f7e11bf7-91ea-46e1-b9c4-643bbe508e06][JSON:Type System:Null]].
+
+   Represents the root path of the workspace.
+   It is null when no folder is open.
+
+   This is an optional value.
+
+   This member is deprecated in favour of ~rootUri~.
+
+ + rootUri :: A [[id:34b77302-2633-4aa0-bc51-7317ff45a7ad][Language Server Protocol:3.16:Basic JSON Structures:URI:DocumentUri]] or [[id:f7e11bf7-91ea-46e1-b9c4-643bbe508e06][JSON:Type System:Null]].
+
+   Represents the root of the workspace. It is null if no folder is open.
+
+   This member has precedence over ~rootPath~.
+
+   This member is deprecated in favour of ~workspaceFolders~.
+
+ + initializationOptions :: A value of any type that represents the
+   initilization options that the user provided.
+
+   This is an optional value.
+
+ + capabilities :: A [[id:e19bf896-7484-4451-af5c-fb0d555a4da4][Language Server Protocol:3.16:Actual
+   Protocol:Initialize:ClientCapabilities]] that represent the features
+   provided by the Client.
+
+ + trace :: A [[id:233cf4fb-bef1-4c0b-9917-3112b3f0b312][Language Server Protocol:3.16:Basic JSON
+   Structures:TraceValue]] that represents the initial [[id:8fccacb6-caa5-4b28-b8c6-6a43fbedd3e6][Language Server
+   Protocol:3.16:Actual Protocol:Server Lifetime:Log Tracing]] value.
+
+   If omitted, log tracing is considered disabled.
+
+   This is an optional value.
+
+ + workspaceFolders :: An [[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type System:Array]] of [[id:fbee5bd0-3d0f-4509-8ad8-eb909056c61d][Language Server
+   Protocol:3.16:Actual
+   Protocol:Workspace:workspace/workspaceFolders:WorkspaceFolder]] or
+   [[id:f7e11bf7-91ea-46e1-b9c4-643bbe508e06][JSON:Type System:Null]].
+
+   Represents the workspace folders configured in the client when the
+   Server starts.
+
+   This property should be available only when the client supports
+   workspace folders, see [[id:e19bf896-7484-4451-af5c-fb0d555a4da4][Language Server Protocol:3.16:Actual
+   Protocol:Initialize:ClientCapabilities]].
+
+   It should be null when the Client supports workspace folders but
+   none are configured.
+
+   This is an optional value.

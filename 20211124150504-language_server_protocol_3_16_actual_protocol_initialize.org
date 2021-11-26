@@ -36,4 +36,4 @@ to the ~initialize~ request.
    If the Client sets up a progress token the Server can also send
    [[id:cb5fefd1-5e6a-41d2-b90d-29dc155a4a34][Language Server Protocol:3.16:Progress Reporting]] notifications.
 
-+ See [[id:9cdab890-0d6e-43b8-8882-bf5c157fe24e][Language Server Protocol:3.16:Actual Protocol:Initialize:InitializeRequest]]
++ See [[id:9cdab890-0d6e-43b8-8882-bf5c157fe24e][Language Server Protocol:3.16:Actual Protocol:Initialize:InitializeRequest]] for a way to call this method.

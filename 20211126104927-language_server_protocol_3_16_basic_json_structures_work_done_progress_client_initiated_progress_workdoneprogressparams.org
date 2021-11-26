@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       1a217943-dd12-40bd-a958-48602385f00f
+:ROAM_ALIASES: "Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:Client Initiated Progress:workDoneToken"
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:Client Initiated Progress:WorkDoneProgressParams
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Progress:Asynchronous:Client:Parameter:
+
+Parameters used to initiate a [[id:8f4163c7-6821-4998-b909-66db9b9d5c53][Language Server Protocol:3.16:Basic JSON
+Structures:Work Done Progress]] exchange when sending a
+[[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]].
+
+WorkDoneProgressParams is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + workDoneToken :: A [[id:6505d695-6867-4863-9f7a-ad7f8053d157][Language Server Protocol:3.16:Progress
+   Reporting:ProgressParams:ProgressToken]] that a Server can use to
+   report work done progress.
+
+   A ~workDoneToken~ is valid only as long as the Server has not sent
+   a [[id:a42a0131-45f9-4bd2-8727-9bdf29f9674b][JSON-RPC:2.0:Response]] back for the related [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]].

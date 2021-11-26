@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       6d1dd845-e513-419a-a595-33272478fb13
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#initialized
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Initialized:InitializedNotification
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Initialiazed:Notification:
+
+The [[id:7e17801e-eb31-4e80-b723-59d55e62dc05][JSON-RPC:2.0:Request:Notification]] used to call the [[id:e8928aa4-be3b-4b14-be8c-e47a345eae09][Language Server
+Protocol:3.16:Actual Protocol:Initialized]] method.
+
++ This notification is sent from the Client to the Server.
+
++ This notification should be sent after the Client received a
+  successfull [[id:213c3263-f5c1-42c1-9302-1962e359522c][Language Server Protocol:3.16:Actual
+  Protocol:Initialize:initializeResponse]] but before any other request
+  or notification is sent.
+
++ This notification should be sent only once.
+
++ The notification uses [[id:aacbb0ef-881e-4000-84cc-c39268a49f2f][Language Server Protocol:3.16:Actual
+  Protocol:Initialized:InitializedNotification:InitializedParams]] for
+  the ~params~ member of this notification.

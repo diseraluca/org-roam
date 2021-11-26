@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       a0c0c654-c50d-4935-8a88-93a471c43a4d
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#initialize
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Initialize:InitializeResponse:InitializeResult
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Initialize:Response:Result:
+
+The result for an [[id:213c3263-f5c1-42c1-9302-1962e359522c][Language Server Protocol:3.16:Actual Protocol:Initialize:initializeResponse]].
+
+An InitializeResult is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + capabilities :: A  #TODO add capabilites
+
+ + serverInfo :: An [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+    + name :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the name of the
+      Server.
+
+    + version :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the version of
+      the Server.
+
+      This is an optional value.

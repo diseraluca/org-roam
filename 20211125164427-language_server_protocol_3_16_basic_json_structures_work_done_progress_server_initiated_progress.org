@@ -1,4 +1,10 @@
 :PROPERTIES:
 :ID:       71802b44-59af-4666-937b-2f0daaf5d8d9
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#workDoneProgress
 :END:
 #+title: Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:Server Initiated Progress
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Progress:Asynchronous:Server:
+
+A progress report that is initiated by sending [[id:1dff4101-0c29-4382-af29-d6375e09eb77][Language Server
+Protocol:3.16:Actual Protocol:Window:window/workDoneProgress/create]]
+notification.

@@ -5,4 +5,6 @@
 #+title: Language Server Protocol:3.16:Basic JSON Structures:Work Done Progress:Client Initiated Progress
 #+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Progress:Asynchronous:Client:
 
-A progress report that is initiated by sending a
+A progress report that is initiated by sending a [[id:1a217943-dd12-40bd-a958-48602385f00f][Language Server
+Protocol:3.16:Basic JSON Structures:Work Done Progress:Client
+Initiated Progress:workDoneToken]].

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       213c3263-f5c1-42c1-9302-1962e359522c
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#initialize
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Initialize:initializeResponse
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Initialize:Response:
+
+The [[id:a42a0131-45f9-4bd2-8727-9bdf29f9674b][JSON-RPC:2.0:Response]] for an [[id:9cdab890-0d6e-43b8-8882-bf5c157fe24e][Language Server Protocol:3.16:Actual Protocol:Initialize:InitializeRequest]].
+
++ The ~result~ member of this response is [[id:a0c0c654-c50d-4935-8a88-93a471c43a4d][Language Server Protocol:3.16:Actual Protocol:Initialize:InitializeResponse:InitializeResult]].
+
++ The ~error~ member of this response is [[id:af97f5c3-6bd1-47d1-88a6-d6908f7d284b][Language Server Protocol:3.16:Actual Protocol:Initialize:InitializeResponse:InitializeError]]

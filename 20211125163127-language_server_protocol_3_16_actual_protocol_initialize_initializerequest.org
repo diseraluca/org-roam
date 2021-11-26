@@ -9,6 +9,9 @@ The [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]] that is se
 
 + The ~initialize~ request can be sent only once.
 
-The request uses [[id:4938cbb5-4558-4bcc-aea0-8baf6ed95024][Language Server Protocol:3.16:Actual
-Protocol:Initialize:InitializeRequest:InitializeParams]] for the
-parameters member of the request.
++ The request uses [[id:4938cbb5-4558-4bcc-aea0-8baf6ed95024][Language Server Protocol:3.16:Actual
+  Protocol:Initialize:InitializeRequest:InitializeParams]] for the
+  ~params~ member of the request.
+
++ The response to this request is [[id:213c3263-f5c1-42c1-9302-1962e359522c][Language Server Protocol:3.16:Actual
+  Protocol:Initialize:initializeResponse]].

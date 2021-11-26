@@ -5,7 +5,7 @@
 #+title: JSON-RPC:2.0:Request:Notification
 #+filetags: :JSON-RPC:JSON:RPC:Request:Notification:Tech:
 
-A Request Object without an /id/ parameter.
+A Request Object without an ~id~ parameter.
 
 A Request Object that is a notification signifies a lack of intrest in the [[id:a42a0131-45f9-4bd2-8727-9bdf29f9674b][JSON-RPC:2.0:Response]] by the part of the client.
 

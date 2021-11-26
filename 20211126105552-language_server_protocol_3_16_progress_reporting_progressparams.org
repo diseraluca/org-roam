@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       b4b42cda-2985-4910-80d3-b9d0d5b0b270
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#progress
+:END:
+#+title: Language Server Protocol:3.16:Progress Reporting:ProgressParams
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:Progress:Asynchronous:Parameter:
+
+The parameters used in a progress notification.
+
+ProgressParams is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + token :: A [[id:6505d695-6867-4863-9f7a-ad7f8053d157][Language Server Protocol:3.16:Progress
+   Reporting:ProgressParams:ProgressToken]] that identifies the task.
+
+ + value :: A value of any type that represent the data for the
+   progress.

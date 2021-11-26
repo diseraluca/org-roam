@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       aacbb0ef-881e-4000-84cc-c39268a49f2f
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#initialized
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Initialized:InitializedNotification:InitializedParams
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Initialiazed:Notification:Parameter:
+
+The parameters used for an [[id:6d1dd845-e513-419a-a595-33272478fb13][Language Server Protocol:3.16:Actual
+Protocol:Initialized:InitializedNotification]].
+
+InitializedParams is an empty [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]].

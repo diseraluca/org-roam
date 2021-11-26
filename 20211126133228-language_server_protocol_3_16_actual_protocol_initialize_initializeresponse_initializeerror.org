@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       af97f5c3-6bd1-47d1-88a6-d6908f7d284b
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#initialize
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Initialize:InitializeResponse:InitializeError
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Initialize:Error:
+
+The [[id:6c220bbe-849f-4012-924c-30e04977c69e][JSON-RPC:2.0:Response:Error]] for an [[id:213c3263-f5c1-42c1-9302-1962e359522c][Language Server Protocol:3.16:Actual Protocol:Initialize:initializeResponse]].
+
+InitializeError has the following codes:
+
+ + unknownProtocolVersion :: Used when the protocol version provided
+   by the Client can't be handled by the Server.
+
+   The value of this code is 1.
+
+   This code has been deprecated in favour of [[id:e19bf896-7484-4451-af5c-fb0d555a4da4][Language Server
+   Protocol:3.16:Actual Protocol:Initialize:ClientCapabilities]] that
+   removed the need for a version handshake.
+
+InitializeError has an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members as its ~data~:
+
+ + retry :: A [[id:726309c0-c7e7-4650-9f6f-6159a6d10081][JSON:Type System:Boolean]] indicating whether the Client should execute the following logic:
+
+    1. Show the message provided by the error to the user.
+    2. The user selects either retry or cancel.
+    3. If the user selected retry the initialize method is sent again.

@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       acc76869-7516-4b09-a07a-6cce3542b7c4
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#shutdown
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Shutdown
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Shutdown:Method:
+
++ See [[id:60d892f2-195a-42d8-89b3-ceeb7b79ab9f][Language Server Protocol:3.16:Actual
+  Protocol:Shutdown:ShutdownRequest]] for a way to call this method.

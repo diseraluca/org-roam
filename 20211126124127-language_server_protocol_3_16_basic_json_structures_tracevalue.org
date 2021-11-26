@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       233cf4fb-bef1-4c0b-9917-3112b3f0b312
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#traceValue
+:END:
+#+title: Language Server Protocol:3.16:Basic JSON Structures:TraceValue
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON:Tracing:Verbosity:
+
+Represents the level of verbosity with which the Server has to report
+its execution trace using the [[id:2db0ab94-6949-4e84-adea-50747a1a27b0][Language Server Protocol:3.16:Actual
+Protocol:Server Lifetime:Log Tracing:$/logTrace]] notification.
+
+Initially set by the Client during [[id:ea926146-df61-4748-807d-0b51eef341e9][Language Server
+Protocol:3.16:Actual Protocol:Initialize]], can be modified using the
+[[id:074abfca-6acf-48cf-8ddb-d7de951b7159][Language Server Protocol:3.16:Actual Protocol:Server Lifetime:Log
+Tracing:$/setTrace]] notification.
+
+A TraceValue is one of the literal [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]]s ="off"=,
+="messages"= or ="verbose"=.

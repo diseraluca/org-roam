@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       8fccacb6-caa5-4b28-b8c6-6a43fbedd3e6
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Server Lifetime:Log Tracing

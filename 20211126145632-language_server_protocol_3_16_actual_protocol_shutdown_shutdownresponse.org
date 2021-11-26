@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       af8a9cd0-4ad5-41ff-971f-ef09cb8b6758
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Shutdown:ShutdownResponse

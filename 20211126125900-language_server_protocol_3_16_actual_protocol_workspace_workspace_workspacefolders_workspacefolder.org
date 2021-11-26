@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       fbee5bd0-3d0f-4509-8ad8-eb909056c61d
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:Workspace:workspace/workspaceFolders:WorkspaceFolder
