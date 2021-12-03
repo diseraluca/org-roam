@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       9f9a62c8-54e9-48aa-a531-28f400dff84c
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#shwoMessageRequest
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:window/showMessageRequest:ShowMessageRequestRequest:ShowMessageRequestParams
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Window:ShowMessageRequest:Parameter:
+
+The parameters used for an [[id:041033da-f421-4e54-880d-3ab3f0bd2014][Language Server Protocol:3.16:Actual Protocol:window/showMessageRequest:ShowMessageRequestRequest]].
+
+ShowMessageRequestParams is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + type :: A [[id:e9203c1a-2836-4f6f-921f-21582cce7ab6][Language Server Protocol:3.16:Actual
+   Protocol:window/showMessage:ShowMessageNotification:ShowMessageParams:MessageType]]
+   that represent the kind of the message.
+
+ + message :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the actual
+   message to show.
+
+ + actions :: An [[id:efb9cf9c-b39d-4400-844d-3d9c7f5d1c18][JSON:Type System:Array]] of [[id:afe095fa-1c51-4f00-9f09-5066600fc530][Language Server
+   Protocol:3.16:Actual
+   Protocol:window/showMessageRequest:ShowMessageRequestRequest:MessageActionItem]]
+   that should be presented to the user.
+
+   This is an optional value.

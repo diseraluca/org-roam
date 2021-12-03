@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       980f68a4-1cb5-4708-aecb-5d05ccba0cce
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#setTrace
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:$/setTrace:SetTraceNotification
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:SetTrace:Notification:Client:
+
+The [[id:7e17801e-eb31-4e80-b723-59d55e62dc05][JSON-RPC:2.0:Request:Notification]] used to change the trace setting of the Server.
+
++ The notification uses [[id:acc9cb6d-ece6-4f2c-8cf4-c12d2ae61310][Language Server Protocol:3.16:Actual
+  Protocol:$/setTrace:SetTraceNotification:SetTraceParams]] for the
+  ~params~ member of the notification.

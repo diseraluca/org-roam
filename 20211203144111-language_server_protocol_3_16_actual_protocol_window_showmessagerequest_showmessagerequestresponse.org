@@ -1,0 +1,4 @@
+:PROPERTIES:
+:ID:       b338ae45-03d0-4723-a536-f5bac8b7abed
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:window/showMessageRequest:ShowMessageRequestResponse

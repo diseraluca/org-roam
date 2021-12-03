@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       977e91d0-6585-4eef-a00c-23681155beb0
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#showMessage
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:window/showMessage:ShowMessageNotification:ShowMessageParams
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Window:ShowMessage:Parameter:
+
+The parameter used for a [[id:96980a1c-f8b3-4651-9f04-b719b45c8a7e][Language Server Protocol:3.16:Actual
+Protocol:window/showMessage:ShowMessageNotification]].
+
+ShowMessageParams is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + type :: A [[id:e9203c1a-2836-4f6f-921f-21582cce7ab6][Language Server Protocol:3.16:Actual
+   Protocol:window/showMessage:ShowMessageNotification:ShowMessageParams:MessageType]]
+   specifying the kind of message to show.
+
+ + message :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the message to
+   show.

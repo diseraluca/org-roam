@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       96980a1c-f8b3-4651-9f04-b719b45c8a7e
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#showMessage
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:window/showMessage:ShowMessageNotification
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Window:ShowMessage:Notification:Server:
+
+The [[id:7e17801e-eb31-4e80-b723-59d55e62dc05][JSON-RPC:2.0:Request:Notification]] used to call the [[id:6ad70fa7-8ab8-4d31-9d30-d6a61388a545][Language Server
+Protocol:3.16:Actual Protocol:window/showMessage]] method.
+
+This notification is used to ask the Client to display a message in
+the user interface.
+
++ The notification uses [[id:977e91d0-6585-4eef-a00c-23681155beb0][Language Server Protocol:3.16:Actual
+  Protocol:window/showMessage:ShowMessageNotification:ShowMessageParams]]
+  for the ~params~ member of the notification.

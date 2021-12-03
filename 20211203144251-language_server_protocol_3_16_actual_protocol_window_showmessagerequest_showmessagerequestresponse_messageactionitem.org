@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       afe095fa-1c51-4f00-9f09-5066600fc530
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#shwoMessageRequest
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:window/showMessageRequest:ShowMessageRequestRequest:MessageActionItem
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Window:ShowMessageRequest:

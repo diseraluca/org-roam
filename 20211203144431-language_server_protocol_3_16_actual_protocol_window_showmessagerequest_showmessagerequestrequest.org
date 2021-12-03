@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       041033da-f421-4e54-880d-3ab3f0bd2014
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#shwoMessageRequest
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:window/showMessageRequest:ShowMessageRequestRequest
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Window:ShowMessageRequest:Request:Server:
+
+The [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]] that is sent to call the [[id:6dbf834c-5794-41fe-9e53-41bbc7c08e50][Language Server
+Protocol:3.16:Actual Protocol:window/showMessageRequest]] method.
+
+This is sent from a Server to a Client to ask it to display a message
+in the user interface, same as the [[id:6ad70fa7-8ab8-4d31-9d30-d6a61388a545][Language Server
+Protocol:3.16:Actual Protocol:window/showMessage]] method. This request
+additionally provide a way to pass an action that the user can perform
+and to wait for an answer from the Client.
+
++ The request uses [[id:9f9a62c8-54e9-48aa-a531-28f400dff84c][Language Server Protocol:3.16:Actual
+  Protocol:window/showMessageRequest:ShowMessageRequestRequest:ShowMessageRequestParams]]
+  for the ~params~ member of the request.

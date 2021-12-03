@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       e132e87b-7077-4443-874e-4097bb4b489a
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:window/showMessageRequest:ShowMessageRequestClientCapabilities
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Window:ShowMessageRequest:Capabilities:
+
+[[id:e19bf896-7484-4451-af5c-fb0d555a4da4][Language Server Protocol:3.16:Actual
+Protocol:Initialize:ClientCapabilities]] for the [[id:6dbf834c-5794-41fe-9e53-41bbc7c08e50][Language Server
+Protocol:3.16:Actual Protocol:window/showMessageRequest]] method.
+
+ShowMessageRequestClientCapabilities is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + messageActionItem :: An [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+     + addiitonalPropertiesSupport :: A [[id:726309c0-c7e7-4650-9f6f-6159a6d10081][JSON:Type System:Boolean]]
+       representing whether the Client supports additional attributes
+       which are preserved and sent back to the Server in the [[id:b338ae45-03d0-4723-a536-f5bac8b7abed][Language
+       Server Protocol:3.16:Actual
+       Protocol:window/showMessageRequest:ShowMessageRequestResponse]].
+
+       This is an optional value.
+
+    Contains capabilities that are specific to [[id:afe095fa-1c51-4f00-9f09-5066600fc530][Language Server
+   Protocol:3.16:Actual
+   Protocol:window/showMessageRequest:ShowMessageRequestRequest:MessageActionItem]].
+
+   This is an optional value.

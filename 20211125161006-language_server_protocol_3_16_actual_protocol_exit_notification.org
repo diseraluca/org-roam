@@ -1,4 +1,18 @@
 :PROPERTIES:
 :ID:       eee9d62f-c455-49c6-93f7-9b025deaa93c
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#exit
 :END:
-#+title: Language Server Protocol:3.16:Actual Protocol:Exit Notification
+#+title: Language Server Protocol:3.16:Actual Protocol:Exit:ExitNotification
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Exit:Notification:Client:
+
+The [[id:7e17801e-eb31-4e80-b723-59d55e62dc05][JSON-RPC:2.0:Request:Notification]] used to call [[id:09238469-06e5-4d51-8dfc-8cd570e2528e][Language Server
+Protocol:3.16:Actual Protocol:Exit]].
+
+On receiving this notification the Server should exit its process
+completely, returning a success code of 0 if the [[id:60d892f2-195a-42d8-89b3-ceeb7b79ab9f][Language Server
+Protocol:3.16:Actual Protocol:Shutdown:ShutdownRequest]] has been
+received before or an exit code of 1 otherwise.
+
++ This notification doesn't use a ~params~ member.
+
++ This notification is sent from the Client to the Server.

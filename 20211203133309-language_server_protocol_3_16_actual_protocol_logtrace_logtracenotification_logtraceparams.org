@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       7ca09d0f-f07b-4634-ad24-00e8bded2033
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#logTrace
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:$/logTrace:LogTraceNotification:LogTraceParams
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:LogTrace:Parameter:
+
+The parameters used for a [[id:832f7a3b-a677-4260-8c14-1547b0e8149b][Language Server Protocol:3.16:Actual
+Protocol:$/logTrace:LogTraceNotification]].
+
+LogTraceParams is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + message :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] representing the message that
+   should be logged.
+
+ + verbose :: A [[id:40b19f64-f8b5-49ec-9d7b-f095062801df][JSON:Type System:String]] containing additional information.
+
+   Should not be used unless [[id:233cf4fb-bef1-4c0b-9917-3112b3f0b312][Language Server Protocol:3.16:Basic JSON
+   Structures:TraceValue]] is ="verbose"=.
+
+   This is an optional value.

@@ -1,4 +1,10 @@
 :PROPERTIES:
 :ID:       6ad70fa7-8ab8-4d31-9d30-d6a61388a545
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#showMessage
 :END:
-#+title: Language Server Protocol:3.16:Actual Protocol:Window:window/showMessage
+#+title: Language Server Protocol:3.16:Actual Protocol:window/showMessage
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:ShowMessage:Method:
+
++ See [[id:96980a1c-f8b3-4651-9f04-b719b45c8a7e][Language Server Protocol:3.16:Actual
+  Protocol:window/showMessage:ShowMessageNotification]] for a way to
+  call this method.

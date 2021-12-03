@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       acc9cb6d-ece6-4f2c-8cf4-c12d2ae61310
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#setTrace
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:$/setTrace:SetTraceNotification:SetTraceParams
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:SetTrace:Parameter:
+
+The parameters used for a [[id:980f68a4-1cb5-4708-aecb-5d05ccba0cce][Language Server Protocol:3.16:Actual
+Protocol:$/setTrace:SetTraceNotification]].
+
+SetTraceParams is an [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] with the following members:
+
+ + value :: A [[id:233cf4fb-bef1-4c0b-9917-3112b3f0b312][Language Server Protocol:3.16:Basic JSON
+   Structures:TraceValue]] that should be assigned to the trace setting.

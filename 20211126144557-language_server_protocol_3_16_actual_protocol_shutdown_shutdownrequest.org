@@ -8,12 +8,12 @@
 The [[id:ad9a41bf-e8ca-4db9-b2dd-987786b21a22][JSON-RPC:2.0:Request]] used to call the [[id:acc76869-7516-4b09-a07a-6cce3542b7c4][Language Server
 Protocol:3.16:Actual Protocol:Shutdown]] method.
 
-Asks the Server to shutdown but not to [[id:f249818a-31e2-4084-8c84-b3a6737d485f][Language Server
-Protocol:3.16:Actual Protocol:Server Lifetime:Exit]] (as to allow the
-delivering response to the Client).
+Asks the Server to shutdown but not to [[id:09238469-06e5-4d51-8dfc-8cd570e2528e][Language Server
+Protocol:3.16:Actual Protocol:Exit]] (as to allow the delivering
+response to the Client).
 
 Clients must not send any notification other than the [[id:eee9d62f-c455-49c6-93f7-9b025deaa93c][Language Server
-Protocol:3.16:Actual Protocol:Exit Notification]] after sending this
+Protocol:3.16:Actual Protocol:Exit:Exit Notification]] after sending this
 request.
 
 Furthermore, Clients should wait for the [[id:af8a9cd0-4ad5-41ff-971f-ef09cb8b6758][Language Server

@@ -1,4 +1,10 @@
 :PROPERTIES:
 :ID:       2db0ab94-6949-4e84-adea-50747a1a27b0
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#logTrace
 :END:
-#+title: Language Server Protocol:3.16:Actual Protocol:Server Lifetime:Log Tracing:$/logTrace
+#+title: Language Server Protocol:3.16:Actual Protocol:$/logTrace
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:LogTrace:Method:
+
++ See [[id:832f7a3b-a677-4260-8c14-1547b0e8149b][Language Server Protocol:3.16:Actual
+  Protocol:$/logTrace:LogTraceNotification]] for a way to call this
+  method.

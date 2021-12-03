@@ -1,4 +1,13 @@
 :PROPERTIES:
 :ID:       6dbf834c-5794-41fe-9e53-41bbc7c08e50
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#shwoMessageRequest
 :END:
-#+title: Language Server Protocol:3.16:Actual Protocol:Window:window/showMessageRequest
+#+title: Language Server Protocol:3.16:Actual Protocol:window/showMessageRequest
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Window:ShowMessageRequest:Method:
+
++ This method respects the [[id:e132e87b-7077-4443-874e-4097bb4b489a][Language Server Protocol:3.16:Actual
+  Protocol:window/showMessageRequest:ShowMessageRequestClientCapabilities]].
+
++ See [[id:041033da-f421-4e54-880d-3ab3f0bd2014][Language Server Protocol:3.16:Actual
+  Protocol:window/showMessageRequest:ShowMessageRequestRequest]] for a
+  way to call this method.

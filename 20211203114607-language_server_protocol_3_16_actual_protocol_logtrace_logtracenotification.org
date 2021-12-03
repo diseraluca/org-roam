@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       832f7a3b-a677-4260-8c14-1547b0e8149b
+:END:
+#+title: Language Server Protocol:3.16:Actual Protocol:$/logTrace:LogTraceNotification
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:LogTrace:Notification:Server:
+
+The [[id:7e17801e-eb31-4e80-b723-59d55e62dc05][JSON-RPC:2.0:Request:Notification]] used to call the [[id:2db0ab94-6949-4e84-adea-50747a1a27b0][Language Server
+Protocol:3.16:Actual Protocol:$/logTrace]] method.
+
+Thea amount of information in this notification depends on the
+[[id:233cf4fb-bef1-4c0b-9917-3112b3f0b312][Language Server Protocol:3.16:Basic JSON Structures:TraceValue]].
+
+Indeed, if the value is ="off"=, the Server should not send this
+notification.
+
+If it is ="messages"=, the Server should avoid using the ~verbose~ member.
+
+=$/logTrace= is intended for systematic reporting. For single debug messages use [[id:7975210d-4ee2-47b1-bbf6-e0cca28548b9][Language Server Protocol:3.16:Actual Protocol:window/logMessage]].
+
++ The notification uses [[id:7ca09d0f-f07b-4634-ad24-00e8bded2033][Language Server Protocol:3.16:Actual
+  Protocol:$/logTrace:LogTraceNotification:LogTraceParams]] for the
+  ~params~ member of the notification.
