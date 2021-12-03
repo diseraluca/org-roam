@@ -14,7 +14,7 @@ InitializeParams is a [[id:1a217943-dd12-40bd-a958-48602385f00f][Language Server
    This represent the process id of the parent process that started
    the server.
 
-   If the parent process is not alive, the Server should [[id:09238469-06e5-4d51-8dfc-8cd570e2528e][Language
+   If the parent process is not alive, the Server should [[id:f249818a-31e2-4084-8c84-b3a6737d485f][Language
    Server Protocol:3.16:Actual Protocol:Exit]].
 
  + clientInfo :: An [[id:2b6c48db-b918-46db-86be-d1cbdf5f5bef][JSON:Type System:Object]] that has the following members:

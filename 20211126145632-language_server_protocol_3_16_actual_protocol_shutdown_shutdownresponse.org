@@ -1,4 +1,12 @@
 :PROPERTIES:
 :ID:       af8a9cd0-4ad5-41ff-971f-ef09cb8b6758
+:ROAM_REFS: https://microsoft.github.io/language-server-protocol/specifications/specification-3-16/#shutdown
 :END:
 #+title: Language Server Protocol:3.16:Actual Protocol:Shutdown:ShutdownResponse
+#+filetags: :LSP:Tech:Languages:Tooling:Specification:JSON-RPC:Lifetime:Shutdown:Response:
+
+The [[id:a42a0131-45f9-4bd2-8727-9bdf29f9674b][JSON-RPC:2.0:Response]] for a [[id:60d892f2-195a-42d8-89b3-ceeb7b79ab9f][Language Server Protocol:3.16:Actual Protocol:Shutdown:ShutdownRequest]].
+
+ + The ~result~ member of this response is [[id:f7e11bf7-91ea-46e1-b9c4-643bbe508e06][JSON:Type System:Null]].
+
+ + The ~error~ member of this response can set its ~code~ and ~message~ member when an exception happens during shutdown.

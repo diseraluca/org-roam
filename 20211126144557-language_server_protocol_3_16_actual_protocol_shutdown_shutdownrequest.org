@@ -26,3 +26,5 @@ always respond with an ~InvalidRequest~ [[id:6c220bbe-849f-4012-924c-30e04977c69
 + This request doesn't use a ~params~ member.
 
 + This request is sent from the client to the server.
+
++ The response to this request is [[id:af8a9cd0-4ad5-41ff-971f-ef09cb8b6758][Language Server Protocol:3.16:Actual Protocol:Shutdown:ShutdownResponse]].
